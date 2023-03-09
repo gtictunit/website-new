@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden
+}
+
+a {
+    text-decoration:  none !important;
+}
+
+/* Navbar */
+.nav{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px 30px;
+    background-color: #3D0052;
+    color: white;
+}
+.navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.nav-list{
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-link{
+    color: white;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header {
+    background-image: url('../assets/images/bgcolor.jpg');
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: bottom;
+    position: relative;
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.67);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width:100%
+}
+
+.hero {
+    position: relative;
+    z-index: 1000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header-description{
+    font-size: 22px;
+    margin-top: 48px;
+    display: flex;
+    gap: 22px;
+}
+
+.header-text {
+    font-size: 75px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #3D0052;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: white;
+    gap: 30px;
+}
+.footer-logo {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.footer-logo img{
+    margin-left: -20px;
+}
+
+.footer-text{
+    font-size: 15px;
+    margin: 10px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    }
+.social-links {
+    margin: 24px 0;
+    font-size: 32px;
+    display: flex;
+    gap: 21px;
+}
+
+.section-header {
+    /* font-family: 'Josefin Sans', sans-serif; */
+    margin-bottom: 24px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+
+.footer-2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-2 li {
+    margin: 16px 0;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
