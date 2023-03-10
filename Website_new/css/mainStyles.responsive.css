@@ -1,0 +1,17 @@
+@media only screen and (max-width: 600px) {
+    .nav {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 10px 30px;
+        background-color: #3d0052;
+        color: white;
+      }
+    
+      .navbar-brand div {
+        display: none;
+      }
+}

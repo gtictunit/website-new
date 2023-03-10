@@ -16,7 +16,8 @@
   <link rel="stylesheet" href="./css/mainStyles.css" />
   <link rel="stylesheet" href="./css/drop-in.animation.css" />
   <link rel="stylesheet" href="./css/drop-down.animation.css" />
-  <link rel="stylesheet" href="./css//ripple.css" />
+  <link rel="stylesheet" href="./css/ripple.css" />
+  <link rel ="stylesheet" href="./css/mainStyles.responsive.css" />
 
 
   <!-- Font awesome -->

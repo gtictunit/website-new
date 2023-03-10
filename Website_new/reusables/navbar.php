@@ -12,6 +12,9 @@
             <div>Glory Tabernacle Ministry</div>
           </a>
         </div>
+        <div class="menu-icon">
+          
+        </div>
         <div class="">
           <ul class="nav-list">
             <li class="nav-item ">
