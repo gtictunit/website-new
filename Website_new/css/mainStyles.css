@@ -30,6 +30,7 @@ a {
     display: flex;
     align-items: center;
     color: white;
+    gap: 10px;
 }
 
 .nav-list{
@@ -44,7 +45,6 @@ a {
     color: white;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 header {
@@ -105,11 +105,12 @@ footer {
 }
 .footer-logo {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Josefin Sans', sans-serif;
     display: flex;
     align-items: center;
     color: white;
+    gap: 10px;
 }
 
 .footer-logo img{
