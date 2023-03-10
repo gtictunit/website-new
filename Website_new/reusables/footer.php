@@ -1,121 +1,7 @@
-<!-- <footer class="footer">
-        <div class="footer-1">
-          <a href="/" class="footer-logo">
-            <img
-              src="./assets/images/gt_logo.png"
-              alt="Logo"
-              width="50"
-              height="auto"
-              class="d-inline-block align-text-top"
-              alt=""
-            />
-            <div>Glory Tabernacle Ministry</div>
-          </a>
-          <div class="footer-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis,
-            illo! Distinctio deserunt ut illum facere sunt harum esse aliquid
-            explicabo excepturi repellendus quo maxime alias laborum quibusdam
-            numquam, possimus omnis.
-          </div>
-          <div class="social-links">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-          </div>
-        </div>
-
-
-        <!-- Footer 2 WITH QUick LI=inks -->
-        <div class="footer-2">
--->
-        <!-- Footer 2 WITH QUick LI=inks -->
-        <!--<div class="footer-2">
-            <div class="section-header">Quick links</div>
-            <ul>
-            <li class="bottom-link">
-                Get Involved
-              </li>
-
-              <li class="bottom-link">
-               ADMI
-              </li>
-              <li class="bottom-link">
-              <li>
-               ADMI
-              </li>
-              <li>
-                GT Missions
-              </li>
-              <li class="bottom-link">
-                Get Involved
-              </li>
-              <li>
-                Get Involved
-              </li>
-            </ul>
-        </div> -->
-
-        <!-- Teams  -->
-<!-- <div class="footer-3">
-  <div class="section-header">
-    Teams
-  </div>
-
-  <ul>
-    <li>
-      Glory Men
-    </li>
-    <li>
-      Glory Women
-    </li>
-    <li>
-      BLEST
-    </li>
-    <li>
-      Glory Children
-    </li>
-    <li>
-      Glory Youth
-    </li>
-</ul>
-</div>
- -->
-
-<!-- More Info -->
-<!-- <div class="footer-4">
-  <div class="section-header">
-   Contact Us
-  </div>
-
-  <ul>
-    <li class="no-hover">
-    
-      <i class="fa-solid fa-location-dot"></i> 
-      Glory Tabernacle Ministry, Oju-Irin, Bodija, Ibadan
-    </li>
-    <li>
-    <i class="fa-solid fa-phone"></i> Phone 
-        <br>
-      <a href="tel:123456">+23490878</a>
-    </li>
-    <li>
-    <i class="fa-solid fa-envelope"></i>
-    Email
-    <br>
-    <a href="mailto:gtictunit@mail.com">gtictunit@gmail.com</a>
-    </li>
- 
-</ul>
-</div>
-
-      </footer> -->
-
-
 <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
+<footer class="text-center text-xl-start">
   <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+  <section class="container-xl d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
     <div class="me-5 d-none d-lg-block">
       <span>Get connected with us on social networks:</span>
@@ -149,97 +35,45 @@
 
   <!-- Section: Links  -->
   <section class="">
-    <div class="container text-center text-md-start mt-5">
+    <div class="container-xl text-center text-md-start mt-5">
       <!-- Grid row -->
       <div class="row mt-3">
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Company name
-          </h6>
+          <div class="text-uppercase fw-bold mb-4 flex align-items-center gap-6">
+            <img src="./assets/images/gt_logo.png" alt="Logo" width="50" height="auto" class="" alt="" />
+            <span style="margin-left:8px;">
+              Glory Tabernacle Ministry
+            </span>
+          </div>
           <p>
             Here you can use rows and columns to organize your footer content. Lorem ipsum
             dolor sit amet, consectetur adipisicing elit.
           </p>
         </div>
-
-        <!-- Teams  -->
-<div class="footer-3">
-  <div class="section-header">
-    Teams
-  </div>
-
-  <ul>
-    <li>
-      Glory Men
-    </li>
-    <li>
-      Glory Women
-    </li>
-    <li>
-      BLEST
-    </li>
-    <li>
-      Glory Children
-    </li>
-    <li>
-      Glory Youth
-    </li>
-</ul>
-</div>
-
-
-<!-- More Info -->
-<div class="footer-4">
-  <div class="section-header">
-   Contact Us
-  </div>
-
-  <ul>
-    <li class="no-hover">
-    
-      <i class="fa-solid fa-location-dot"></i> 
-      Glory Tabernacle Ministry, Oju-Irin, Bodija, Ibadan
-    </li>
-    <li>
-    <i class="fa-solid fa-phone"></i> Phone 
-        <br>
-      <a href="tel:123456">+23490878</a>
-    </li>
-    <li>
-    <i class="fa-solid fa-envelope"></i>
-    Email
-    <br>
-    <a href="mailto:gtictunit@mail.com">gtictunit@gmail.com</a>
-    </li>
- 
-</ul>
-</div>
-
-<hr>
-
-<hr><hr><hr>
-      </footer>
         <!-- Grid column -->
 
         <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
-            Products
+            Teams
           </h6>
           <p>
-            <a href="#!" class="text-reset">Angular</a>
+            <a href="#!" class="text-reset">Glory Men</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">React</a>
+            <a href="#!" class="text-reset">Glory Women</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Vue</a>
+            <a href="#!" class="text-reset">Blest</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Laravel</a>
+            <a href="#!" class="text-reset">Glory Youth</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Glory Children</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -266,19 +100,31 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <ul class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            info@example.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-        </div>
-        <!-- Grid column -->
+
+          <li class="no-hover d-flex align-items-start">
+            <div class="me-3">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <span>
+              Glory Tabernacle Ministry, Oju-Irin, Bodija, Ibadan
+            </span>
+          </li>
+          <li>
+            <a href="mailto:gtictunit@gmail.com">
+              <i class="fas fa-envelope me-3"></i>
+              gtictunit@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:123456"><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          </li>
+
       </div>
+      <!-- Grid column -->
+      </ul>
       <!-- Grid row -->
     </div>
   </section>
@@ -286,7 +132,7 @@
 
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 Copyright:
+    © 2023 Copyright:
     <a class="text-reset fw-bold" href="/">Glory Tabernacle Ministry</a>
   </div>
   <!-- Copyright -->

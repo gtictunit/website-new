@@ -18,34 +18,7 @@
   <link rel="stylesheet" href="./css/drop-down.animation.css" />
   <link rel="stylesheet" href="./css//ripple.css" />
 
-    <title>Glory Tabernacle Ministry Ibadan</title>
-  </head>
-  <body>
-    <div>
-      <!-- Navbar -->
-    <?php include('./reusables/navbar.php') ?>
 
-
-    <!-- Header -->
-      <header>
-        <div class="overlay"></div>
-        <div class="hero">
-          <h6 class="header-text drop-in">
-            Welcome to<br />
-            Glory Tabernacle Ministry
-          </h6>
-          <div class="header-description drop-in-2">
-            <span>SALVATION</span>| <span>SANCTIFICATION</span>|
-            <span>SERVICE</span>
-          </div>
-        </div>
-      </header>
-
-      <!-- Footer -->
-      <?php include('./reusables/footer.php') ?>
-    </div>
-  </body>
-</html>
   <!-- Font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -106,7 +79,7 @@
     </section> -->
 
 
-    <section class="container-xl cta-section-give">
+    <section class="container-xl cta-section-give" data-aos="fade-up" data-aos-offset="200">
       <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
         <div class="icon-container">
 
@@ -137,10 +110,10 @@
     </section>
 
     <section class="container-xl welcome-section">
-      <div class="welcome-image">
+      <div class="welcome-image" data-aos="zoom-in-up">
         <img src="./assets/images/crd-welcome.jpg" alt="" width="100%" />
       </div>
-      <div class="welcome-text">
+      <div class="welcome-text" data-aos="fade-left">
         <span>Welcome to</span>
         <h6>Glory Tabernacle Ministry</h6>
         <p>What a joy it is to introduce you to our church! You'll discover that our passion is to provide a place where people just like you can have a life-changing experience with God. At our doors are wide open to people from all backgrounds.</p>
@@ -165,8 +138,12 @@
           </div>
 
           <p>What a joy it is to introduce you to our church! You'll discover that our passion is to provide a place where people.</p>
-          <button class="join-us-live">
-            Join us live
+
+          <button role="link" class="join-us-live">
+            <a href="https://www.youtube.com/@GTMinistryIb/streams" target="_blank">
+              Join us live
+            </a>
+
           </button>
         </div>
 
