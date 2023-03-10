@@ -18,7 +18,7 @@
         <div class="">
           <ul class="nav-list">
             <li class="nav-item ">
-              <a href="#" class="nav-link active"> Home </a>
+              <a href="index.php" class="nav-link active"> Home </a>
             </li>
             <li class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-btn">
@@ -26,7 +26,7 @@
                  <!-- <i class="fa-solid fa-chevron-down"></i> -->
             </a>
               <div class="dropdown-content">
-                <a href="#">Church History</a>
+                <a href="ChruchHistory.php">Church History</a>
                 <a href="#">Board of Trustees </a>
                 <a href="#">Eldership </a>
 
@@ -54,7 +54,7 @@
             </li>
       
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact us</a>
+              <a href="contactus.php" class="nav-link">Contact us</a>
             </li>
           </ul>
         </div>
