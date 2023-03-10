@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Corben&display=swap");
 
 body {
   padding: 0;
@@ -34,9 +35,9 @@ a {
 }
 
 .navbar-brand:hover {
-    color: white;
-    opacity: 0.9;
-  }
+  color: white;
+  opacity: 0.9;
+}
 
 .nav-list {
   display: flex;
@@ -57,8 +58,8 @@ a {
   margin: 0 20px;
 }
 
-.nav-link:hover{
-    color: #fff;
+.nav-link:hover {
+  color: #fff;
 }
 
 .nav-link:after {
@@ -76,6 +77,55 @@ a {
 .nav-link:hover:after {
   width: 100%;
   left: 0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-btn {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: -10px;
+  border-radius: 8px;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Poppins";
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  max-height: 500px;
+  opacity: 1;
+  z-index: 9999;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 }
 
 header {
@@ -118,6 +168,24 @@ header {
   font-size: 75px;
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
+}
+
+.learn-more-btn {
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
+  align-items: center;
+  cursor: pointer;
 }
 
 /* Footer */
@@ -172,4 +240,91 @@ footer {
   margin: 16px 0;
   /* font-family: 'Montserrat', sans-serif; */
   font-family: "Josefin Sans", sans-serif;
+}
+
+/* Features Section */
+.features-section {
+  width: 100%;
+  padding: 50px;
+  background-color: white;
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  height: 60vh;
+  align-items: center;
+}
+
+.card {
+  padding: 32px;
+  border-radius: 2px;
+  color: #fff;
+  border: none;
+  height: 350px;
+}
+
+.card-1 {
+  background-color: #ff0000;
+}
+
+.card-2 {
+  background-color: #0000ff;
+}
+
+.card-3 {
+  background-color: #9900cc;
+}
+
+.card h6 {
+  font-family: "Corben", cursive;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.welcome-section {
+  width: 70%;
+  padding: 50px;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.welcome-section,
+.welcome-text {
+  flex: 1;
+}
+
+.welcome-text span {
+  font-family: "Corben", cursive;
+  font-weight: 500;
+  font-size: 21px;
+  color: black;
+  opacity: 0.875;
+}
+
+.welcome-text h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 18px;
+}
+
+.welcome-text p {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 18px;
+  color: #9e9c9c;
 }
