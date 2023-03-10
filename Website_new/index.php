@@ -133,7 +133,7 @@
                 <div class="circle3"></div>
               </div>
             </div>
-            <h6 class="col-9">Stream OUR SERVICES LIVE Online Now!</h6>
+            <h6 class="col-9">Stream Our Services Live Online Now!</h6>
           </div>
 
           <p>What a joy it is to introduce you to our church! You'll discover that our passion is to provide a place where people.</p>
