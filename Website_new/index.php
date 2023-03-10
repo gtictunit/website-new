@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./css/mainStyles.css" />
   <link rel="stylesheet" href="./css/drop-in.animation.css" />
   <link rel="stylesheet" href="./css/drop-down.animation.css" />
+  <link rel="stylesheet" href="./css//ripple.css" />
 
   <!-- Font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -52,9 +53,9 @@
       </a>
     </header>
 
-    <section class="container-xl mx-auto">
+    <!-- <section class="container-xl mx-auto">
       <div class="card-container" >
-        <div class="card card-1" data-aos="fade-up"  data-aos-offset="-300" data-aos-duration="800" data-aos-easing="ease-in" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
+        <div class="card card-1" data-aos="fade-up"  data-aos-offset="-200" data-aos-duration="800" data-aos-easing="ease-in" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
           <h6>MOTTO</h6>
           <p>Jesus gave Himself for me, that He might redeem me from all iniquity, and purify me unto Himself a peculiar child, zealous of good works. </p>
         </div>
@@ -64,7 +65,7 @@
 
 
         </div>
-        <div class="card card-3" data-aos="fade-up"  data-aos-offset="-300" data-aos-duration="800" data-aos-easing="ease-in" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center" data-aos-delay="200">
+        <div class="card card-3" data-aos="fade-up"  data-aos-offset="-200" data-aos-duration="800" data-aos-easing="ease-in" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center" data-aos-delay="200">
           <h6>Service Times </h6>
           <p>Thursdays at 4:30pm.<br />
             Sundays at 9:00am
@@ -72,6 +73,37 @@
           <h6>Our Location </h6>
           <p>We are located Bethel land, Railway-crossing, bodija-ojurin, Ibadan, Oyo state.
           </p>
+        </div>
+      </div>
+    </section> -->
+
+
+    <section class="container-xl cta-section-give">
+      <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
+        <div class="icon-container">
+
+        </div>
+        <div class="description">
+          <h6>Pastor's desk</h6>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus, officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed debitis fugiat!</p>
+        </div>
+      </div>
+      <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
+        <div class="icon-container">
+
+        </div>
+        <div class="description">
+          <h6>Online radio</h6>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus, officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed debitis fugiat!</p>
+        </div>
+      </div>
+      <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
+        <div class="icon-container">
+
+        </div>
+        <div class="description">
+          <h6>Sermon of the month</h6>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus, officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed debitis fugiat!</p>
         </div>
       </div>
     </section>
@@ -86,6 +118,34 @@
         <p>What a joy it is to introduce you to our church! You'll discover that our passion is to provide a place where people just like you can have a life-changing experience with God. At our doors are wide open to people from all backgrounds.</p>
       </div>
     </section>
+
+    <section class="live-video-section">
+      <div class="container-xl w-100 h-100 d-flex justify-content-end align-items-center">
+        <div class="live-description w-50 justify-content-end">
+          <span>VIEW LIVE BROADCAST </span>
+
+          <div class="row align-items-center">
+            <div class="play-icon step col-3">
+              <i class="fa-solid fa-play"></i>
+              <div class="circles">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+              </div>
+            </div>
+            <h6 class="col-9">Stream OUR SERVICES LIVE Online Now!</h6>
+          </div>
+
+          <p>What a joy it is to introduce you to our church! You'll discover that our passion is to provide a place where people.</p>
+          <button class="join-us-live">
+            Join us live
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
     <?php include('./reusables/footer.php') ?>
   </div>
 

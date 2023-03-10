@@ -19,7 +19,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 10px 30px;
   background-color: #3d0052;
   color: white;
@@ -56,11 +56,17 @@ a {
   padding: 15px 0;
   position: relative;
   margin: 0 20px;
+  font-size: 15px;
 }
 
 .nav-link:hover {
-  color: #fff;
+  color: #9e9c9c;
 }
+
+ .active {
+  color: #9e9c9c;
+}
+
 
 .nav-link:after {
   background: none repeat scroll 0 0 transparent;
@@ -70,7 +76,7 @@ a {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #fff;
+  background: #9e9c9c;;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -93,15 +99,16 @@ a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  background-color: #fff;
+  min-width: 300px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  margin-top: -10px;
+  /* margin-top: -10px; */
   border-radius: 8px;
   max-height: 0;
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
+  padding:20px;
 }
 
 .dropdown-content a {
@@ -109,11 +116,14 @@ a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  font-family: "Poppins";
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #3d0052;
+  color: #fff;
   border-radius: 8px;
 }
 
@@ -189,14 +199,14 @@ header {
 }
 
 /* Footer */
-footer {
+/* footer {
   background-color: #3d0052;
   padding: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   color: white;
   gap: 30px;
-}
+} */
 .footer-logo {
   font-weight: 700;
   font-size: 18px;
@@ -328,3 +338,91 @@ footer {
   margin-bottom: 18px;
   color: #9e9c9c;
 }
+
+
+.cta-section-give {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  height: 60vh;
+  align-items: center;
+  padding: 50px;
+}
+
+.cta-section-give .description h6 {
+ color: #000;
+ font-family: "Corben", cursive;
+ font-size: 28px;
+}
+
+.cta-section-give .description p {
+  color: #000;
+  opacity: 0.875;
+  font-family: Raleway;
+  font-size: 16px;
+ }
+
+
+ .live-video-section {
+  background-image: url('../assets/images//crd-bg-video.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  margin: 100px 0;
+ }
+
+ .live-description {
+  padding: 25px;
+  position: relative !important;
+
+ }
+
+ .live-video-section span {
+font-size: 16px;
+color:#D04A48;
+font-family: "Josefin Sans", sans-serif;
+}
+
+.live-video-section h6 {
+  font-size: 50px;
+  color:#1A1A1A;
+  font-family: "Corben", cursive;
+  font-weight: 700;
+  }
+
+  .live-video-section p {
+    font-size: 18px;
+    color:#767676   ;
+    font-family: "Raleway";
+    font-weight: 500;
+    }
+
+    .play-icon {
+      width: 75px;
+      height: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      background-color: #D04A48;
+      color: #fff;
+      font-size: 32px;
+
+    }
+
+    .fa-play{
+      z-index: 2;
+    }
+
+    .join-us-live {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 30px;
+      background-color: #D04A48;
+      color: #fff;
+      padding:10px 30px;
+      border: none;
+      margin-top: 30px;
+    }

@@ -14,34 +14,40 @@
         </div>
         <div class="">
           <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#" class="nav-link"> Home </a>
+            <li class="nav-item ">
+              <a href="#" class="nav-link active"> Home </a>
             </li>
             <li class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-btn">
                 <span>About</span>
-                 <i class="fa-solid fa-chevron-down"></i>
+                 <!-- <i class="fa-solid fa-chevron-down"></i> -->
             </a>
               <div class="dropdown-content">
-                <a href="#">Church history</a>
-                <a href="#">Pastors desk</a>
+                <a href="#">Church History</a>
+                <a href="#">Board of Trustees </a>
+                <a href="#">Eldership </a>
+
               
             </div>
             <li class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-btn">
                 <span>Resources</span>
-                 <i class="fa-solid fa-chevron-down"></i>
+                 <!-- <i class="fa-solid fa-chevron-down"></i> -->
             </a>
               <div class="dropdown-content">
-                <a href="#">Sermon of the month</a>
-                <a href="#">Pastors desk</a>
-                <a href="#">Live stream </a>
-                <a href="#">Audio messages </a>
-                <a href="#">Onine radio<a>
+                <a href="#">Sermon of the Month</a>
+                <a href="#">Pastor's Desk</a>
+                <a href="#">Live Stream </a>
+                <a href="#">Audio Messages </a>
+                <a href="#">Onine Radio<a>
             </div>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Programmes</a>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-btn">Programmes</a>
+              <div class="dropdown-content">
+                <a href="#">Weekly Programmes</a>
+                <a href="#">Church Calendar</a>
+            </div>
             </li>
       
             <li class="nav-item">
