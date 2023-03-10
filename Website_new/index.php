@@ -32,7 +32,11 @@
   </head>
   <body>
     <div>
+      <!-- Navbar -->
     <?php include('./reusables/navbar.php') ?>
+
+
+    <!-- Header -->
       <header>
         <div class="overlay"></div>
         <div class="hero">
@@ -46,6 +50,8 @@
           </div>
         </div>
       </header>
+
+      <!-- Footer -->
       <?php include('./reusables/footer.php') ?>
     </div>
   </body>

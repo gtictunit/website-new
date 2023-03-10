@@ -173,3 +173,105 @@ footer {
   /* font-family: 'Montserrat', sans-serif; */
   font-family: "Josefin Sans", sans-serif;
 }
+
+
+.footer-3 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-3 li {
+  margin: 16px 0;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Josefin Sans", sans-serif;
+}
+
+
+
+.footer-4 ul{
+  list-style: none;
+  padding: 0;
+}
+
+.footer-4 li{
+  margin: 16px 0;
+  font-family: "Josefin Sans", sans-serif;
+  
+}
+
+li:hover{
+  color: red;
+}
+
+.fa-location-dot{
+  color: red;
+}
+.fa-phone{
+  color: red;
+}
+.fa-envelope{
+  color: red;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: white;
+}
+
+.no-hover:hover{
+  color:white;
+}
+
+hr{
+  width:30px;
+}
+
+
+/* Contatct Us */
+
+.contact{
+  background-image: url("../assets/images/bgcolor.jpg");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  background-position: bottom;
+  position: relative;
+}
+
+.ellu-p{
+  /* position: relative; */
+  padding-top: 30px;
+  text-align: center;
+  align-content: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Josefin Sans" sans-serif;
+}
+
+.colored{
+  font-size: 24px;
+  margin: -3px;
+  width: 350px;
+  height: 50px;  
+  text-align: center;
+  /* padding-top: 20px;
+  background-color: darkslategrey;
+  background-size: contain;
+   */
+
+}
+
+.btn-warning{
+  width: 300px;
+  margin-top: 10px;
+}
+
+.abeg{
+  background-color: #3d0052;
+  padding: 53px;
+  color: white;
+  gap: 30px;
+}
