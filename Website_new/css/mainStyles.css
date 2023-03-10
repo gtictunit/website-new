@@ -12,6 +12,11 @@ a {
   text-decoration: none !important;
 }
 
+.flex-grow{
+  display: flex;
+  flex-grow: 1;
+}
+
 /* Navbar */
 .nav {
   width: 100vw;
@@ -23,6 +28,11 @@ a {
   padding: 10px 30px;
   background-color: #3d0052;
   color: white;
+}
+
+.nav-tgl {
+  display: none;
+
 }
 .navbar-brand {
   font-weight: 700;
@@ -60,12 +70,17 @@ a {
 }
 
 .nav-link:hover {
-  color: #9e9c9c;
+  color: yellow;
 }
 
- .active {
-  color: #9e9c9c;
-}
+ /* .active {
+  color: white;
+  border-bottom: 2px solid white;
+} */
+
+/* .menu-icon {
+  display: none;
+} */
 
 
 .nav-link:after {
@@ -76,7 +91,7 @@ a {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #9e9c9c;;
+  background: yellow;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -199,14 +214,31 @@ header {
 }
 
 /* Footer */
-/* footer {
-  background-color: #3d0052;
-  padding: 50px;
+footer {
+  background-color: #3d0052 !important;
+  /* padding: 50px; */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  color: white;
+  /* grid-template-columns: repeat(4, 1fr); */
+  color: white !important;
   gap: 30px;
-} */
+  font-family: Raleway !important;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap:12px;
+}
+
+footer i {
+  color: #ddd !important;
+}
+
+footer h6 {
+  color: #fff !important;
+  font-family: "Josefin Sans", sans-serif;
+}
 .footer-logo {
   font-weight: 700;
   font-size: 18px;
@@ -402,7 +434,7 @@ hr{
 }
 
 .welcome-section {
-  width: 70%;
+  width: 90%;
   padding: 50px;
   background-color: white;
   margin: 0 auto;
@@ -470,7 +502,7 @@ hr{
   background-size: cover;
   background-repeat: no-repeat;
   height: 80vh;
-  margin: 100px 0;
+  margin-top: 100px;
  }
 
  .live-description {
@@ -526,4 +558,66 @@ font-family: "Josefin Sans", sans-serif;
       padding:10px 30px;
       border: none;
       margin-top: 30px;
+      width: fit-content;
+    }
+
+    /* SWIPER */
+    .our-services {
+      font-weight: 700;
+      font-size: 80px;
+      font-family: "Josefin Sans", sans-serif;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: -webkit-linear-gradient(180deg,red, blue,#9900cc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .services{
+      height: 60vh;
+      display: flex;
+      align-items: center;
+    }
+    .swiper {
+      width: 100%;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .autoplay-progress {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      z-index: 10;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: var(--swiper-theme-color);
+    }
+
+    .autoplay-progress svg {
+      --progress: 0;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      stroke-width: 4px;
+      stroke: var(--swiper-theme-color);
+      fill: none;
+      stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+      stroke-dasharray: 125.6;
+      transform: rotate(-90deg);
     }
