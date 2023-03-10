@@ -14,10 +14,11 @@
 
   <!-- Local css -->
   <link rel="stylesheet" href="./css/mainStyles.css" />
+  <link rel="stylesheet" href="./css/mainStyles.responsive.css" />
   <link rel="stylesheet" href="./css/drop-in.animation.css" />
   <link rel="stylesheet" href="./css/drop-down.animation.css" />
   <link rel="stylesheet" href="./css/ripple.css" />
-  <link rel ="stylesheet" href="./css/mainStyles.responsive.css" />
+
 
 
   <!-- Font awesome -->
@@ -84,7 +85,7 @@
       </div>
     </section> -->
 
-    
+
 
 
     <section class="container-xl cta-section-give" data-aos="fade-up" data-aos-offset="200">
@@ -128,8 +129,8 @@
       </div>
     </section>
 
-    <section class="services container-xl">
-      <div class="w-50">
+    <section class="services container-xl d-flex flex-column-reverse flex-md-row gap-5">
+      <div class="w-sm-100 w-md-50">
         <div class="our-services">
           <span>
             Our Services
@@ -177,8 +178,9 @@
     </section>
 
     <section class="live-video-section">
+      <div class="overlay-live"></div>
       <div class="container-xl w-100 h-100 d-flex justify-content-end align-items-center">
-        <div class="live-description w-50 justify-content-end">
+        <div class="live-description w-xs-100 w-md-50 justify-content-end">
           <span>VIEW LIVE BROADCAST </span>
 
           <div class="row align-items-center">
@@ -210,6 +212,69 @@
   </div>
 
 
+  <!-- Navbarjs -->
+  <script>
+    let toggled = false;
+    const nav = document.getElementsByClassName('nav')[0];
+    const btn = document.getElementsByClassName('nav-tgl')[0];
+    const navList = document.getElementsByClassName('nav-list')[0];
+    btn.onclick = function(evt) {
+      if (!toggled) {
+        toggled = true;
+        evt.target.classList.add('toggled');
+        nav.classList.add('active');
+        navList.style.display = "block"
+        navList.style.transition = "all 5s linear"
+      } else {
+        toggled = false;
+        evt.target.classList.remove('toggled');
+        nav.classList.remove('active');
+        navList.style.display = "none"
+      }
+    }
+  </script>
+  <script>
+    const nav = document.querySelector('#nav');
+    const menu = document.querySelector('#menu');
+    const menuToggle = document.querySelector('.nav__toggle');
+    let isMenuOpen = false;
+
+
+    // TOGGLE MENU ACTIVE STATE
+    menuToggle.addEventListener('click', e => {
+      e.preventDefault();
+      isMenuOpen = !isMenuOpen;
+
+      // toggle a11y attributes and active class
+      menuToggle.setAttribute('aria-expanded', String(isMenuOpen));
+      menu.hidden = !isMenuOpen;
+      nav.classList.toggle('nav--open');
+    });
+
+
+    // TRAP TAB INSIDE NAV WHEN OPEN
+    nav.addEventListener('keydown', e => {
+      // abort if menu isn't open or modifier keys are pressed
+      if (!isMenuOpen || e.ctrlKey || e.metaKey || e.altKey) {
+        return;
+      }
+
+      // listen for tab press and move focus
+      // if we're on either end of the navigation
+      const menuLinks = menu.querySelectorAll('.nav__link');
+      if (e.keyCode === 9) {
+        if (e.shiftKey) {
+          if (document.activeElement === menuLinks[0]) {
+            menuToggle.focus();
+            e.preventDefault();
+          }
+        } else if (document.activeElement === menuToggle) {
+          menuLinks[0].focus();
+          e.preventDefault();
+        }
+      }
+    });
+  </script>
   <!-- AOS Css initialization -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

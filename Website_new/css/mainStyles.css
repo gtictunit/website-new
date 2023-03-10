@@ -12,6 +12,11 @@ a {
   text-decoration: none !important;
 }
 
+.flex-grow{
+  display: flex;
+  flex-grow: 1;
+}
+
 /* Navbar */
 .nav {
   width: 100vw;
@@ -23,6 +28,11 @@ a {
   padding: 10px 30px;
   background-color: #3d0052;
   color: white;
+}
+
+.nav-tgl {
+  display: none;
+
 }
 .navbar-brand {
   font-weight: 700;
@@ -63,10 +73,14 @@ a {
   color: yellow;
 }
 
- .active {
+ /* .active {
   color: white;
   border-bottom: 2px solid white;
-}
+} */
+
+/* .menu-icon {
+  display: none;
+} */
 
 
 .nav-link:after {
