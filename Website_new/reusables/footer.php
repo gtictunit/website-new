@@ -25,9 +25,9 @@
           </div>
         </div>
 
-
+-->
         <!-- Footer 2 WITH QUick LI=inks -->
-        <!-- <div class="footer-2">
+        <!--<div class="footer-2">
             <div class="section-header">Quick links</div>
             <ul>
               <li>
