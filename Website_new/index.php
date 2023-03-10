@@ -28,6 +28,11 @@
   <!-- AOS CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+  <!-- SwiperJs -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
   <link rel="shortcut icon" href="./assets/images/gt_logo.png" type="image/x-icon">
 
   <title>Glory Tabernacle Ministry Ibadan</title>
@@ -78,6 +83,8 @@
       </div>
     </section> -->
 
+    
+
 
     <section class="container-xl cta-section-give" data-aos="fade-up" data-aos-offset="200">
       <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
@@ -120,6 +127,54 @@
       </div>
     </section>
 
+    <section class="services container-xl">
+      <div class="w-50">
+        <div class="our-services">
+          <span>
+            Our Services
+          </span>
+          <i class="fa-solid fa-location-arrow"></i>
+        </div>
+      </div>
+      <div class="w-50">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="https://www.youtube.com/@GTMinistryIb/streams" target="_blank">
+                <img src="./assets/images/SUNDAY SERVICE.jpg" width="100%" height="100%" alt="" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://www.youtube.com/playlist?list=PLYaPNT9OHFY2e5VG4B1CMrqvOvr261PDs" target="_blank">
+                <img src="./assets/images/Miracle and Communion Service.jpg" width="100%" height="100%" alt="" />
+
+              </a>
+
+            </div>
+            <div class="swiper-slide">
+              <a href="https://www.youtube.com/playlist?list=PLYaPNT9OHFY0ccDvVvGTvbzY8fGn5vdTJ">
+                <img src="./assets/images/THURSDAY SERVICE.jpg" width="100%" height="100%" alt="" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://www.youtube.com/playlist?list=PLYaPNT9OHFY30sMhrduq5kUV-yE7Sbyk2" target="_blank">
+                <img src="./assets/images/Hour Of Divine Help.jpg" width="100%" height="100%" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="live-video-section">
       <div class="container-xl w-100 h-100 d-flex justify-content-end align-items-center">
         <div class="live-description w-50 justify-content-end">
@@ -143,20 +198,55 @@
             <a href="https://www.youtube.com/@GTMinistryIb/streams" target="_blank">
               Join us live
             </a>
-
           </button>
         </div>
-
       </div>
     </section>
+
 
 
     <?php include('./reusables/footer.php') ?>
   </div>
 
+
+  <!-- AOS Css initialization -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      // grabCursor: true,
+      spaceBetween: 50,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
+
+    });
   </script>
 </body>
 
