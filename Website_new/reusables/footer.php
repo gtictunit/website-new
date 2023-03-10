@@ -25,21 +25,29 @@
           </div>
         </div>
 
+
+        <!-- Footer 2 WITH QUick LI=inks -->
+        <div class="footer-2">
 -->
         <!-- Footer 2 WITH QUick LI=inks -->
         <!--<div class="footer-2">
             <div class="section-header">Quick links</div>
             <ul>
-              <li>
+            <li class="bottom-link">
                 Get Involved
               </li>
+
+              <li class="bottom-link">
+               ADMI
+              </li>
+              <li class="bottom-link">
               <li>
                ADMI
               </li>
               <li>
                 GT Missions
               </li>
-              <li>
+              <li class="bottom-link">
                 Get Involved
               </li>
               <li>
@@ -155,6 +163,64 @@
             dolor sit amet, consectetur adipisicing elit.
           </p>
         </div>
+
+        <!-- Teams  -->
+<div class="footer-3">
+  <div class="section-header">
+    Teams
+  </div>
+
+  <ul>
+    <li>
+      Glory Men
+    </li>
+    <li>
+      Glory Women
+    </li>
+    <li>
+      BLEST
+    </li>
+    <li>
+      Glory Children
+    </li>
+    <li>
+      Glory Youth
+    </li>
+</ul>
+</div>
+
+
+<!-- More Info -->
+<div class="footer-4">
+  <div class="section-header">
+   Contact Us
+  </div>
+
+  <ul>
+    <li class="no-hover">
+    
+      <i class="fa-solid fa-location-dot"></i> 
+      Glory Tabernacle Ministry, Oju-Irin, Bodija, Ibadan
+    </li>
+    <li>
+    <i class="fa-solid fa-phone"></i> Phone 
+        <br>
+      <a href="tel:123456">+23490878</a>
+    </li>
+    <li>
+    <i class="fa-solid fa-envelope"></i>
+    Email
+    <br>
+    <a href="mailto:gtictunit@mail.com">gtictunit@gmail.com</a>
+    </li>
+ 
+</ul>
+</div>
+
+<hr>
+
+<hr><hr><hr>
+      </footer>
         <!-- Grid column -->
 
         <!-- Grid column -->

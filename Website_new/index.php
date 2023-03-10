@@ -18,6 +18,34 @@
   <link rel="stylesheet" href="./css/drop-down.animation.css" />
   <link rel="stylesheet" href="./css//ripple.css" />
 
+    <title>Glory Tabernacle Ministry Ibadan</title>
+  </head>
+  <body>
+    <div>
+      <!-- Navbar -->
+    <?php include('./reusables/navbar.php') ?>
+
+
+    <!-- Header -->
+      <header>
+        <div class="overlay"></div>
+        <div class="hero">
+          <h6 class="header-text drop-in">
+            Welcome to<br />
+            Glory Tabernacle Ministry
+          </h6>
+          <div class="header-description drop-in-2">
+            <span>SALVATION</span>| <span>SANCTIFICATION</span>|
+            <span>SERVICE</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Footer -->
+      <?php include('./reusables/footer.php') ?>
+    </div>
+  </body>
+</html>
   <!-- Font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
