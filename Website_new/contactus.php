@@ -53,13 +53,13 @@
 <div class="container">
   <div class="row">
     <div class="col-sm">
-      <h3>Get in touch with us</h3>
+      <h3 class="fontie">Get in touch with us</h3>
       <p>You can reach out to us via this section</p>
       <div class="footer-1">
           
           <div class="footer-text">
 
-          <form id="contact-form" role="form">
+          <form id="contact-form" role="form" method="post" enctype="text/plain" action="mailto:noahtochukwu10@gmail.com">
           <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -101,16 +101,18 @@
  
 </form>
           </div>
-          <!-- <div class="social-links">
+          <div class="social-links">
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-youtube"></i>
-          </div> -->
+          </div>
         </div>
     </div>
     <div class="col-sm">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3956.2974929237753!2d3.9175446!3d7.4322955!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039ed51c6f2bf8f%3A0x2baa9ae9082a5ea0!2sGlory%20Tabernacle%20Ministry!5e0!3m2!1sen!2sng!4v1678534932864!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
     </div>
 
   </div>
