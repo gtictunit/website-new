@@ -24,11 +24,25 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* box-shadow: none; */
   padding: 10px 30px;
   background-color: #3d0052;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: white;
 }
+
+/* .navbar {
+  background-color: rgba(0, 0, 0, 0) !important;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-function: ease-in-out;
+} */
+
+/* .navbar-scrolled {
+  background-color: #3d0052 !important;
+  color: #ffffff !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} */
 
 .nav-tgl {
   display: none;
@@ -151,22 +165,22 @@ a {
   /* background-color: #3e8e41; */
 }
 
-header {
+.main-header {
   height: 100vh !important;
-  background-image: url("../assets/images/directional-arrow-pavement.jpg");
+  background-image: url("../assets/images/heroo.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* .overlay {
-  background: rgba(61, 0, 82, 0.15);
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  z-index: 200;
-} */
+  /* z-index: 200; */
+}
 
 .hero {
   position: relative;
@@ -668,7 +682,7 @@ hr {
    */
 
 .text-2023 {
-  font-size: 300px;
+  font-size: 200px;
   color: orange;
   font-family: "Corben", cursive;
   font-weight: 700;
@@ -676,6 +690,17 @@ hr {
 
 .rhema {
   color: white !important;
-  font-size: 150px;
+  font-size: 100px;
   font-family: "Titan One", cursive;
+}
+
+.image-overlay {
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 200;
+  border-radius: 20px;
 }

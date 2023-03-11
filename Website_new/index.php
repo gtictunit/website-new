@@ -50,53 +50,56 @@
 
 <body>
   <div>
-    <?php include('./reusables/navbar.php') ?>
-    <header>
+    <header class="main-header">
+      <?php include('./reusables/navbar.php') ?>
+
       <div class="overlay"></div>
 
-      <!-- <div class="hero">
-            <h6 class="header-text drop-in">
-              Welcome to<br />
-              Glory Tabernacle Ministry
-            </h6>
-            <div class="header-description drop-in-2">
-              <span>SALVATION</span>| <span>SANCTIFICATION</span>|
-              <span>SERVICE</span>
-            </div>
-          </div>
-    </div>
-   
-      <a class="learn-more-btn  animate__animated animate__fadeUp animate__infinite">
-        Learn more
-        <i class="fa-solid fa-chevron-down animate__animated animate__pulse animate__infinite"></i>
-      </a> -->
-
-      <div class="w-100 d-flex  align-items-center">
-        <div class="w-50 p-5 d-flex align-items-center justify-content-center" style=" height: 90vh;">
-          <h6 class="text-2023">
-            <div>
-              2023
-            </div>
-          </h6>
-
-        </div>
-        <div class="w-50 p-5 d-flex align-items-center justify-content-center" style=" height: 90vh;">
-          <h6 class="rhema">
-            <div>
-              Grace <br>
-              <span>For The</span><br />
-              <span>
-                Journey
-              </span>
-            </div>
-          </h6>
+      <div class="hero">
+        <h6 class="header-text drop-in">
+          Welcome to<br />
+          Glory Tabernacle Ministry
+        </h6>
+        <div class="header-description drop-in-2">
+          <span>SALVATION</span>| <span>SANCTIFICATION</span>|
+          <span>SERVICE</span>
         </div>
       </div>
-    </header>
+  </div>
+
+  <a class="learn-more-btn  animate__animated animate__fadeUp animate__infinite">
+    Learn more
+    <i class="fa-solid fa-chevron-down animate__animated animate__pulse animate__infinite"></i>
+  </a>
+
+  <div class="container-xl">
+    <!-- <div class="w-100 d-flex  align-items-center">
+          <div class="w-50 p-5 d-flex align-items-center justify-content-center" style=" height: 90vh;">
+            <h6 class="text-2023">
+              <div>
+                2023
+              </div>
+            </h6>
+
+          </div>
+          <div class="w-50 p-5 d-flex align-items-center justify-content-center" style=" height: 90vh;">
+            <h6 class="rhema">
+              <div>
+                Grace <br>
+                <span>For The</span><br />
+                <span>
+                  Journey
+                </span>
+              </div>
+            </h6>
+          </div>
+        </div> -->
+  </div>
+  </header>
 
 
 
-    <!-- <section class="container-xl mx-auto">
+  <!-- <section class="container-xl mx-auto">
       <div class="card-container" >
         <div class="card card-1" data-aos="fade-up"  data-aos-offset="-200" data-aos-duration="800" data-aos-easing="ease-in" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
           <h6>MOTTO</h6>
@@ -124,228 +127,232 @@
 
 
 
-    <section class="container-xl cta-section-give">
-      <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
-        <div class="icon-container">
+  <section class="container-xl cta-section-give">
+    <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
+      <div class="icon-container">
 
-        </div>
-        <div class="description">
-          <h6>Pastor's desk</h6>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
-            officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed
-            debitis fugiat!</p>
-        </div>
       </div>
-      <!-- <div class="vr" style="height: 250px;"></div> -->
-      <div class="cta-give-2 d-flex flex-row justify-content-start align-items-center">
-        <div class="icon-container">
-
-        </div>
-        <div class="description">
-          <h6>Online radio</h6>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
-            officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed
-            debitis fugiat!</p>
-        </div>
+      <div class="description">
+        <h6>Pastor's desk</h6>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
+          officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed
+          debitis fugiat!</p>
       </div>
-      <!-- <div class="vr" style="height: 250px;"></div> -->
-      <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
-        <div class="icon-container">
-
-        </div>
-        <div class="description">
-          <h6>Sermon of the month</h6>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
-            officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed
-            debitis fugiat!</p>
-        </div>
-      </div>
-    </section>
-
-    <style>
-      .cta-section-give {
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        background: white;
-        border-radius: 20px;
-        margin-top: -150px;
-        z-index: 100000000 !important;
-
-      }
-
-      .cta-give-2 {
-        padding: 0 20px;
-        border: 1px solid gray;
-        border-top: 0;
-        border-bottom: 0
-      }
-    </style>
-
-
-    <section class="container-xl welcome-section">
-      <div class="welcome-image" data-aos="zoom-in-up">
-        <img src="./assets/images/crd-welcome.jpg" alt="" width="100%" />
-      </div>
-      <div class="welcome-text" data-aos="fade-left">
-        <span>Welcome to</span>
-        <h6>Glory Tabernacle Ministry</h6>
-        <p>What a joy it is to introduce you to our church! You'll discover that our passion is to provide a place where
-          people just like you can have a life-changing experience with God. At our doors are wide open to people from
-          all backgrounds.</p>
-      </div>
-    </section>
-
-    <section class="services container-xl d-flex flex-column-reverse flex-md-row gap-5">
-      <div class="w-sm-100 w-md-50">
-        <div class="our-services">
-          <span>
-            Our Services
-          </span>
-          <i class="fa-solid fa-location-arrow"></i>
-        </div>
-      </div>
-      <div class="w-50">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href="https://www.youtube.com/@GTMinistryIb/streams" target="_blank">
-                <img src="./assets/images/SUNDAY SERVICE.jpg" width="100%" height="100%" alt="" />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="https://www.youtube.com/playlist?list=PLYaPNT9OHFY2e5VG4B1CMrqvOvr261PDs" target="_blank">
-                <img src="./assets/images/Miracle and Communion Service.jpg" width="100%" height="100%" alt="" />
-
-              </a>
-
-            </div>
-            <div class="swiper-slide">
-              <a href="https://www.youtube.com/playlist?list=PLYaPNT9OHFY0ccDvVvGTvbzY8fGn5vdTJ">
-                <img src="./assets/images/THURSDAY SERVICE.jpg" width="100%" height="100%" alt="" />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="https://www.youtube.com/playlist?list=PLYaPNT9OHFY30sMhrduq5kUV-yE7Sbyk2" target="_blank">
-                <img src="./assets/images/Hour Of Divine Help.jpg" width="100%" height="100%" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-          <div class="autoplay-progress">
-            <svg viewBox="0 0 48 48">
-              <circle cx="24" cy="24" r="20"></circle>
-            </svg>
-            <span></span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="live-video-section">
-      <div class="overlay-live"></div>
-      <div class="container-xl w-100 h-100 d-flex justify-content-end align-items-center">
-        <div class="live-description w-xs-100 w-md-50 justify-content-end">
-          <span>VIEW LIVE BROADCAST </span>
-
-          <div class="row align-items-center">
-            <div class="play-icon step col-3">
-              <i class="fa-solid fa-play"></i>
-              <div class="circles">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-                <div class="circle3"></div>
-              </div>
-            </div>
-            <h6 class="col-9">Stream Our Services Live Online Now!</h6>
-          </div>
-
-          <p>What a joy it is to introduce you to our church! You'll discover that our passion is to provide a place
-            where people.</p>
-
-          <button role="link" class="join-us-live">
-            <a href="https://www.youtube.com/@GTMinistryIb/streams" target="_blank">
-              Join us live
-            </a>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="giving">
-
-      <div class="container-xl">
-        <div class="giving-overlay"></div>
-        <div class="giving-body">
-          <div class="giving-header">
-            No One Has Ever Become Poor By Giving
-          </div>
-          <div class="giving-description">
-            You can Donate to Glory Tabernacle Ministry today.
-          </div>
-          <a class="btn give-btn text-white" href="">
-            Donate
-            <a>
-        </div>
-      </div>
-    </section>
-
-    <style>
-      .giving {
-        background-color: pink;
-        background-image: url("./assets/images/renate-vanaga-L6kEF4sVy8U-unsplash.jpg");
-        background-position: center;
-        background-size: cover;
-        position: relative;
-      }
-
-      .giving-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        /* background: rgba(109, 9, 121, 0.7); */
-        background: rgba(0, 0, 0, 0.75);
-        height: 100%;
-        width: 100%;
-      }
-
-      .giving-body {
-        width: 100%;
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-      }
-
-      .giving-header {
-        font-family: Poppins;
-        color: #fff;
-        font-size: 48px;
-        font-weight: 700;
-      }
-
-      .giving-description {
-        color: #fff;
-        font-size: 21px;
-        font-family: "Raleway";
-        margin: 15px 0;
-      }
-
-      .giving-body a {
-        width: fit-content;
-        padding: 10px 30px;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-        border-radius: 2px color: white;
-        background-color: #3d0052;
-      }
-    </style>
-
-    <div class="radio-live">
-      <span>Listen to our online radio</span>
-      <i class="fa-solid fa-tower-cell"></i>
     </div>
+    <!-- <div class="vr" style="height: 250px;"></div> -->
+    <div class="cta-give-2 d-flex flex-row justify-content-start align-items-center">
+      <div class="icon-container">
+
+      </div>
+      <div class="description">
+        <h6>Online radio</h6>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
+          officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed
+          debitis fugiat!</p>
+      </div>
+    </div>
+    <!-- <div class="vr" style="height: 250px;"></div> -->
+    <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
+      <div class="icon-container">
+
+      </div>
+      <div class="description">
+        <h6>Sermon of the month</h6>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
+          officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed
+          debitis fugiat!</p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .cta-section-give {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      background: white;
+      border-radius: 20px;
+      margin-top: -50px;
+      z-index: 1000000 !important;
+      position: relative;
+
+    }
+
+    .cta-give-2 {
+      padding: 0 20px;
+      border: 1px solid gray;
+      border-top: 0;
+      border-bottom: 0
+    }
+  </style>
+
+
+  <section class="container-xl welcome-section">
+    <div class="welcome-image" data-aos="zoom-in-up">
+      <img src="./assets/images/welcome.png" alt="" width="100%"
+        style="border-radius:20px; box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; position:relative" />
+      <div class="image-overlay"></div>
+    </div>
+    <div class="welcome-text" data-aos="fade-left">
+      <span>Welcome to</span>
+      <h6>Glory Tabernacle Ministry</h6>
+      <p>What a joy it is to introduce you to our church! You'll discover that our passion is to provide a place where
+        people just like you can have a life-changing experience with God. At our doors are wide open to people from
+        all backgrounds.</p>
+    </div>
+  </section>
+
+  <section class="services container-xl d-flex flex-column-reverse flex-md-row gap-5">
+    <div class="w-sm-100 w-md-50">
+      <div class="our-services">
+        <span>
+          Our Services
+        </span>
+        <i class="fa-solid fa-location-arrow"></i>
+      </div>
+    </div>
+    <div class="w-50">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="https://www.youtube.com/@GTMinistryIb/streams" target="_blank">
+              <img src="./assets/images/SUNDAY SERVICE.jpg" width="100%" height="100%" alt="" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.youtube.com/playlist?list=PLYaPNT9OHFY2e5VG4B1CMrqvOvr261PDs" target="_blank">
+              <img src="./assets/images/Miracle and Communion Service.jpg" width="100%" height="100%" alt="" />
+
+            </a>
+
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.youtube.com/playlist?list=PLYaPNT9OHFY0ccDvVvGTvbzY8fGn5vdTJ">
+              <img src="./assets/images/THURSDAY SERVICE.jpg" width="100%" height="100%" alt="" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.youtube.com/playlist?list=PLYaPNT9OHFY30sMhrduq5kUV-yE7Sbyk2" target="_blank">
+              <img src="./assets/images/Hour Of Divine Help.jpg" width="100%" height="100%" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="autoplay-progress">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="live-video-section">
+    <div class="overlay-live"></div>
+    <div class="container-xl w-100 h-100 d-flex justify-content-end align-items-center">
+      <div class="live-description w-xs-100 w-md-50 justify-content-end">
+        <span>VIEW LIVE BROADCAST </span>
+
+        <div class="row align-items-center">
+          <div class="play-icon step col-3">
+            <i class="fa-solid fa-play"></i>
+            <div class="circles">
+              <div class="circle1"></div>
+              <div class="circle2"></div>
+              <div class="circle3"></div>
+            </div>
+          </div>
+          <h6 class="col-9">Stream Our Services Live Online Now!</h6>
+        </div>
+
+        <p>What a joy it is to introduce you to our church! You'll discover that our passion is to provide a place
+          where people.</p>
+
+        <button role="link" class="join-us-live">
+          <a href="https://www.youtube.com/@GTMinistryIb/streams" target="_blank">
+            Join us live
+          </a>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="giving">
+
+    <div class="container-xl">
+      <div class="giving-overlay"></div>
+      <div class="giving-body">
+        <div class="giving-header">
+          No One Has Ever Become Poor By Giving
+        </div>
+        <div class="giving-description">
+          You can Donate to Glory Tabernacle Ministry today.
+        </div>
+        <a class="btn give-btn text-white" href="">
+          Donate
+          <a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .giving {
+      background-color: pink;
+      background-image: url("./assets/images/renate-vanaga-L6kEF4sVy8U-unsplash.jpg");
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+
+    .giving-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      /* background: rgba(109, 9, 121, 0.7); */
+      background: rgba(0, 0, 0, 0.75);
+      height: 100%;
+      width: 100%;
+    }
+
+    .giving-body {
+      width: 100%;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-bottom: 50px;
+    }
+
+    .giving-header {
+      font-family: Poppins;
+      color: #fff;
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .giving-description {
+      color: #fff;
+      font-size: 21px;
+      font-family: "Raleway";
+      margin: 15px 0;
+    }
+
+    .giving-body a {
+      width: fit-content;
+      padding: 10px 30px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      border-radius: 2px color: white;
+      background-color: #3d0052;
+    }
+  </style>
+
+  <div class="radio-live">
+    <span>Listen to our online radio</span>
+    <i class="fa-solid fa-tower-cell"></i>
+  </div>
 
 
   </div>
@@ -408,19 +415,20 @@
       }
     }
   </script>
-  <script>
-    var i = 0;
-    var txt = '2023';
-    var speed = 50;
+  <!-- <script>
+    document.onreadystatechange = function () {
+      let lastScrollPosition = 0;
+      const navbar = document.querySelector('.navbar');
+      window.addEventListener('scroll', function (e) {
+        lastScrollPosition = window.scrollY;
 
-    (function typeWriter() {
-      if (i < txt.length) {
-        document.getElementById("demo").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-      }
-    })
-  </script>
+        if (lastScrollPosition > 100)
+          navbar.classList.add('navbar-scrolled');
+        else
+          navbar.classList.remove('navbar-scrolled');
+      });
+    }
+  </script> -->
   <!-- AOS Css initialization -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
