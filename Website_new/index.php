@@ -19,6 +19,12 @@
   <link rel="stylesheet" href="./css/drop-down.animation.css" />
   <link rel="stylesheet" href="./css/ripple.css" />
 
+  <!-- Carousel -->
+  <link rel="stylesheet" type="text/css" href="./vendor/carousel/css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="./vendor/carousel/css/style3.css" />
+  <script type="text/javascript" src="./vendor/carousel/js/modernizr.custom.86080.js"></script>
+
+
 
 
   <!-- Font awesome -->
@@ -43,7 +49,7 @@
 <body>
   <div>
     <?php include('./reusables/navbar.php') ?>
-    <header>
+    <!-- <header>
       <div class="overlay"></div>
       <div class="hero">
         <h6 class="header-text drop-in">
@@ -59,7 +65,10 @@
         Learn more
         <i class="fa-solid fa-chevron-down animate__animated animate__pulse animate__infinite"></i>
       </a>
-    </header>
+    </header> -->
+
+    <?php include './reusables/background-carousel.php' ?>
+
 
     <!-- <section class="container-xl mx-auto">
       <div class="card-container" >
@@ -234,7 +243,7 @@
     }
   </script>
   <script>
-    const nav = document.querySelector('#nav');
+    // const nav = document.querySelector('#nav');
     const menu = document.querySelector('#menu');
     const menuToggle = document.querySelector('.nav__toggle');
     let isMenuOpen = false;

@@ -81,9 +81,10 @@
     width:100%;
 }
 .h-btn{
-    height: 10vh;
+    height: 8vh;
     width: 35vh;
     background: transparent;
+    transform: translateX(170%);
 }
 .h-btn:hover{
     background: black;
@@ -91,5 +92,10 @@
     transition: 0.9s;
 }
 .img-roll{
-    width: 30vh;
+    width: 40vh;
+    border: 0px;
+}
+.img-coro img{
+  height: 60vh;
+  width: 100vh;
 }

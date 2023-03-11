@@ -150,11 +150,15 @@ a {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  /* background-color: #3e8e41; */
+}
+
+.header{
+  height: 100vh !important;
 }
 
 header {
-  background-image: url("../assets/images/bgcolor.jpg");
+  background-image: url("../assets/images/year-banner.jpeg");
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
