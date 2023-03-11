@@ -19,7 +19,7 @@
           <!-- <i class="fa-solid fa-chevron-down"></i> -->
         </a>
         <div class="dropdown-content">
-          <a href="ChruchHistory.php">Church History</a>
+          <a href="ChurchHistory.php">Church History</a>
           <a href="#">Board of Trustees </a>
           <a href="#">Eldership </a>
 

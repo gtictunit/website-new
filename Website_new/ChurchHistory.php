@@ -59,7 +59,7 @@
         </div> -->
         <header class="history-header-1">
             <div class="history-overlay"></div>
-            <div class="hero">
+            <div class="history-hero">
               <h6 class="history-header-text drop-in">
               Our History
               </h6>
@@ -80,7 +80,7 @@
                     When Dr. Hans Adu-Dapaah, a Ghanaian and first ever Elder of the church separated himself to fast and pray unto the Lord sometime in 1991, the Lord told him specifically that GT is a Ministry with divine origin and divine destiny. He devoted his entire time, limited resources, skills and family to the service of the Lord, mainly in the area of assisting Pastor Obed in the day-to-day chores of running the Ministry physically and spiritually. He was a sterling model of such workers promised by God, who took his lead from the style of the Pastor, basically labouring tirelessly in the vineyard of the Lord, non-relenting in assuming tasks, no matter how menial.
                     
                 </span><br><br>
-                <button class="h-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button class="h-btn"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                     READ MORE
                 </button> 
   <!-- Modal -->
