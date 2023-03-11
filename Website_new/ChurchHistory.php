@@ -40,19 +40,15 @@
 <body>
     <div class="h-body">
         <?php include('./reusables/navbar.php') ?>
-        <header class="history-header">
+        <!-- <header class="history-header">
           <div class="history-overlay"></div>
           <div class="hero">
             <h6 class="history-header-text drop-in">
             About
             </h6>
-          </div>
-          <!-- <a class="learn-more-btn">
-            Learn more
-            <i class="fa-solid fa-chevron-down animate__animated animate__pulse animate__infinite"></i>
-          </a> -->
-        </header>
-        <div class="h-brief">
+        </div>
+        </header> -->
+        <!-- <div class="h-brief">
             <div class="h-brief-words"><br><br><br>
                 <h1 class>About Us</h1>
                 <div class="block"></div>
@@ -60,7 +56,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis odio at expedita a ex aspernatur vero excepturi magni libero sunt praesentium quo veritatis placeat maxime quidem illo quis, autem voluptates?
                 </span>
             </div>
-        </div>
+        </div> -->
         <header class="history-header-1">
             <div class="history-overlay"></div>
             <div class="hero">
@@ -69,18 +65,21 @@
               </h6>
             </div>
           </header><br>
-          <div class="history-words">
+          <div class="history-words container">
             <div class="history-words-1">
-                <h2 class="history-h2 ">
+                <h1 class="history-h2 ">
                     How It All Started 
                     <div class="block-1"></div>
-                </h2>
+                </h1><br>
                 <span class="h-wordings d-flex">
-                    <img src="./assets/images/gt_logo.png" class="img-thumbnail img-roll" alt="...">
+                    <img src="https://newspeakspaces.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2019/03/28143545/image-31.jpg" class="img-thumbnail bg-gradient img-roll" alt="..."><br>
                     God gave the Pioneer General Pastor some definite revelations and visions which led to the birth of the Ministry. He received accurate details of the date to start, the Name of the Ministry, the Organisational Structure, the Venue, and Names of the Trustees. <br><br>
 
-                    Right from the early years of GT as a church, the Pastor has been clearly focused about the type of Christians that should form the core of membership of the church. Such Christians, established on the solid foundation of the Word of God, living victorious holy lives, ready and willing at all times to be effective tools in the crafty hands of the Master and usable for His purpose as worthy vessels, tried and effective for the work of the Kingdom and prepared for heaven; were to form the core of membership of GT right from onset.
-                </span><br>
+                    Right from the early years of GT as a church, the Pastor has been clearly focused about the type of Christians that should form the core of membership of the church. Such Christians, established on the solid foundation of the Word of God, living victorious holy lives, ready and willing at all times to be effective tools in the crafty hands of the Master and usable for His purpose as worthy vessels, tried and effective for the work of the Kingdom and prepared for heaven; were to form the core of membership of GT right from onset. <br><br>
+
+                    When Dr. Hans Adu-Dapaah, a Ghanaian and first ever Elder of the church separated himself to fast and pray unto the Lord sometime in 1991, the Lord told him specifically that GT is a Ministry with divine origin and divine destiny. He devoted his entire time, limited resources, skills and family to the service of the Lord, mainly in the area of assisting Pastor Obed in the day-to-day chores of running the Ministry physically and spiritually. He was a sterling model of such workers promised by God, who took his lead from the style of the Pastor, basically labouring tirelessly in the vineyard of the Lord, non-relenting in assuming tasks, no matter how menial.
+                    
+                </span><br><br>
                 <button class="h-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     READ MORE
                 </button> 
@@ -112,13 +111,43 @@
 
 
                         </div>
-                        <div class="modal-footer">
-                        </div>
                     </div>
                     </div>
                 </div>
             </div>
           </div>
+          <center>
+            <div class="images-coro container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner img-coro">
+                      <div class="carousel-item active">
+                        <img src="./assets/images/bgcolor.jpg" class="d-block w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/crd-bg-video.jpg" class="d-block w-75" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/crd-welcome.jpg" class="d-block w-75" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              </div>
+          </center>
+          
+          
           <?php include('./reusables/footer.php') ?>
     </div>
     
