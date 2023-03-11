@@ -28,7 +28,9 @@
 
 
   <!-- Font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -122,35 +124,62 @@
 
 
 
-    <section class="container-xl cta-section-give" data-aos="fade-up" data-aos-offset="200">
+    <section class="container-xl cta-section-give">
       <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
         <div class="icon-container">
 
         </div>
         <div class="description">
           <h6>Pastor's desk</h6>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus, officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed debitis fugiat!</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
+            officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed
+            debitis fugiat!</p>
         </div>
       </div>
-      <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
+      <!-- <div class="vr" style="height: 250px;"></div> -->
+      <div class="cta-give-2 d-flex flex-row justify-content-start align-items-center">
         <div class="icon-container">
 
         </div>
         <div class="description">
           <h6>Online radio</h6>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus, officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed debitis fugiat!</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
+            officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed
+            debitis fugiat!</p>
         </div>
       </div>
+      <!-- <div class="vr" style="height: 250px;"></div> -->
       <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
         <div class="icon-container">
 
         </div>
         <div class="description">
           <h6>Sermon of the month</h6>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus, officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed debitis fugiat!</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
+            officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed
+            debitis fugiat!</p>
         </div>
       </div>
     </section>
+
+    <style>
+      .cta-section-give {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background: white;
+        border-radius: 20px;
+        margin-top: -150px;
+        z-index: 100000000 !important;
+
+      }
+
+      .cta-give-2 {
+        padding: 0 20px;
+        border: 1px solid gray;
+        border-top: 0;
+        border-bottom: 0
+      }
+    </style>
+
 
     <section class="container-xl welcome-section">
       <div class="welcome-image" data-aos="zoom-in-up">
@@ -159,7 +188,9 @@
       <div class="welcome-text" data-aos="fade-left">
         <span>Welcome to</span>
         <h6>Glory Tabernacle Ministry</h6>
-        <p>What a joy it is to introduce you to our church! You'll discover that our passion is to provide a place where people just like you can have a life-changing experience with God. At our doors are wide open to people from all backgrounds.</p>
+        <p>What a joy it is to introduce you to our church! You'll discover that our passion is to provide a place where
+          people just like you can have a life-changing experience with God. At our doors are wide open to people from
+          all backgrounds.</p>
       </div>
     </section>
 
@@ -229,7 +260,8 @@
             <h6 class="col-9">Stream Our Services Live Online Now!</h6>
           </div>
 
-          <p>What a joy it is to introduce you to our church! You'll discover that our passion is to provide a place where people.</p>
+          <p>What a joy it is to introduce you to our church! You'll discover that our passion is to provide a place
+            where people.</p>
 
           <button role="link" class="join-us-live">
             <a href="https://www.youtube.com/@GTMinistryIb/streams" target="_blank">
@@ -240,9 +272,118 @@
       </div>
     </section>
 
+    <section class="giving">
+
+      <div class="container-xl">
+        <div class="giving-overlay"></div>
+        <div class="giving-body">
+          <div class="giving-header">
+            No One Has Ever Become Poor By Giving
+          </div>
+          <div class="giving-description">
+            You can Donate to Glory Tabernacle Ministry today.
+          </div>
+          <a class="btn give-btn text-white" href="">
+            Donate
+            <a>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .giving {
+        background-color: pink;
+        background-image: url("./assets/images/renate-vanaga-L6kEF4sVy8U-unsplash.jpg");
+        background-position: center;
+        background-size: cover;
+        position: relative;
+      }
+
+      .giving-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* background: rgba(109, 9, 121, 0.7); */
+        background: rgba(0, 0, 0, 0.75);
+        height: 100%;
+        width: 100%;
+      }
+
+      .giving-body {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .giving-header {
+        font-family: Poppins;
+        color: #fff;
+        font-size: 48px;
+        font-weight: 700;
+      }
+
+      .giving-description {
+        color: #fff;
+        font-size: 21px;
+        font-family: "Raleway";
+        margin: 15px 0;
+      }
+
+      .giving-body a {
+        width: fit-content;
+        padding: 10px 30px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 2px color: white;
+        background-color: #3d0052;
+      }
+    </style>
+
+    <div class="radio-live">
+      <span>Listen to our online radio</span>
+      <i class="fa-solid fa-tower-cell"></i>
+    </div>
 
 
-    <?php include('./reusables/footer.php') ?>
+  </div>
+
+  <style>
+    .radio-live {
+      position: fixed;
+      left: 0;
+      top: 60%;
+      height: auto;
+      width: fit-content;
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(109, 9, 121, 1) 35%, rgba(203, 42, 42, 1) 75%);
+      color: white;
+      padding: 16px;
+      border-radius: 0 45px 45px 0;
+      font-size: 28px;
+      cursor: pointer;
+      transition: all .3s ease-out;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transform: translate(-190px, 0);
+    }
+
+    .radio-live span {
+      font-size: 14px;
+      font-family: Poppins;
+    }
+
+
+    .radio-live:hover {
+      transform: translate(0, 0);
+    }
+  </style>
+
+
+
+  <?php include('./reusables/footer.php') ?>
   </div>
 
 
@@ -252,7 +393,7 @@
     const nav = document.getElementsByClassName('nav')[0];
     const btn = document.getElementsByClassName('nav-tgl')[0];
     const navList = document.getElementsByClassName('nav-list')[0];
-    btn.onclick = function(evt) {
+    btn.onclick = function (evt) {
       if (!toggled) {
         toggled = true;
         evt.target.classList.add('toggled');
