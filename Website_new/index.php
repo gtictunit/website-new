@@ -20,9 +20,9 @@
   <link rel="stylesheet" href="./css/ripple.css" />
 
   <!-- Carousel -->
-  <link rel="stylesheet" type="text/css" href="./vendor/carousel/css/demo.css" />
-  <link rel="stylesheet" type="text/css" href="./vendor/carousel/css/style3.css" />
-  <script type="text/javascript" src="./vendor/carousel/js/modernizr.custom.86080.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="./vendor/carousel/css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="./vendor/carousel/css/style1.css" />
+  <script type="text/javascript" src="./vendor/carousel/js/modernizr.custom.86080.js"></script> -->
 
 
 
@@ -49,25 +49,49 @@
 <body>
   <div>
     <?php include('./reusables/navbar.php') ?>
-    <!-- <header>
+    <header>
       <div class="overlay"></div>
-      <div class="hero">
-        <h6 class="header-text drop-in">
-          Welcome to<br />
-          Glory Tabernacle Ministry
-        </h6>
-        <div class="header-description drop-in-2">
-          <span>SALVATION</span>| <span>SANCTIFICATION</span>|
-          <span>SERVICE</span>
-        </div>
-      </div>
-      <a class="learn-more-btn">
+
+      <!-- <div class="hero">
+            <h6 class="header-text drop-in">
+              Welcome to<br />
+              Glory Tabernacle Ministry
+            </h6>
+            <div class="header-description drop-in-2">
+              <span>SALVATION</span>| <span>SANCTIFICATION</span>|
+              <span>SERVICE</span>
+            </div>
+          </div>
+    </div>
+   
+      <a class="learn-more-btn  animate__animated animate__fadeUp animate__infinite">
         Learn more
         <i class="fa-solid fa-chevron-down animate__animated animate__pulse animate__infinite"></i>
-      </a>
-    </header> -->
+      </a> -->
 
-    <?php include './reusables/background-carousel.php' ?>
+      <div class="w-100 d-flex  align-items-center">
+        <div class="w-50 p-5 d-flex align-items-center justify-content-center" style=" height: 90vh;">
+          <h6 class="text-2023">
+            <div>
+              2023
+            </div>
+          </h6>
+
+        </div>
+        <div class="w-50 p-5 d-flex align-items-center justify-content-center" style=" height: 90vh;">
+          <h6 class="rhema">
+            <div>
+              Grace <br>
+              <span>For The</span><br />
+              <span>
+                Journey
+              </span>
+            </div>
+          </h6>
+        </div>
+      </div>
+    </header>
+
 
 
     <!-- <section class="container-xl mx-auto">
@@ -92,6 +116,7 @@
           </p>
         </div>
       </div>
+   
     </section> -->
 
 
@@ -243,46 +268,17 @@
     }
   </script>
   <script>
-    // const nav = document.querySelector('#nav');
-    const menu = document.querySelector('#menu');
-    const menuToggle = document.querySelector('.nav__toggle');
-    let isMenuOpen = false;
+    var i = 0;
+    var txt = '2023';
+    var speed = 50;
 
-
-    // TOGGLE MENU ACTIVE STATE
-    menuToggle.addEventListener('click', e => {
-      e.preventDefault();
-      isMenuOpen = !isMenuOpen;
-
-      // toggle a11y attributes and active class
-      menuToggle.setAttribute('aria-expanded', String(isMenuOpen));
-      menu.hidden = !isMenuOpen;
-      nav.classList.toggle('nav--open');
-    });
-
-
-    // TRAP TAB INSIDE NAV WHEN OPEN
-    nav.addEventListener('keydown', e => {
-      // abort if menu isn't open or modifier keys are pressed
-      if (!isMenuOpen || e.ctrlKey || e.metaKey || e.altKey) {
-        return;
+    (function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
       }
-
-      // listen for tab press and move focus
-      // if we're on either end of the navigation
-      const menuLinks = menu.querySelectorAll('.nav__link');
-      if (e.keyCode === 9) {
-        if (e.shiftKey) {
-          if (document.activeElement === menuLinks[0]) {
-            menuToggle.focus();
-            e.preventDefault();
-          }
-        } else if (document.activeElement === menuToggle) {
-          menuLinks[0].focus();
-          e.preventDefault();
-        }
-      }
-    });
+    })
   </script>
   <!-- AOS Css initialization -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
