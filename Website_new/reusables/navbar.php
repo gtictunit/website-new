@@ -1,7 +1,8 @@
 <nav class="nav navbar navbar-expand-lg sticky-top">
   <div>
     <a href="/" class="navbar-brand">
-      <img src="./assets/images/gt_logo.png" alt="Logo" width="50" height="auto" class="d-inline-block align-text-top" alt="" />
+      <img src="./assets/images/gt_logo.png" alt="Logo" width="50" height="auto" class="d-inline-block align-text-top"
+        alt="" />
       <div>Glory Tabernacle Ministry</div>
     </a>
   </div>
