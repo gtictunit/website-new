@@ -67,10 +67,10 @@
       </div>
   </div>
 
-  <a class="learn-more-btn  animate__animated animate__fadeUp animate__infinite">
+  <!-- <a class="learn-more-btn  animate__animated animate__fadeUp animate__infinite">
     Learn more
     <i class="fa-solid fa-chevron-down animate__animated animate__pulse animate__infinite"></i>
-  </a>
+  </a> -->
 
   <div class="container-xl">
     <!-- <div class="w-100 d-flex  align-items-center">
@@ -200,16 +200,17 @@
     </div>
   </section>
 
-  <section class="services container-xl d-flex flex-column-reverse flex-md-row gap-5">
-    <div class="w-sm-100 w-md-50">
-      <div class="our-services">
+  <section class="services container-xl d-flex flex-column gap-5">
+    <div class="w-100">
+      <div class="our-services text-center">
         <span>
           Our Services
         </span>
-        <i class="fa-solid fa-location-arrow"></i>
+        <!-- <i class="fa-solid fa-location-arrow"></i> -->
+        <i class="fa-solid fa-arrow-turn-down"></i>
       </div>
     </div>
-    <div class="w-50">
+    <div class="w-75">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -291,7 +292,7 @@
         </div>
         <a class="btn give-btn text-white" href="">
           Donate
-          <a>
+        </a>
       </div>
     </div>
   </section>

@@ -12,7 +12,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 40vh;
   background-position: center;
   position: relative;
 }
@@ -21,7 +21,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 50vh;
+  height: 40vh;
   width: 100%;
 }
 .h-brief {
