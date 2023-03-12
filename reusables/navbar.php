@@ -48,7 +48,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="contactus.php" class="nav-link">Missions</a>
+        <a href="#" class="nav-link">Missions</a>
       </li>
 
       <li class="nav-item">

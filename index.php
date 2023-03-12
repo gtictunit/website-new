@@ -129,40 +129,36 @@
 
   <section class="container-xl cta-section-give">
     <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
-      <div class="icon-container">
-
+      <div class="icon-container col-4">
+        <img src="./assets/images/vision.png" width="75px" height="75px" />
       </div>
-      <div class="description">
-        <h6>Pastor's desk</h6>
+      <div class="description col-8">
+        <h6>Our Vision</h6>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
-          officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed
-          debitis fugiat!</p>
+          officia minima voluptatem sit</p>
       </div>
     </div>
-    <!-- <div class="vr" style="height: 250px;"></div> -->
+
     <div class="cta-give-2 d-flex flex-row justify-content-start align-items-center">
-      <div class="icon-container">
-
+      <div class="icon-container col-4">
+        <img src="./assets/images/target.png" width="75px" height="75px" />
       </div>
       <div class="description">
-        <h6>Online radio</h6>
+        <h6>Our Mission</h6>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
-          officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed
-          debitis fugiat!</p>
+          officia minima voluptatem sit,</p>
       </div>
     </div>
-    <!-- <div class="vr" style="height: 250px;"></div> -->
+
     <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
-      <div class="icon-container">
-
+      <div class="icon-container col-4">
+        <img src="./assets/images/location.png" width="75px" height="75px" />
       </div>
       <div class="description">
-        <h6>Sermon of the month</h6>
+        <h6>Participate with us</h6>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
-          officia minima voluptatem sit, qui facilis veritatis repudiandae molestiae corrupti quos voluptas optio sed
-          debitis fugiat!</p>
+          officia minima voluptatem sit,
       </div>
-    </div>
   </section>
 
   <style>

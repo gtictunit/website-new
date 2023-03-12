@@ -495,15 +495,16 @@ hr {
 
 .cta-section-give .description h6 {
   color: #000;
-  font-family: "Corben", cursive;
+  font-family: "Montserrat", sans-serif;
   font-size: 28px;
+  font-weight: 600;
 }
 
 .cta-section-give .description p {
-  color: #000;
+  color: #635353;
   opacity: 0.875;
   font-family: Raleway;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .live-video-section {
