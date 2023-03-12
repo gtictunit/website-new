@@ -200,9 +200,40 @@
     </div>
   </section>
 
+  <section class="live-video-section">
+    <div class="overlay-live"></div>
+    <div class="container-xl w-100 h-100 d-flex justify-content-end align-items-center">
+      <div class="live-description w-xs-100 w-md-50 justify-content-end">
+        <span>VIEW LIVE BROADCAST </span>
+
+        <div class="row align-items-center">
+          <div class="play-icon step col-3">
+            <i class="fa-solid fa-play"></i>
+            <div class="circles">
+              <div class="circle1"></div>
+              <div class="circle2"></div>
+              <div class="circle3"></div>
+            </div>
+          </div>
+          <h6 class="col-9">Stream Our Services Live Online Now!</h6>
+        </div>
+
+        <p>What a joy it is to introduce you to our church! You'll discover that our passion is to provide a place
+          where people.</p>
+
+        <button role="link" class="join-us-live">
+          <a href="https://www.youtube.com/@GTMinistryIb/streams" target="_blank">
+            Join us live
+          </a>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
   <section class="services container-xl d-flex flex-column gap-5">
     <div class="w-100">
-      <div class="our-services text-center">
+      <div class="our-services text-center justify-content-center">
         <span>
           Our Services
         </span>
@@ -249,35 +280,6 @@
     </div>
   </section>
 
-  <section class="live-video-section">
-    <div class="overlay-live"></div>
-    <div class="container-xl w-100 h-100 d-flex justify-content-end align-items-center">
-      <div class="live-description w-xs-100 w-md-50 justify-content-end">
-        <span>VIEW LIVE BROADCAST </span>
-
-        <div class="row align-items-center">
-          <div class="play-icon step col-3">
-            <i class="fa-solid fa-play"></i>
-            <div class="circles">
-              <div class="circle1"></div>
-              <div class="circle2"></div>
-              <div class="circle3"></div>
-            </div>
-          </div>
-          <h6 class="col-9">Stream Our Services Live Online Now!</h6>
-        </div>
-
-        <p>What a joy it is to introduce you to our church! You'll discover that our passion is to provide a place
-          where people.</p>
-
-        <button role="link" class="join-us-live">
-          <a href="https://www.youtube.com/@GTMinistryIb/streams" target="_blank">
-            Join us live
-          </a>
-        </button>
-      </div>
-    </div>
-  </section>
 
   <section class="giving">
 
@@ -463,7 +465,7 @@
       on: {
         autoplayTimeLeft(s, time, progress) {
           progressCircle.style.setProperty("--progress", 1 - progress);
-          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+          progressContent.textContent = `${Math.ceil(time / 1000)}`;
         }
       }
 
