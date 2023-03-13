@@ -150,7 +150,7 @@
     </div>
     <center>
       <h2>This is for the video of the biography</h2>
-     <video src="./assets/images/AnimePahe_Shingeki_no_Kyojin_-_74_BD_720p_SCY.mp4" controls width="700"></video>
+     <video src="./assets/images/1afdec5a7ed48e8fbebfefcf6c9fdb56.mp4" controls width="700"></video>
     </center>
 
 
