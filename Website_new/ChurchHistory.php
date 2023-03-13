@@ -72,7 +72,7 @@
           <div class="history-words container">
             <div class="history-words-1">
                 <h1 class="history-h2 ">
-                    How It All Started 
+                    How It All Started...
                     <div class="block-1"></div>
                 </h1><br>
                 <span class="h-wordings d-flex">
@@ -149,39 +149,7 @@
       </div>
     </div>
     <center>
-      <div class="images-coro container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner img-coro">
-            <div class="carousel-item active">
-              <img src="./assets/images/bgcolor.jpg" class="d-block w-75" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/crd-bg-video.jpg" class="d-block w-75" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/crd-welcome.jpg" class="d-block w-75" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
+          <video src="./assets/images/AnimePahe_Shingeki_no_Kyojin_-_74_BD_720p_SCY.mp4" width="700" controls></video>
     </center>
 
 
