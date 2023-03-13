@@ -349,12 +349,16 @@ hr {
 /* Contatct Us */
 
 .contact {
-  background-image: url("../assets/images/bgcolor.jpg");
+  position: relative;
+}
+
+.contact-header {
+  background-image: url("../assets/images/about.jpg  ");
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
-  background-position: bottom;
+  height: 300px;
+  background-position: center;
   position: relative;
 }
 
@@ -367,6 +371,7 @@ hr {
   font-size: 50px;
   font-weight: bold;
   font-family: "Ubuntu", sans-serif;
+  color: white;
 }
 
 .colored {
@@ -490,15 +495,16 @@ hr {
 
 .cta-section-give .description h6 {
   color: #000;
-  font-family: "Corben", cursive;
+  font-family: "Montserrat", sans-serif;
   font-size: 28px;
+  font-weight: 600;
 }
 
 .cta-section-give .description p {
-  color: #000;
+  color: #635353;
   opacity: 0.875;
   font-family: Raleway;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .live-video-section {
@@ -577,7 +583,7 @@ hr {
   -webkit-text-fill-color: transparent;
 }
 .services {
-  height: 60vh;
+  padding: 50px 0;
   display: flex;
   align-items: center;
 }

@@ -48,6 +48,10 @@
       </li>
 
       <li class="nav-item">
+        <a href="#" class="nav-link">Missions</a>
+      </li>
+
+      <li class="nav-item">
         <a href="contactus.php" class="nav-link">Contact us</a>
       </li>
     </ul>
