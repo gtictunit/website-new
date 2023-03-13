@@ -343,7 +343,8 @@
       width: fit-content;
       padding: 10px 30px;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-      border-radius: 2px color: white;
+      border-radius: 2px ;
+      color: white;
       background-color: #3d0052;
     }
   </style>
