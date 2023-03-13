@@ -20,7 +20,7 @@
           <!-- <i class="fa-solid fa-chevron-down"></i> -->
         </a>
         <div class="dropdown-content">
-          <a href="ChurchHistory.php">Church History</a>
+          <a href="churchhistory">Church History</a>
           <a href="#">Board of Trustees </a>
           <a href="#">Eldership </a>
 
@@ -52,7 +52,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="contactus.php" class="nav-link">Contact us</a>
+        <a href="contactus" class="nav-link">Contact us</a>
       </li>
     </ul>
 

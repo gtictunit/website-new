@@ -710,3 +710,7 @@ hr {
   z-index: 200;
   border-radius: 20px;
 }
+
+.badge-primary{
+  background-color: #9900cc;
+}
