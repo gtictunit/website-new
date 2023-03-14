@@ -10,23 +10,17 @@
 
     <!-- Right -->
     <div>
-      <a href="" class="me-4 text-reset">
+      <a href="https://www.facebook.com/GTMinistryIb/" target="_blank" class="me-4 text-reset">
         <i class="fab fa-facebook-f"></i>
       </a>
-      <a href="" class="me-4 text-reset">
+      <a href="https://www.twitter.com/GTMinistryIb/" target="_blank" class="me-4 text-reset">
         <i class="fab fa-twitter"></i>
       </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
+      <a href="https://www.youtube.com/GTMinistryIb/" target="_blank" class="me-4 text-reset">
+        <i class="fab fa-youtube"></i>
       </a>
-      <a href="" class="me-4 text-reset">
+      <a href="https://www.instagram.com/GTMinistryIb/" target="_blank" class="me-4 text-reset">
         <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
       </a>
     </div>
     <!-- Right -->

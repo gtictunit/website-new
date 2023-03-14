@@ -22,7 +22,7 @@
         <div class="dropdown-content">
           <a href="ChurchHistory.php">Church History</a>
           <a href="#">Board of Trustees </a>
-          <a href="#">Eldership </a>
+          <a href="eldership-council.php">Eldership </a>
 
 
         </div>
@@ -47,14 +47,24 @@
         </div>
       </li>
 
-      <li class="nav-item">
-        <a href="#" class="nav-link">Missions</a>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-btn">
+          <span>Missions</span>
+        </a>
+        <div class="dropdown-content missions-drop ">
+          <a href="#">The Beginning of Mission Support</a>
+          <a href="#">Partial Missionary Sponsorship Program (PMSP)</a>
+          <a href="#">Special Missionary Sponsorship Program (SMSP)</a>
+          <a href="#">Mission Teams</a>
+          <a href="#">Other Mission Activities<a>
+        </div>
       </li>
 
       <li class="nav-item">
         <a href="contactus.php" class="nav-link">Contact us</a>
       </li>
     </ul>
-
+<!-- reduce the width of a dropdown? -->
   </div>
 </nav>
+

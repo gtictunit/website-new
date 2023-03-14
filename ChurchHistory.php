@@ -44,23 +44,6 @@
 <body>
     <div class="h-body">
         <?php include('./reusables/navbar.php') ?>
-        <!-- <header class="history-header">
-          <div class="history-overlay"></div>
-          <div class="hero">
-            <h6 class="history-header-text drop-in">
-            About
-            </h6>
-        </div>
-        </header> -->
-        <!-- <div class="h-brief">
-            <div class="h-brief-words"><br><br><br>
-                <h1 class>About Us</h1>
-                <div class="block"></div>
-                <span class="h-brief-words-2">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis odio at expedita a ex aspernatur vero excepturi magni libero sunt praesentium quo veritatis placeat maxime quidem illo quis, autem voluptates?
-                </span>
-            </div>
-        </div> -->
         <header class="history-header-1">
             <div class="history-overlay"></div>
             <div class="hero">
@@ -72,20 +55,20 @@
           <div class="history-words container">
             <div class="history-words-1">
                 <h1 class="history-h2 ">
-                    How It All Started 
+                    How It All Started...
                     <div class="block-1"></div>
                 </h1><br>
                 <span class="h-wordings d-flex">
                     <img src="https://newspeakspaces.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2019/03/28143545/image-31.jpg" class="img-thumbnail bg-gradient img-roll" alt="..."><br>
                     God gave the Pioneer General Pastor some definite revelations and visions which led to the birth of the Ministry. He received accurate details of the date to start, the Name of the Ministry, the Organisational Structure, the Venue, and Names of the Trustees. <br><br>
 
-          Right from the early years of GT as a church, the Pastor has been clearly focused about the type of Christians
-          that should form the core of membership of the church. Such Christians, established on the solid foundation of
-          the Word of God, living victorious holy lives, ready and willing at all times to be effective tools in the
-          crafty hands of the Master and usable for His purpose as worthy vessels, tried and effective for the work of
-          the Kingdom and prepared for heaven; were to form the core of membership of GT right from onset. <br><br>
+                    Right from the early years of GT as a church, the Pastor has been clearly focused about the type of Christians
+                    that should form the core of membership of the church. Such Christians, established on the solid foundation of
+                    the Word of God, living victorious holy lives, ready and willing at all times to be effective tools in the
+                    crafty hands of the Master and usable for His purpose as worthy vessels, tried and effective for the work of
+                    the Kingdom and prepared for heaven; were to form the core of membership of GT right from onset. <br><br>
 
-                    When Dr. Hans Adu-Dapaah, a Ghanaian and first ever Elder of the church separated himself to fast and pray unto the Lord sometime in 1991, the Lord told him specifically that GT is a Ministry with divine origin and divine destiny. He devoted his entire time, limited resources, skills and family to the service of the Lord, mainly in the area of assisting Pastor Obed in the day-to-day chores of running the Ministry physically and spiritually. He was a sterling model of such workers promised by God, who took his lead from the style of the Pastor, basically labouring tirelessly in the vineyard of the Lord, non-relenting in assuming tasks, no matter how menial.
+                      When Dr. Hans Adu-Dapaah, a Ghanaian and first ever Elder of the church separated himself to fast and pray unto the Lord sometime in 1991, the Lord told him specifically that GT is a Ministry with divine origin and divine destiny. He devoted his entire time, limited resources, skills and family to the service of the Lord, mainly in the area of assisting Pastor Obed in the day-to-day chores of running the Ministry physically and spiritually. He was a sterling model of such workers promised by God, who took his lead from the style of the Pastor, basically labouring tirelessly in the vineyard of the Lord, non-relenting in assuming tasks, no matter how menial.
                     
                 </span><br><br>
                 <button class="h-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -149,8 +132,7 @@
       </div>
     </div>
     <center>
-      <h2>This is for the video of the biography</h2>
-     <video src="./assets/images/1afdec5a7ed48e8fbebfefcf6c9fdb56.mp4" controls width="700"></video>
+     <!-- <video src="./assets/images/1afdec5a7ed48e8fbebfefcf6c9fdb56.mp4" controls width="700"></video> -->
     </center>
 
 
