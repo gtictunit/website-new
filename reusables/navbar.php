@@ -20,7 +20,7 @@
           <!-- <i class="fa-solid fa-chevron-down"></i> -->
         </a>
         <div class="dropdown-content">
-          <a href="ChurchHistory.php">Church History</a>
+          <a href="churchhistory">Church History</a>
           <a href="#">Board of Trustees </a>
           <a href="eldership-council.php">Eldership </a>
 
@@ -36,7 +36,7 @@
           <a href="#">Pastor's Desk</a>
           <a href="#">Live Stream </a>
           <a href="#">Audio Messages </a>
-          <a href="#">Onine Radio<a>
+          <a href="#">Online Radio<a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -61,10 +61,9 @@
       </li>
 
       <li class="nav-item">
-        <a href="contactus.php" class="nav-link">Contact us</a>
+        <a href="contactus" class="nav-link">Contact us</a>
       </li>
     </ul>
 <!-- reduce the width of a dropdown? -->
   </div>
 </nav>
-
