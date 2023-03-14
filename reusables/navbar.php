@@ -36,7 +36,7 @@
           <a href="#">Pastor's Desk</a>
           <a href="#">Live Stream </a>
           <a href="#">Audio Messages </a>
-          <a href="#">Onine Radio<a>
+          <a href="#">Online Radio<a>
         </div>
       </li>
       <li class="nav-item dropdown">
