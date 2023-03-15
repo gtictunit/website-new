@@ -53,7 +53,7 @@
       <div class="history-overlay"></div>
       <div class="hero">
         <h4 class="history-header-text drop-in">
-          You've a Seat Reserved!
+          You've Got a Seat Reserved!
         </h4>
       </div>
     </header><br>
