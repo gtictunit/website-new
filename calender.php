@@ -52,9 +52,9 @@
 <header class="history-header-1">
       <div class="history-overlay"></div>
       <div class="hero">
-        <h6 class="history-header-text drop-in">
-          Our Calendar
-        </h6>
+        <h4 class="history-header-text drop-in">
+          We Cordially Invites you to All Our Programmes.<br/><small>You will be Richly Blessed as you Come</small>
+        </h4>
       </div>
     </header><br>
 
@@ -62,7 +62,7 @@
     <div class="history-words container">
       <div class="history-words-1">
         <h1 class="history-h2 ">
-          Our Monthly Programmes
+          2023 Church Calendar
           <div class="block-1"></div>
         </h1><br>
      
@@ -355,15 +355,8 @@
       </div>
     </div>
     <!-- Footer -->
-    <?php
-    // include('./reusables/footer.php') 
-    ?>
+   <?php include('./reusables/footer.php') ?>
   </div>
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2023 Copyright:
-    <a class="text-reset fw-bold" href="/">Glory Tabernacle Ministry</a>
-  </div>
-
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
