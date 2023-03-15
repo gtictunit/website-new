@@ -62,7 +62,7 @@
     <div class="history-words container">
       <div class="history-words-1">
         <h1 class="history-h2 ">
-          Our Monthly Programmes
+          2023 Church Calendar
           <div class="block-1"></div>
         </h1><br>
      
