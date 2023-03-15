@@ -42,7 +42,7 @@
       <li class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-btn">Programmes</a>
         <div class="dropdown-content">
-          <a href="#">Weekly Programmes</a>
+          <a href="weekly-programmes.php">Weekly Programmes</a>
           <a href="calender">Church Calendar</a>
         </div>
       </li>
