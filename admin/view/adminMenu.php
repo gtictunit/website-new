@@ -1,61 +1,89 @@
-<a href="dashboard.php">
+<a href="dashboard">
     <button type="button" class="noncollapsible">
         Dashboard
     </button>
 </a>
-<button type="button" class="collapsible">Pastor Desk
+<button type="button" class="collapsible">Pastor's Desk
 </button>
 <div class="content">
-    <a href="newPD.php" >
+    <a href="newPD" >
         <button type="button" class="submenubut">
-            New
+            Add Pastor's Desk
         </button>
     </a>
-    <a href="viewPD.php">
+    <a href="viewPD">
         <button type="button" class="submenubut">
-            View
+            View Pastor's Desk
         </button>
     </a>
 </div>
 <button type="button" class="collapsible">Sermon of the Month
 </button>
 <div class="content">
-    <a href="newSOTM.php" >
+    <a href="newSOTM" >
         <button type="button" class="submenubut">
-           New
+           Add Sermon of the Month
         </button>
     </a>
-    <a href="viewSOTM.php" >
+    <a href="viewSOTM" >
         <button type="button" class="submenubut">
-            View
+            View Sermon of the Month
         </button>
     </a>
 </div>
 <button type="button" class="collapsible">Audio Message
 </button>
 <div class="content">
-    <a href="newAM.php" >
+    <a href="newAM" >
         <button type="button" class="submenubut">
-           New
+           Add Audio Message
         </button>
     </a>
-    <a href="viewAM.php">
+    <a href="viewAM">
         <button type="button" class="submenubut">
-        View
+        View Audio Message
+        </button>
+    </a>
+</div>
+<button type="button" class="collapsible">Streaming Link
+</button>
+<div class="content">
+    <a href="newSL" >
+        <button type="button" class="submenubut">
+           Add Streaming Link
+        </button>
+    </a>
+    <a href="viewSL">
+        <button type="button" class="submenubut">
+        View Streaming Link
+        </button>
+    </a>
+</div>
+<button type="button" class="collapsible">Church Calendar
+</button>
+<div class="content">
+    <a href="newCA" >
+        <button type="button" class="submenubut">
+           Add Calendar
+        </button>
+    </a>
+    <a href="viewCA">
+        <button type="button" class="submenubut">
+        View Calendar
         </button>
     </a>
 </div>
 <button type="button" class="collapsible">Administrator
 </button>
 <div class="content">
-    <a href="newAD.php" >
+    <a href="newAD" >
         <button type="button" class="submenubut">
-           New
+           Add Administrator
         </button>
     </a>
-    <a href="viewAD.php">
+    <a href="viewAD">
         <button type="button" class="submenubut">
-        View
+        View Administrator
         </button>
     </a>
 </div>

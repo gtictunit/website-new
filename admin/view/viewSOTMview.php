@@ -5,14 +5,18 @@
     $admin = new dashboardClass();
     $select = new selectClass();
     $menu = $admin->Menu();
-    $usermail = $admin->adminEmail();    
+    $usermail = $admin->adminEmail();  
+    
+    require_once "model/sermonMonth.php";
+    $pd = new sermonMonth();
+    $message = $pd->viewAllSermonMonth();
 ?>    
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Children Church Management System</title>
+        <title>Glory Tabernacle Ministry | Administrator Console</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
         <link href="library/css/techive.css" rel="stylesheet" type="text/css" />
@@ -23,6 +27,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./library/img/gt_logo.png" type="image/x-icon">
     </head>
     <body class="bodyDashboard">
         <div class="container-fluid">
@@ -56,8 +61,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="content-fluid dashboardbody">
-                        
+                    <div class="container vContainer">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <?php echo $message; ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

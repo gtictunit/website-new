@@ -1,23 +1,17 @@
 <?php
     session_start();
-    require_once "model/dashboardClass.php";
-    require_once "model/utilityClass.php";
-    
+    require_once "model/dashboardClass.php"; 
 
-    $admin = new dashboardClass();
-    $util = new utilityClass();
-   
+    $admin = new dashboardClass();   
 
     $menu = $admin->Menu();
     $usermail = $admin->adminEmail();
-    $day = $util->genDay();
-    $month = $util->genMonth();
-    $year = $util->genYear();
+    
 
     if(isset($_POST['submit'])){
-        require_once "model/audioMessage.php";
-        $pd = new audioMessage();
-        $message = $pd->newAudioMessage();
+        require_once "model/admin.php";
+        $ad = new admin();
+        $message = $ad->newAdmin();
     }
 ?>    
 <!DOCTYPE HTML>
@@ -65,7 +59,7 @@
                     <div class="content-fluid infodiv rowShadow">
                         <div class="row ">
                             <div class="col-md-6 dashtext">
-                                New Audio Message
+                                New Administrator
                             </div>
                             <div class="col-md-6 usermail">
                                 <i class="fa-solid fa-circle-user ispace"></i><?php if(isset($usermail)){echo $usermail;}?>
@@ -84,23 +78,23 @@
                                 <div class="container-fluid div1">
                                     <div class="row dvrw1">
                                         <div class="col-md-12 divformheading">
-                                            <i class="glyphicon glyphicon-plus ispace"></i>Add Audio Message
+                                            <i class="glyphicon glyphicon-plus ispace"></i>Add Administrator
                                         </div>
                                     </div>
                                     <div class="row formrow">
                                         <div class="col-md-12"><?php if(isset($message)){echo $message;}?>
                                         </div>
                                     </div>
-                                    <form method="post" action="" id="ccmsFormValidate" enctype="multipart/form-data">
+                                    <form method="post" action="" id="ccmsFormValidate">
                                     <div class="row formrow">
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-md-6 formtext">
                                                     <div class="container-fluid">
                                                         <div class="row">
-                                                            <div class="col-md-3 ">Topic</div>
+                                                            <div class="col-md-3 ">Firstname</div>
                                                             <div class="col-md-9">
-                                                                <input type="text" class="form-control" id="title" name="am_topic" minlength="3" require/>
+                                                                <input type="text" class="form-control" id="firstname" name="adm_firstname" minlength="3" require/>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -108,9 +102,9 @@
                                                 <div class="col-md-6 formtext">
                                                     <div class="container-fluid">
                                                         <div class="row">
-                                                            <div class="col-md-3 ">Preacher</div>
+                                                            <div class="col-md-3 ">Lastname</div>
                                                             <div class="col-md-9">
-                                                                <input type="text" class="form-control" id="writer" name="am_preacher" minlength="3" require/>
+                                                                <input type="text" class="form-control" id="lastname" name="adm_lastname" minlength="3" require/>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -124,11 +118,9 @@
                                                 <div class="col-md-6 formtext">
                                                     <div class="container-fluid">
                                                         <div class="row">
-                                                            <div class="col-md-3 ">Day</div>
+                                                            <div class="col-md-3 ">Email</div>
                                                             <div class="col-md-9">
-                                                                <select class="form-control" id="day" name="am_day">
-                                                                    <?php echo $day; ?>
-                                                                </select>
+                                                            <input type="text" class="form-control" id="email" name="adm_email" minlength="3" require/>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -136,81 +128,22 @@
                                                 <div class="col-md-6 formtext">
                                                     <div class="container-fluid">
                                                         <div class="row">
-                                                            <div class="col-md-3 ">Month</div>
+                                                            <div class="col-md-3 ">Admin Level</div>
                                                             <div class="col-md-9">
-                                                                <select class="form-control" id="month" name="am_month">
-                                                                    <?php echo $month; ?>
+                                                                <select class="form-control" id="level" name="adm_level">
+                                                                   <option value="">Select Admin Level</option>
+                                                                   <option value="1">Super Admininstrator</option>
+                                                                   <option value="2">Admininstrator</option>
                                                                 </select>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row formrow">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-md-6 formtext">
-                                                    <div class="container-fluid">
-                                                        <div class="row">
-                                                            <div class="col-md-3 ">Year</div>
-                                                            <div class="col-md-9">
-                                                                <select class="form-control" id="year" name="am_year">
-                                                                    <?php echo $year; ?>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 formtext">
-                                                    <div class="container-fluid">
-                                                            <div class="row">
-                                                                <div class="col-md-3 ">Service</div>
-                                                                <div class="col-md-9">
-                                                                    <select class="form-control" id="service" name="am_service">
-                                                                        <option value="">Select Service</option>
-                                                                        <option value="Sunday">Sunday</option>
-                                                                        <option value="Thursday">Thursday</option>
-                                                                        <option value="Special">Special</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row formrow">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-md-6 formtext">
-                                                    <div class="container-fluid">
-                                                        <div class="row">
-                                                            <div class="col-md-3 ">Upload Message</div>
-                                                            <div class="col-md-9">
-                                                                <input class="form-control" type="file" name="am_audio">
-                                                                    <small>
-                                                                        (Upload only mp3 format audio with maximum size of 20MB.)
-                                                                    </small>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 formtext">
-                                                    <div class="container-fluid">
-                                                            <div class="row">
-                                                                <div class="col-md-3 "></div>
-                                                                <div class="col-md-9">
-                                                                    
-                                                                </div>
-                                                            </div>
-                                                        </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     
+                                                                        
                                     <div class="row formrow">
                                         <div class="col-md-12 formtext">
                                             <button type="submit" class="butt1" name="submit">Submit</button>

@@ -5,7 +5,11 @@
     $admin = new dashboardClass();
     $select = new selectClass();
     $menu = $admin->Menu();
-    $usermail = $admin->adminEmail();    
+    $usermail = $admin->adminEmail();  
+    
+    require_once "model/admin.php";
+    $pd = new admin();
+    $message = $pd->viewAllAdministrator();
 ?>    
 <!DOCTYPE HTML>
 <html lang="en">
@@ -21,8 +25,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Macondo&family=Original+Surfer&family=Permanent+Marker&family=Roboto+Condensed:wght@300&family=Roboto+Flex:opsz,wght@8..144,100&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="shortcut icon" href="./library/img/gt_logo.png" type="image/x-icon">
-   </head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./library/img/gt_logo.png" type="image/x-icon">
+    </head>
     <body class="bodyDashboard">
         <div class="container-fluid">
             <div class="row">
@@ -42,7 +48,7 @@
                     <div class="content-fluid infodiv rowShadow">
                         <div class="row ">
                             <div class="col-md-6 dashtext">
-                                Administrator Dashboard
+                                View Administrator
                             </div>
                             <div class="col-md-6 usermail">
                                 <i class="fa-solid fa-circle-user ispace"></i><?php if(isset($usermail)){echo $usermail;}?>
@@ -55,41 +61,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="content-fluid dashboardbody">
-                        <div class="row ">
-                            <div class="col-md-3">
-                                <div class="card dashboardcard">
-                                    <div class="card-body">
-                                        <h5 class="card-title dashboardcardtitle1">Pastor's Desk</h5>
-                                        <p class="card-text">Some quick example text to build on the card title.</p>
-                                    </div>
-                                </div>
+                    <div class="container vContainer">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <?php echo $message; ?>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card dashboardcard">
-                                    <div class="card-body">
-                                        <h5 class="card-title dashboardcardtitle1">Sermon of the Month</h5>
-                                        <p class="card-text">Some quick example text to build on the card title .</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card dashboardcard">
-                                    <div class="card-body">
-                                        <h5 class="card-title dashboardcardtitle1">Audio Message</h5>
-                                        <p class="card-text">Some quick example text to build on the card title.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card dashboardcard">
-                                    <div class="card-body">
-                                        <h5 class="card-title dashboardcardtitle1">Administrator</h5>
-                                        <p class="card-text">Some quick example text to build on the card title.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
                         </div>
                     </div>
                 </div>

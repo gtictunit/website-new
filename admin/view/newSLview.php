@@ -15,9 +15,9 @@
     $year = $util->genYear();
 
     if(isset($_POST['submit'])){
-        require_once "model/audioMessage.php";
-        $pd = new audioMessage();
-        $message = $pd->newAudioMessage();
+        require_once "model/streamingLink.php";
+        $pd = new streamingLink();
+        $message = $pd->newStreamingLink();
     }
 ?>    
 <!DOCTYPE HTML>
@@ -65,7 +65,7 @@
                     <div class="content-fluid infodiv rowShadow">
                         <div class="row ">
                             <div class="col-md-6 dashtext">
-                                New Audio Message
+                                New Streaming Link
                             </div>
                             <div class="col-md-6 usermail">
                                 <i class="fa-solid fa-circle-user ispace"></i><?php if(isset($usermail)){echo $usermail;}?>
@@ -84,40 +84,15 @@
                                 <div class="container-fluid div1">
                                     <div class="row dvrw1">
                                         <div class="col-md-12 divformheading">
-                                            <i class="glyphicon glyphicon-plus ispace"></i>Add Audio Message
+                                            <i class="glyphicon glyphicon-plus ispace"></i>Add Streaming Link
                                         </div>
                                     </div>
                                     <div class="row formrow">
                                         <div class="col-md-12"><?php if(isset($message)){echo $message;}?>
                                         </div>
                                     </div>
-                                    <form method="post" action="" id="ccmsFormValidate" enctype="multipart/form-data">
-                                    <div class="row formrow">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-md-6 formtext">
-                                                    <div class="container-fluid">
-                                                        <div class="row">
-                                                            <div class="col-md-3 ">Topic</div>
-                                                            <div class="col-md-9">
-                                                                <input type="text" class="form-control" id="title" name="am_topic" minlength="3" require/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 formtext">
-                                                    <div class="container-fluid">
-                                                        <div class="row">
-                                                            <div class="col-md-3 ">Preacher</div>
-                                                            <div class="col-md-9">
-                                                                <input type="text" class="form-control" id="writer" name="am_preacher" minlength="3" require/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <form method="post" action="" id="ccmsFormValidate">
+                                    
                                     <div class="row formrow">
                                         <div class="container-fluid">
                                             <div class="row">
@@ -126,7 +101,7 @@
                                                         <div class="row">
                                                             <div class="col-md-3 ">Day</div>
                                                             <div class="col-md-9">
-                                                                <select class="form-control" id="day" name="am_day">
+                                                                <select class="form-control" id="day" name="sl_day">
                                                                     <?php echo $day; ?>
                                                                 </select>
                                                             </div>
@@ -138,7 +113,7 @@
                                                         <div class="row">
                                                             <div class="col-md-3 ">Month</div>
                                                             <div class="col-md-9">
-                                                                <select class="form-control" id="month" name="am_month">
+                                                                <select class="form-control" id="month" name="sl_month">
                                                                     <?php echo $month; ?>
                                                                 </select>
                                                             </div>
@@ -156,7 +131,7 @@
                                                         <div class="row">
                                                             <div class="col-md-3 ">Year</div>
                                                             <div class="col-md-9">
-                                                                <select class="form-control" id="year" name="am_year">
+                                                                <select class="form-control" id="year" name="sl_year">
                                                                     <?php echo $year; ?>
                                                                 </select>
                                                             </div>
@@ -168,7 +143,7 @@
                                                             <div class="row">
                                                                 <div class="col-md-3 ">Service</div>
                                                                 <div class="col-md-9">
-                                                                    <select class="form-control" id="service" name="am_service">
+                                                                    <select class="form-control" id="service" name="sl_service">
                                                                         <option value="">Select Service</option>
                                                                         <option value="Sunday">Sunday</option>
                                                                         <option value="Thursday">Thursday</option>
@@ -187,12 +162,10 @@
                                                 <div class="col-md-6 formtext">
                                                     <div class="container-fluid">
                                                         <div class="row">
-                                                            <div class="col-md-3 ">Upload Message</div>
+                                                            <div class="col-md-3 ">Streaming Link</div>
                                                             <div class="col-md-9">
-                                                                <input class="form-control" type="file" name="am_audio">
-                                                                    <small>
-                                                                        (Upload only mp3 format audio with maximum size of 20MB.)
-                                                                    </small>
+                                                                <input class="form-control" type="text" name="sl_link">
+                                                                    
                                                             </div>
                                                         </div>
                                                     </div>
@@ -228,7 +201,7 @@
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 <script type="text/javascript" src="library/js/ccms.js"></script>
-<script type="text/javascript" src="library/js/tinymce/tinymce.min.js"></script>
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
 <script>
     var coll = document.getElementsByClassName("collapsible");

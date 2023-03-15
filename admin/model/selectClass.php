@@ -3,11 +3,20 @@
         //database tables
         private $login = "`gtm-login`";
         private $admin = "`gtm-admin-profile`";
+        private $pastor_desk = "`gtm-pastor-desk`";
+        private $sermon_month = "`gtm-sermon-month`";
+        private $audio_message = "`gtm-audio-message`";
+        private $streaming_link = "`gtm-streaming-link`";
+        private $calendar = "`gtm-calendar`";
+
+
         //Database connection
         private $Connection;
+
         //Parameters form forms
         private $email;
         private $password;
+
         //Variable for session
         private $adminSession;
 
@@ -61,7 +70,7 @@
         public function login(){
             $this->setEmail($_POST["email"]);
             $this->setPassword(($_POST["password"]));
-           // $this->password = md5($this->password);
+            $this->password = md5($this->password);
             if(empty($this->email) or empty($this->password)){
                 return '<p class="userAuthFailed">Enter Your Email and Password</p>';
             }
@@ -94,22 +103,34 @@
                 return '<p class="userAuthFailed">Admin Authentical Failed! Check your Email and Password</p>';
             }
         }
-        public function allUsers(){
+        
+        public function userCategory($cat){
+            if($cat == 1){
+                return 'Administration';
+            }
+            else{
+                return 'Teacher';
+            }
+        }
+        //////View All pastor desk
+        public function viewAllPastorDesk(){
             $query = $this->Connection->prepare(
-                "SELECT `ccms-user-fname`, `ccms-user-lname`, `ccms-user-email`, `ccms-auto-no`  FROM " . $this->user . " ORDER BY `ccms-user-fname` ASC"
+                "SELECT `gtm-auto-no`, `gtm-pd-title`, `gtm-pd-day`, `gtm-pd-month`, `gtm-pd-year`,
+                `gtm-pd-writer`
+                  FROM " . $this->pastor_desk . " ORDER BY `gtm-pd-year` DESC, `gtm-pd-month` DESC, `gtm-pd-day` DESC"
             );
             $query->execute();
             /*Fetch all of the remaining rows in the result set*/
             
             
-            $out = '<div class="row table-responsive">'
-                    .'<table class="table table-borderedtable-sm" style="background-color:#fff">'
+            $out = '<div class="row ">'
+                    .'<table class="table table-borderedtable-sm rowShadow table-hover table-responsive" style="background-color:#fff">'
                     .'<thead>'
                         .'<tr>'
                             .'<th scope="col">Sn</th>'
-                            .'<th scope="col">Firstname</th>'
-                            .'<th scope="col">Lastname</th>'
-                            .'<th scope="col">Email</th>'
+                            .'<th scope="col">Title</th>'
+                            .'<th scope="col">Date</th>'
+                            .'<th scope="col">Writer</th>'
                             .'<th scope="col">&nbsp;</th>'
                         .'</tr>'
                     .'</thead>'
@@ -118,14 +139,13 @@
             while($result = $query->fetch()){
                 $out .='<tr>'
                         .'<th scope="row tableText">'.$count.'</th>'
-                        .'<td>'.$result[0].'</td>'
                         .'<td>'.$result[1].'</td>'
-                        .'<td>'.$result[2].'</td>'
+                        .'<td>'.$result[3].' '.$result[2].', '.$result[4].'</td>'
+                        .'<td>'.$result[5].'</td>'
                         .'<td>'
-                            .'<a href="editUserProfile.php?userid='.$result[3].'"><button type="button" class="butt2 view">View More</button></a>'
-                            .'<button type="button" class="butt2 suspend" data-id='.$result[2].' data-toggle="modal" data-target="#suspend">Suspend</button>'
-                            .'<button type="button" class="butt2 reactivate" data-id='.$result[2].' data-toggle="modal" data-target="#reactivate">Reactivate</button>'
-                            .'<button type="button" class="butt2 delete" data-id='.$result[2].' data-toggle="modal" data-target="#delete">Delete</button>'                                 
+                            .'<a href="editPastorDesk.php?pdno='.$result[0].'"><button type="button" class="butt2 view">Edit</button></a>'
+                            .'<button type="button" class="butt2 view" data-id='.$result[0].' data-toggle="modal" data-target="#view">View</button>'
+                            .'<button type="button" class="butt2 delete" data-id='.$result[0].' data-toggle="modal" data-target="#delete">Delete</button>'                                 
                         .'</td>'
                     .'</tr>';
                 $count++;
@@ -137,14 +157,243 @@
                     $this->Connection = null; //connection closure
             return $out;
         }
-        public function userCategory($cat){
-            if($cat == 1){
-                return 'Administration';
+         //////View Sermon of the month
+         public function viewAllSermonMonth(){
+            $query = $this->Connection->prepare(
+                "SELECT `gtm-auto-no`, `gtm-sotm-title`, `gtm-sotm-month`, `gtm-sotm-year`,
+                `gtm-sotm-preacher`
+                  FROM " . $this->sermon_month . " ORDER BY `gtm-sotm-year` DESC, `gtm-sotm-month` DESC"
+            );
+            $query->execute();
+            /*Fetch all of the remaining rows in the result set*/
+            
+            
+            $out = '<div class="row ">'
+                    .'<table class="table table-borderedtable-sm rowShadow table-hover table-responsive" style="background-color:#fff">'
+                    .'<thead>'
+                        .'<tr>'
+                            .'<th scope="col">Sn</th>'
+                            .'<th scope="col">Title</th>'
+                            .'<th scope="col">Date</th>'
+                            .'<th scope="col">Preacher</th>'
+                            .'<th scope="col">&nbsp;</th>'
+                        .'</tr>'
+                    .'</thead>'
+                    .'<tbody>';
+            $count = 1;
+            while($result = $query->fetch()){
+                $out .='<tr>'
+                        .'<th scope="row tableText">'.$count.'</th>'
+                        .'<td>'.$result[1].'</td>'
+                        .'<td>'.$result[2].' '.$result[3].'</td>'
+                        .'<td>'.$result[4].'</td>'
+                        .'<td>'
+                            .'<a href="editPastorDesk.php?pdno='.$result[0].'"><button type="button" class="butt2 view">Edit</button></a>'
+                            .'<button type="button" class="butt2 view" data-id='.$result[0].' data-toggle="modal" data-target="#view">View</button>'
+                            .'<button type="button" class="butt2 delete" data-id='.$result[0].' data-toggle="modal" data-target="#delete">Delete</button>'                                 
+                        .'</td>'
+                    .'</tr>';
+                $count++;
             }
-            else{
-                return 'Teacher';
-            }
+            $out .='</tbody>'
+                    .'</table>'
+                    .'</div>';
+            
+                    $this->Connection = null; //connection closure
+            return $out;
         }
+        //////View audio
+        public function viewAllAudioMessage(){
+            $query = $this->Connection->prepare(
+                "SELECT `gtm-auto-no`,`gtm-am-title`,`gtm-am-preacher`,`gtm-am-day`,`gtm-am-month`,
+                `gtm-am-year`,`gtm-am-service`,`gtm-am-filename`
+                  FROM " . $this->audio_message . " ORDER BY `gtm-am-year` DESC, `gtm-am-month` DESC, `gtm-am-day` DESC"
+            );
+            $query->execute();
+            /*Fetch all of the remaining rows in the result set*/
+            
+            
+            $out = '<div class="row ">'
+                    .'<table class="table table-borderedtable-sm rowShadow table-hover table-responsive" style="background-color:#fff">'
+                    .'<thead>'
+                        .'<tr>'
+                            .'<th scope="col">Sn</th>'
+                            .'<th scope="col">Title</th>'
+                            .'<th scope="col">Date</th>'
+                            .'<th scope="col">Service</th>'
+                            .'<th scope="col">Preacher</th>'
+                            .'<th scope="col">&nbsp;</th>'
+                        .'</tr>'
+                    .'</thead>'
+                    .'<tbody>';
+            $count = 1;
+            while($result = $query->fetch()){
+                $out .='<tr>'
+                        .'<th scope="row tableText">'.$count.'</th>'
+                        .'<td>'.$result[1].'</td>'
+                        .'<td>'.$result[4].' '.$result[3].', '.$result[5].'</td>'
+                        .'<td>'.$result[6].'</td>'
+                        .'<td>'.$result[2].'</td>'
+                        .'<td>'
+                            .'<a href="editPastorDesk.php?pdno='.$result[0].'"><button type="button" class="butt2 view">Edit</button></a>'
+                            .'<button type="button" class="butt2 view" data-id='.$result[0].' data-toggle="modal" data-target="#view">Listen</button>'
+                            .'<button type="button" class="butt2 delete" data-id='.$result[0].' data-toggle="modal" data-target="#delete">Delete</button>'                                 
+                        .'</td>'
+                    .'</tr>';
+                $count++;
+            }
+            $out .='</tbody>'
+                    .'</table>'
+                    .'</div>';
+            
+                    $this->Connection = null; //connection closure
+            return $out;
+        }
+        //////View audio
+        public function viewAllStreamingLink(){
+            $query = $this->Connection->prepare(
+                "SELECT `gtm-auto-no`,`gtm-stream-day`,`gtm-stream-month`,
+                `gtm-stream-year`,`gtm-stream-link`,`gtm-stream-service`
+                  FROM " . $this->streaming_link . " ORDER BY `gtm-stream-year` DESC, `gtm-stream-month` DESC, `gtm-stream-day` DESC"
+            );
+            $query->execute();
+            /*Fetch all of the remaining rows in the result set*/
+            
+            
+            $out = '<div class="row ">'
+                    .'<table class="table table-borderedtable-sm rowShadow table-hover table-responsive" style="background-color:#fff">'
+                    .'<thead>'
+                        .'<tr>'
+                            .'<th scope="col">Sn</th>'
+                            .'<th scope="col">Date</th>'
+                            .'<th scope="col">Service</th>'
+                            .'<th scope="col">Link</th>'
+                            .'<th scope="col">&nbsp;</th>'
+                        .'</tr>'
+                    .'</thead>'
+                    .'<tbody>';
+            $count = 1;
+            while($result = $query->fetch()){
+                $out .='<tr>'
+                        .'<th scope="row tableText">'.$count.'</th>'
+                        .'<td>'.$result[2].' '.$result[1].', '.$result[3].'</td>'
+                        .'<td>'.$result[5].'</td>'
+                        .'<td>'.$result[4].'</td>'
+                        .'<td>'
+                            .'<a href="editPastorDesk.php?pdno='.$result[0].'"><button type="button" class="butt2 view">Edit</button></a>'
+                            .'<button type="button" class="butt2 view" data-id='.$result[0].' data-toggle="modal" data-target="#view">Listen</button>'
+                            .'<button type="button" class="butt2 delete" data-id='.$result[0].' data-toggle="modal" data-target="#delete">Delete</button>'                                 
+                        .'</td>'
+                    .'</tr>';
+                $count++;
+            }
+            $out .='</tbody>'
+                    .'</table>'
+                    .'</div>';
+            
+                    $this->Connection = null; //connection closure
+            return $out;
+        }
+        //////View administrator
+        public function viewAllAdministrator(){
+            $query = $this->Connection->prepare(
+                "SELECT l.`gtm-admin-email`, l.`gtm-admin-act-status`, l.`gtm-admin-status`, 
+                l.`gtm-admin-level`, a.`gtm-admin-fname`, a.`gtm-admin-lname`
+                FROM " . $this->login . " l
+                INNER JOIN ". $this->admin ." a ON l.`gtm-admin-email` = a.`gtm-admin-email` "
+            );
+            $query->execute();
+            /*Fetch all of the remaining rows in the result set*/
+            
+            
+            $out = '<div class="row ">'
+                    .'<table class="table table-borderedtable-sm rowShadow table-hover table-responsive" style="background-color:#fff">'
+                    .'<thead>'
+                        .'<tr>'
+                            .'<th scope="col">Sn</th>'
+                            .'<th scope="col">Firstname</th>'
+                            .'<th scope="col">Lastname</th>'
+                            .'<th scope="col">Email</th>'
+                            .'<th scope="col">Acct Status</th>'
+                            .'<th scope="col">Admin Status</th>'
+                            .'<th scope="col">Admin Level</th>'
+                            .'<th scope="col">&nbsp;</th>'
+                        .'</tr>'
+                    .'</thead>'
+                    .'<tbody>';
+            $count = 1;
+            while($result = $query->fetch()){
+                $out .='<tr>'
+                        .'<th scope="row tableText">'.$count.'</th>'
+                        .'<td>'.$result[4].'</td>'
+                        .'<td>'.$result[5].'</td>'
+                        .'<td>'.$result[0].'</td>'
+                        .'<td>'.$result[1].'</td>'
+                        .'<td>'.$result[2].'</td>'
+                        .'<td>'.$result[3].'</td>'
+                        .'<td>'
+                            
+                            .'<button type="button" class="butt2 view" data-id='.$result[0].' data-toggle="modal" data-target="#view">View</button>'
+                            .'<button type="button" class="butt2 view" data-id='.$result[0].' data-toggle="modal" data-target="#view">Pword Reset</button>'
+                            .'<button type="button" class="butt2 delete" data-id='.$result[0].' data-toggle="modal" data-target="#delete">Delete</button>'                                 
+                        .'</td>'
+                    .'</tr>';
+                $count++;
+            }
+            $out .='</tbody>'
+                    .'</table>'
+                    .'</div>';
+            
+                    $this->Connection = null; //connection closure
+            return $out;
+        }
+        //////View calendar
+        public function viewAllCalendar(){
+            $query = $this->Connection->prepare(
+                "SELECT `gtm-auto-no`, `gtm-cal-day`, `gtm-cal-month`, `gtm-cal-year`, `gtm-cal-event`
+                FROM " . $this->calendar."ORDER BY `gtm-cal-year` DESC, `gtm-cal-month` DESC, `gtm-cal-day` DESC"
+            );
+            $query->execute();
+            /*Fetch all of the remaining rows in the result set*/
+            
+            
+            $out = '<div class="row ">'
+                    .'<table class="table table-borderedtable-sm rowShadow table-hover table-responsive" style="background-color:#fff">'
+                    .'<thead>'
+                        .'<tr>'
+                            .'<th scope="col">Sn</th>'
+                            .'<th scope="col">Date</th>'
+                            .'<th scope="col">Event</th>'
+                            .'<th scope="col">&nbsp;</th>'
+                        .'</tr>'
+                    .'</thead>'
+                    .'<tbody>';
+            $count = 1;
+            while($result = $query->fetch()){
+                $out .='<tr>'
+                        .'<th scope="row tableText">'.$count.'</th>'
+                        .'<td>'.$result[2].' '.$result[1].', '.$result[3].'</td>'
+                        .'<td>'.$result[4].'</td>'
+                        .'<td>'
+                            
+                            .'<button type="button" class="butt2 view" data-id='.$result[0].' data-toggle="modal" data-target="#view">Edit</button>'
+                            .'<button type="button" class="butt2 delete" data-id='.$result[0].' data-toggle="modal" data-target="#delete">Delete</button>'                                 
+                        .'</td>'
+                    .'</tr>';
+                $count++;
+            }
+            $out .='</tbody>'
+                    .'</table>'
+                    .'</div>';
+            
+                    $this->Connection = null; //connection closure
+            return $out;
+        }
+
+
+
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////
         public function viewUser($no){
             $query = $this->Connection->prepare(
                 "SELECT p.`ccms-user-email`, p.`ccms-user-fname`, p.`ccms-user-lname`, p.`ccms-user-gender`, p.`ccms-user-phone`,

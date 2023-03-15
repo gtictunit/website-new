@@ -7,6 +7,8 @@
         private $pastor_desk = "`gtm-pastor-desk`";
         private $sermon_month = "`gtm-sermon-month`";
         private $audio_message = "`gtm-audio-message`";
+        private $streaming_link = "`gtm-streaming-link`";
+        private $calendar = "`gtm-calendar`";
 
         //Database connector
         private $Connection;
@@ -40,6 +42,26 @@
     	private $am_upType;
     	private $am_upSize;
     	private $am_upTemp;
+
+        //administrator form inputs
+        private $adm_firstname;
+        private $adm_lastname;
+        private $adm_email;
+        private $adm_level;
+        private $adm_password;
+
+        //streaming link form inputs
+        private $sl_day;
+        private $sl_month;
+        private $sl_year;
+        private $sl_service;
+        private $sl_link;
+
+        //church calendar form inputs
+        private $ca_day;
+        private $ca_month;
+        private $ca_year;
+        private $ca_event;
 
         public function __construct() {
             require_once  "core/Connector.php";        
@@ -216,6 +238,99 @@
             $this->am_upTemp =$am_upTemp;
         }
 
+        //getter and setter method for $adm_firstname
+        public function getAdmFirstname() {
+            return $this->adm_firstname;
+        }
+        public function setAdmFirstname($adm_firstname) {
+            $this->adm_firstname =$adm_firstname;
+        }
+        //getter and setter method for $adm_lastname
+        public function getAdmLastname() {
+            return $this->adm_lastname;
+        }
+        public function setAdmLastname($adm_lastname) {
+            $this->adm_lastname =$adm_lastname;
+        }
+        //getter and setter method for $adm_email
+        public function getAdmEmail() {
+            return $this->adm_email;
+        }
+        public function setAdmEmail($adm_email) {
+            $this->adm_email =$adm_email;
+        }
+        //getter and setter method for $adm_level
+        public function getAdmLevel() {
+            return $this->adm_level;
+        }
+        public function setAdmLevel($adm_level) {
+            $this->adm_level =$adm_level;
+        }
+
+        //getter and setter method for streaming day
+        public function getSlDay() {
+            return $this->sl_day;
+        }
+        public function setSlDay($sl_day) {
+            $this->sl_day = $sl_day;
+        }
+        //getter and setter method for streaming month
+        public function getSlMonth() {
+            return $this->sl_month;
+        }
+        public function setSlMonth($sl_month) {
+            $this->sl_month = $sl_month;
+        }
+        //getter and setter method for streaming year
+        public function getSlYear() {
+            return $this->sl_year;
+        }
+        public function setSlYear($sl_year) {
+            $this->sl_year = $sl_year;
+        }
+        //getter and setter method for streaming service
+        public function getSlService() {
+            return $this->sl_service;
+        }
+        public function setSlService($sl_service) {
+            $this->sl_service = $sl_service;
+        }
+        //getter and setter method for streaming day
+        public function getSlLink() {
+            return $this->sl_link;
+        }
+        public function setSlLink($sl_link) {
+            $this->sl_link = $sl_link;
+        }
+
+        //getter and setter method for calendar day
+        public function getCaDay() {
+            return $this->ca_day;
+        }
+        public function setCaDay($ca_day) {
+            $this->ca_day = $ca_day;
+        }
+         //getter and setter method for calendar month
+         public function getCaMonth() {
+            return $this->ca_month;
+        }
+        public function setCaMonth($ca_month) {
+            $this->ca_month = $ca_month;
+        }
+         //getter and setter method for calendar year
+         public function getCaYear() {
+            return $this->ca_year;
+        }
+        public function setCaYear($ca_year) {
+            $this->ca_year = $ca_year;
+        }
+         //getter and setter method for calendar event
+         public function getCaEvent() {
+            return $this->ca_event;
+        }
+        public function setCaEvent($ca_event) {
+            $this->ca_event = $ca_event;
+        }
 
         //Insert Pastor Desk method
         public function insPastorDesk(){
@@ -400,12 +515,151 @@
         //upload audio message
         public function uploadMessage(){
             $dest = "./library/audio/".$this->am_filename;
-            if(move_uploaded_file($this->am_upTemp, $dest)){
+            if(@move_uploaded_file($this->am_upTemp, $dest)){
                 return 1;
             }
             else{
                 return 0;
             }
         }
+        //Administrator method
+        public function insAdministrator(){
+            $this->setAdmFirstname($_POST["adm_firstname"]);
+            $this->setAdmLastname($_POST["adm_lastname"]);
+            $this->setAdmEmail($_POST["adm_email"]);
+            $this->setAdmLevel($_POST["adm_level"]);
 
+            $this->adm_password = md5($this->adm_lastname);
+
+           $exist = $this->getAdministrator($this->adm_email);
+            
+            if(empty($this->adm_firstname) or empty($this->adm_lastname) or empty($this->adm_email) or empty($this->adm_level)){
+                return '<p class="userAuthFailed">Fill All the Fields of the Form</p>';
+            }
+            elseif($exist == 1){
+                $this->Connection = null; //connection closure
+                return '<p class="userAuthFailed">Administrator with '.$this->adm_email.' already exist.</p>';
+            }
+            else{
+                if($this->administratorInsert() == 11 ){
+                    $this->Connection = null; //connection closure
+                    return "<p class='insertSuccess'>Administrator Info Added Successfully</p>";
+                }
+            }
+        }
+        public function administratorInsert(){
+            $query1 = $this->Connection->prepare(
+                "INSERT INTO " . $this->login . "(`gtm-auto-no`, `gtm-admin-email`, `gtm-admin-password`, `gtm-admin-act-status`, `gtm-admin-status`, `gtm-admin-level`) VALUES('',:em,:pa,:ac,:st,:lv)"
+            );
+            $query1->execute(array(':em'=>$this->adm_email, ':pa'=>$this->adm_password, ':ac'=>0, ':st'=>1, ':lv'=>$this->adm_level));
+            $result1 = $query1->rowCount();
+
+            $query2 = $this->Connection->prepare(
+                "INSERT INTO " . $this->admin . "(`gtm-auto-no`, `gtm-admin-fname`, `gtm-admin-lname`, `gtm-admin-email`) VALUES('',:fn,:ln,:em)"
+            );
+            $query2->execute(array(':fn'=>$this->adm_firstname, ':ln'=>$this->adm_lastname, ':em'=>$this->adm_email));
+            $result2 = $query2->rowCount();
+            
+            return $result1.$result2;
+        }
+        //check if sermon of the month already exist
+        public function getAdministrator($email){
+            $query = $this->Connection->prepare(
+                "SELECT *  FROM " . $this->admin . "  WHERE `gtm-admin-email` = :em"
+            );
+            $query->execute(array("em" => $email));
+            
+            $result = $query->rowCount();
+           // $this->Connection = null; //connection closure
+            return $result;
+        }
+
+        //streaming link method
+        public function insStreamingLink(){
+            $this->setSlDay($_POST["sl_day"]);
+            $this->setSlMonth($_POST["sl_month"]);
+            $this->setSlYear($_POST["sl_year"]);
+            $this->setSlService($_POST["sl_service"]);
+            $this->setSlLink($_POST["sl_link"]);
+
+            $exist = $this->getStreamingLink($this->sl_day, $this->sl_month, $this->sl_year);
+            
+            if(empty($this->sl_day) or empty($this->sl_month) or empty($this->sl_year) or empty($this->sl_service) or empty($this->sl_link)){
+                return '<p class="userAuthFailed">Fill All the Fields of the Form</p>';
+            }
+            elseif($exist == 1){
+                $this->Connection = null; //connection closure
+                return '<p class="userAuthFailed">Streaming Link already exist.</p>';
+            }
+            else{
+                if($this->streamingLinkInsert() == 1 ){
+                    $this->Connection = null; //connection closure
+                    return "<p class='insertSuccess'>Administrator Info Added Successfully</p>";
+                }
+            }
+        }
+        public function streamingLinkInsert(){
+            $query = $this->Connection->prepare(
+                "INSERT INTO " . $this->streaming_link . "(`gtm-auto-no`, `gtm-stream-day`, `gtm-stream-month`, `gtm-stream-year`, `gtm-stream-link`, `gtm-stream-service`) VALUES('',:da,:mo,:yr,:sl,:sr)"
+            );
+            $query->execute(array(':da'=>$this->sl_day, ':mo'=>$this->sl_month, ':yr'=>$this->sl_year, ':sl'=>$this->sl_link, ':sr'=>$this->sl_service));
+            $result = $query->rowCount();
+            
+            return $result;
+        }
+        //check if sl already exist
+        public function getStreamingLink($d, $m, $y){
+            $query = $this->Connection->prepare(
+                "SELECT *  FROM " . $this->streaming_link . "  WHERE `gtm-stream-day` = :da AND `gtm-stream-month` = :mo AND `gtm-stream-year` = :yr"
+            );
+            $query->execute(array("da" => $d, "mo" => $m, "yr" => $y));
+            
+            $result = $query->rowCount();
+           // $this->Connection = null; //connection closure
+            return $result;
+        }
+
+        //Calendar method
+        public function insCalendar(){
+            $this->setCaDay($_POST["ca_day"]);
+            $this->setCaMonth($_POST["ca_month"]);
+            $this->setCaYear($_POST["ca_year"]);
+            $this->setCaEvent($_POST["ca_event"]);
+
+            $exist = $this->getCalendar($this->ca_day, $this->ca_month, $this->ca_year);
+            
+            if(empty($this->ca_day) or empty($this->ca_month) or empty($this->ca_year) or empty($this->ca_event)){
+                return '<p class="userAuthFailed">Fill All the Fields of the Form</p>';
+            }
+            elseif($exist == 1){
+                $this->Connection = null; //connection closure
+                return '<p class="userAuthFailed">Streaming Link already exist.</p>';
+            }
+            else{
+                if($this->calendarInsert() == 1 ){
+                    $this->Connection = null; //connection closure
+                    return "<p class='insertSuccess'>New Event Added Successfully</p>";
+                }
+            }
+        }
+        public function calendarInsert(){
+            $query = $this->Connection->prepare(
+                "INSERT INTO " . $this->calendar . "(`gtm-auto-no`, `gtm-cal-day`, `gtm-cal-month`, `gtm-cal-year`, `gtm-cal-event`) VALUES('',:da,:mo,:yr,:ev)"
+            );
+            $query->execute(array(':da'=>$this->ca_day, ':mo'=>$this->ca_month, ':yr'=>$this->ca_year, ':ev'=>$this->ca_event));
+            $result = $query->rowCount();
+            
+            return $result;
+        }
+        //check if sl already exist
+        public function getCalendar($d, $m, $y){
+            $query = $this->Connection->prepare(
+                "SELECT *  FROM " . $this->calendar . "  WHERE `gtm-cal-day` = :da AND `gtm-cal-month` = :mo AND `gtm-cal-year` = :yr"
+            );
+            $query->execute(array("da" => $d, "mo" => $m, "yr" => $y));
+            
+            $result = $query->rowCount();
+           // $this->Connection = null; //connection closure
+            return $result;
+        }
     }
