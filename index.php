@@ -273,8 +273,8 @@
           <span></span>
         </div>
       </div>
-    </div>
-  </section>
+   </div>
+</section>
 
 
   <section class="giving">

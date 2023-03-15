@@ -52,11 +52,10 @@
           <span>Missions</span>
         </a>
         <div class="dropdown-content missions-drop ">
-          <a href="#">The Beginning of Mission Support</a>
-          <a href="#">Partial Missionary Sponsorship Program (PMSP)</a>
-          <a href="#">Special Missionary Sponsorship Program (SMSP)</a>
-          <a href="#">Mission Teams</a>
-          <a href="#">Other Mission Activities<a>
+          <a href="missionbegins.php">The Beginning of Mission Support</a>
+          <a href="partialmissions.php">Partial Missionary Sponsorship Program (PMSP)</a>
+          <a href="specialmission.php">Special Missionary Sponsorship Program (SMSP)</a>
+          <a href="missionteam.php">Mission Teams</a>
         </div>
       </li>
 

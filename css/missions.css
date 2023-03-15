@@ -1,0 +1,58 @@
+.m-header-1 {
+  background-image: url("../assets/images/about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 300px;
+  background-position: center;
+  position: relative;
+}
+.m-overlay {
+  background: rgba(0, 0, 0, 0.67);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.m-header-text {
+    font-size: 75px;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+}
+.m-hero {
+    position: relative;
+    z-index: 1000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .block-1 {
+    border: 2px solid #a71919;
+    width: 100%;
+  }
+  .m-btn {
+    height: 8vh;
+    width: 35vh;
+    background: transparent;
+    transform: translateX(170%);
+  }
+  .m-btn:hover {
+    background: black;
+    color: white;
+    transition: 0.9s;
+  }
+  .mission-header-text {
+    font-size: 75px;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+  }
+  .mission-words {
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .mission-words-1 {
+    margin: 10vh;
+  }
