@@ -1,5 +1,5 @@
 <?php
-class pastorDesk{
+class CA{
     
     
     private $insert;
@@ -11,10 +11,10 @@ class pastorDesk{
         require_once  "model/selectClass.php";        
         $this->select = new selectClass(); 
     }
-    public function newPastorDesk(){
-        return $this->insert->insPastorDesk();
+    public function insCalendar(){
+        return $this->insert->insCalendar();
     }    
-    public function viewAllPastorDesk(){
-        return $this->select->viewAllPastorDesk();
+    public function viewAllCalendar(){
+        return $this->select->viewAllCalendar();
     }
 }

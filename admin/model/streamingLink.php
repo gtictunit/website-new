@@ -1,5 +1,5 @@
 <?php
-    class sermonMonth{
+    class streamingLink{
         
         
         private $insert;
@@ -10,10 +10,10 @@
             require_once  "model/selectClass.php";        
             $this->select = new selectClass();
         }
-        public function newSermonMonth(){
-            return $this->insert->insSermonMonth();
-        } 
-        public function viewAllSermonMonth(){
-            return $this->select->viewAllSermonMonth();
+        public function newStreamingLink(){
+            return $this->insert->insStreamingLink();
+        }    
+        public function viewAllStreamingLink(){
+            return $this->select->viewAllStreamingLink();
         }
     }

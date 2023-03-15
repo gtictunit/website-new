@@ -1,5 +1,5 @@
 <?php
-    class sermonMonth{
+    class admin{
         
         
         private $insert;
@@ -10,10 +10,10 @@
             require_once  "model/selectClass.php";        
             $this->select = new selectClass();
         }
-        public function newSermonMonth(){
-            return $this->insert->insSermonMonth();
-        } 
-        public function viewAllSermonMonth(){
-            return $this->select->viewAllSermonMonth();
+        public function newAdmin(){
+            return $this->insert->insAdministrator();
+        }    
+        public function viewAllAdministrator(){
+            return $this->select->viewAllAdministrator();
         }
     }

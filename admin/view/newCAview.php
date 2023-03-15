@@ -15,9 +15,9 @@
     $year = $util->genYear();
 
     if(isset($_POST['submit'])){
-        require_once "model/audioMessage.php";
-        $pd = new audioMessage();
-        $message = $pd->newAudioMessage();
+        require_once "model/CA.php";
+        $pd = new CA();
+        $message = $pd->insCalendar();
     }
 ?>    
 <!DOCTYPE HTML>
@@ -29,14 +29,14 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
         <link href="library/css/techive.css" rel="stylesheet" type="text/css" />
-        <link href="library/css/fontawesome/css/all.css" rel="stylesheet">
+        <!--<link href="library/css/fontawesome/css/all.css" rel="stylesheet">-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Macondo&family=Original+Surfer&family=Permanent+Marker&family=Roboto+Condensed:wght@300&family=Roboto+Flex:opsz,wght@8..144,100&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="./library/img/gt_logo.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./library/img/gt_logo.png" type="image/x-icon">
 <style>
     body{
         padding: 0;
@@ -65,7 +65,7 @@
                     <div class="content-fluid infodiv rowShadow">
                         <div class="row ">
                             <div class="col-md-6 dashtext">
-                                New Audio Message
+                                New Church Calendar
                             </div>
                             <div class="col-md-6 usermail">
                                 <i class="fa-solid fa-circle-user ispace"></i><?php if(isset($usermail)){echo $usermail;}?>
@@ -84,40 +84,15 @@
                                 <div class="container-fluid div1">
                                     <div class="row dvrw1">
                                         <div class="col-md-12 divformheading">
-                                            <i class="glyphicon glyphicon-plus ispace"></i>Add Audio Message
+                                            <i class="glyphicon glyphicon-plus ispace"></i>Add Church Calendar
                                         </div>
                                     </div>
                                     <div class="row formrow">
                                         <div class="col-md-12"><?php if(isset($message)){echo $message;}?>
                                         </div>
                                     </div>
-                                    <form method="post" action="" id="ccmsFormValidate" enctype="multipart/form-data">
-                                    <div class="row formrow">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-md-6 formtext">
-                                                    <div class="container-fluid">
-                                                        <div class="row">
-                                                            <div class="col-md-3 ">Topic</div>
-                                                            <div class="col-md-9">
-                                                                <input type="text" class="form-control" id="title" name="am_topic" minlength="3" require/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 formtext">
-                                                    <div class="container-fluid">
-                                                        <div class="row">
-                                                            <div class="col-md-3 ">Preacher</div>
-                                                            <div class="col-md-9">
-                                                                <input type="text" class="form-control" id="writer" name="am_preacher" minlength="3" require/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <form method="post" action="" id="ccmsFormValidate">
+                                    
                                     <div class="row formrow">
                                         <div class="container-fluid">
                                             <div class="row">
@@ -126,7 +101,7 @@
                                                         <div class="row">
                                                             <div class="col-md-3 ">Day</div>
                                                             <div class="col-md-9">
-                                                                <select class="form-control" id="day" name="am_day">
+                                                                <select class="form-control" id="day" name="ca_day">
                                                                     <?php echo $day; ?>
                                                                 </select>
                                                             </div>
@@ -138,7 +113,7 @@
                                                         <div class="row">
                                                             <div class="col-md-3 ">Month</div>
                                                             <div class="col-md-9">
-                                                                <select class="form-control" id="month" name="am_month">
+                                                                <select class="form-control" id="month" name="ca_month">
                                                                     <?php echo $month; ?>
                                                                 </select>
                                                             </div>
@@ -156,7 +131,7 @@
                                                         <div class="row">
                                                             <div class="col-md-3 ">Year</div>
                                                             <div class="col-md-9">
-                                                                <select class="form-control" id="year" name="am_year">
+                                                                <select class="form-control" id="year" name="ca_year">
                                                                     <?php echo $year; ?>
                                                                 </select>
                                                             </div>
@@ -166,14 +141,9 @@
                                                 <div class="col-md-6 formtext">
                                                     <div class="container-fluid">
                                                             <div class="row">
-                                                                <div class="col-md-3 ">Service</div>
+                                                                <div class="col-md-3 ">Event</div>
                                                                 <div class="col-md-9">
-                                                                    <select class="form-control" id="service" name="am_service">
-                                                                        <option value="">Select Service</option>
-                                                                        <option value="Sunday">Sunday</option>
-                                                                        <option value="Thursday">Thursday</option>
-                                                                        <option value="Special">Special</option>
-                                                                    </select>
+                                                                    <input type="text" class="form-control" id="event" name="ca_event" minlength="3" require/>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -181,36 +151,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row formrow">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-md-6 formtext">
-                                                    <div class="container-fluid">
-                                                        <div class="row">
-                                                            <div class="col-md-3 ">Upload Message</div>
-                                                            <div class="col-md-9">
-                                                                <input class="form-control" type="file" name="am_audio">
-                                                                    <small>
-                                                                        (Upload only mp3 format audio with maximum size of 20MB.)
-                                                                    </small>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 formtext">
-                                                    <div class="container-fluid">
-                                                            <div class="row">
-                                                                <div class="col-md-3 "></div>
-                                                                <div class="col-md-9">
-                                                                    
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
+                                                                        
                                     <div class="row formrow">
                                         <div class="col-md-12 formtext">
                                             <button type="submit" class="butt1" name="submit">Submit</button>
@@ -245,24 +186,5 @@
         }
     });
     }
-</script>
-<script>
-tinymce.init({
-  selector: 'textarea#basic-example',
-  height: 250,
-  width: 950,
-  menubar: false,
-  plugins: [
-    'advlist autolink lists link image charmap print preview anchor',
-    'searchreplace visualblocks code fullscreen',
-    'insertdatetime media table paste code help wordcount'
-  ],
-  toolbar: 'undo redo | formatselect | ' +
-  'bold italic backcolor | alignleft aligncenter ' +
-  'alignright alignjustify | bullist numlist outdent indent | ' +
-  'removeformat | help',
-  content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
-});
-</script>
-    </body>
+</script>    </body>
 </html>

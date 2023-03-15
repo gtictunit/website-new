@@ -53,7 +53,7 @@
       <div class="history-overlay"></div>
       <div class="hero">
         <h4 class="history-header-text drop-in">
-          We Cordially Invites you to All Our Programmes.<br/><small>You will be Richly Blessed as you Come</small>
+          You've a Seat Reserved!
         </h4>
       </div>
     </header><br>

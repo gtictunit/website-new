@@ -1,3 +1,3 @@
-<a href="userprofile.php">My Profile</a>
-<a href="password.php">Change Paswword</a>
-<a href="index.php">Log Out</a>
+<a href="userprofile">My Profile</a>
+<a href="password">Change Paswword</a>
+<a href="logout">Log Out</a>
