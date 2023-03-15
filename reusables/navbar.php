@@ -43,7 +43,7 @@
         <a href="#" class="nav-link dropdown-btn">Programmes</a>
         <div class="dropdown-content">
           <a href="#">Weekly Programmes</a>
-          <a href="#">Church Calendar</a>
+          <a href="calendar">Church Calendar</a>
         </div>
       </li>
 
