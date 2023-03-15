@@ -355,9 +355,7 @@
       </div>
     </div>
     <!-- Footer -->
-    <?php
-    // include('./reusables/footer.php') 
-    ?>
+   <?php include('./reusables/footer.php') ?>
   </div>
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2023 Copyright:
