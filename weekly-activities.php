@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weekly Activities</title>
-    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
-    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/7127052039.js" crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Local css -->
+    <link rel="stylesheet" href="./css/mainStyles.css" />
+    <link rel="stylesheet" href="./css/mainStyles.responsive.css" />
+    <link rel="stylesheet" href="./css/drop-in.animation.css" />
+    <link rel="stylesheet" href="./css/drop-down.animation.css" />
+    <link rel="stylesheet" href="./css/ripple.css" />
+
+    <!-- Carousel -->
+    <!-- <link rel="stylesheet" type="text/css" href="./vendor/carousel/css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="./vendor/carousel/css/style1.css" />
+  <script type="text/javascript" src="./vendor/carousel/js/modernizr.custom.86080.js"></script> -->
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- SwiperJs -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/gt_logo.png"
+      type="image/x-icon" />
+
+    <title>Glory Tabernacle Ministry Ibadan</title>
+  </head>
 <body class="bg-body-secondary">
+    <?php include('./reusables/navbar.php') ?>
     <div class="container h2 head text-center p-5">Our weekly services </div>
     <div id="carouselExample" class="carousel slide container-fluid pt-3 ps-4 justify-content-center" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -200,6 +246,7 @@
         </button>
       </div>
       <br>
+ <?php include('./reusables/footer.php') ?>
       <style>
         
      body{
