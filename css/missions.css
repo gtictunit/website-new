@@ -51,8 +51,11 @@
     text-align: center;
   }
   .mission-words {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
   }
   .mission-words-1 {
     margin: 10vh;
+  }
+  .mission-h2{
+    font-family: "Josefin Sans", sans-serif;
   }
