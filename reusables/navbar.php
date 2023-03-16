@@ -21,7 +21,7 @@
         </a>
         <div class="dropdown-content">
           <a href="church-history">Church History</a>
-          <a href="#">Board of Trustees </a>
+          <a href="board-of-trustees.php">Board of Trustees </a>
           <a href="eldership-council.php">Eldership </a>
 
 
