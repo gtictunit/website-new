@@ -418,7 +418,12 @@
   text-align: center;
 }
         body{
-           font-family: "Josefin Sans", sans-serif ;}
+           font-family: "Josefin Sans", sans-serif ;
+           width: 100%;
+           /*height: 500px;  Example Height */
+           overflow-x: hidden;
+           
+    	            }
            
            .head{
                max-width: 100%;
