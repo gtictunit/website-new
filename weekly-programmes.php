@@ -44,7 +44,7 @@
               
 <div class="col-sm-4">
     <div class="card"><a class="img-container" href="#">
-        <img class="card-img-top img-fluid hover-effect si" src="./assets/images/welcome.png" alt=""></a>
+        <img class="card-img-top img-fluid hover-effect si" src="activity.jpg" alt=""></a>
         <div>
             <div class="card-body">
                 <h4 class="card-title">Activity title</h4>
