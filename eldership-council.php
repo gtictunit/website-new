@@ -52,6 +52,8 @@
       rel="shortcut icon"
       href="./assets/images/gt_logo.png"
       type="image/x-icon" />
+      <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Raleway">
 
     <title>Glory Tabernacle Ministry Ibadan</title>
   </head>
@@ -656,6 +658,13 @@
 
 
     <style>
+      body{
+           font-family: "Josefin Sans", sans-serif ;
+           width: 100%;
+           /*height: 500px;  Example Height */
+           overflow-x: hidden;
+           
+    	            }
       #EC {
         font-family: "Josefin Sans", sans-serif;
       }

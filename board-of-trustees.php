@@ -18,6 +18,9 @@
     ></script>
     <script src="https://kit.fontawesome.com/7127052039.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Raleway">
+   
     <!-- <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script> -->
   </head>
@@ -50,7 +53,7 @@
       <div class="col-sm-2">
         <button
           type="button"
-          class="btn"
+          class="btn border-0"
           data-bs-toggle="modal"
           data-bs-target="#pjd1"
         >
@@ -103,7 +106,7 @@
       <div class="col-sm-2">
         <button
           type="button"
-          class="btn"
+          class="btn border-0"
           data-bs-toggle="modal"
           data-bs-target="#pjd1"
         >
@@ -155,7 +158,7 @@
       <div class="col-sm-2">
         <button
           type="button"
-          class="btn"
+          class="btn border-0"
           data-bs-toggle="modal"
           data-bs-target="#pjd1"
         >
@@ -207,7 +210,7 @@
       <div class="col-sm-2">
         <button
           type="button"
-          class="btn"
+          class="btn border-0"
           data-bs-toggle="modal"
           data-bs-target="#pjd1"
         >
@@ -259,7 +262,7 @@
       <div class="col-sm-2">
         <button
           type="button"
-          class="btn"
+          class="btn border-0"
           data-bs-toggle="modal"
           data-bs-target="#pjd1"
         >
@@ -311,7 +314,7 @@
       <div class="col-sm-2">
         <button
           type="button"
-          class="btn"
+          class="btn border-0"
           data-bs-toggle="modal"
           data-bs-target="#pjd1"
         >
@@ -561,7 +564,7 @@ footer {
   /* grid-template-columns: repeat(4, 1fr); */
   color: white !important;
   gap: 30px;
-  font-family: Raleway !important;
+  font-family: "Raleway" !important;
 }
 
 footer ul {
@@ -709,6 +712,14 @@ hr {
       }
       .main {
         padding-bottom: 5rem;
+        border: 0;
+        background-color: #c17aeb;
+        box-shadow: 5 10px 10px 5 rgba(0,0,0,0.16),0;
+        border-radius:0;
+        margin-bottom:20px;
+
+
+        
       }
     </style>
   </body>
