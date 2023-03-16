@@ -2,7 +2,7 @@
     class selectClass{
         //database tables
         private $login = "`gtm-login`";
-        private $admin = "`gtm-admin-profile`";
+        private $admin = "`gtm-admin-profile`"; 
         private $pastor_desk = "`gtm-pastor-desk`";
         private $sermon_month = "`gtm-sermon-month`";
         private $audio_message = "`gtm-audio-message`";
@@ -155,6 +155,20 @@
                     .'</div>';
             
                     $this->Connection = null; //connection closure
+            return $out;
+        }
+        public function viewPastorDeskHead(){
+            $query = $this->Connection->prepare(
+                "SELECT `gtm-pd-title`, `gtm-pd-day`, `gtm-pd-month`, `gtm-pd-year`,`gtm-pd-writer`
+                  FROM " . $this->pastor_desk . " WHERE `gtm-pd-flag`=1"
+            );
+            $query->execute();
+            /*Fetch all of the remaining rows in the result set*/
+            $result = $query->fetch();
+
+            $out = $result[0];
+            
+            $this->Connection = null; //connection closure
             return $out;
         }
          //////View Sermon of the month

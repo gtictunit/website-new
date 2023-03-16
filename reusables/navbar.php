@@ -32,8 +32,8 @@
           <!-- <i class="fa-solid fa-chevron-down"></i> -->
         </a>
         <div class="dropdown-content">
-          <a href="#">Sermon of the Month</a>
-          <a href="#">Pastor's Desk</a>
+          <a href="sermon-month">Sermon of the Month</a>
+          <a href="pastor-desk">Pastor's Desk</a>
           <a href="#">Live Stream </a>
           <a href="#">Audio Messages </a>
           <a href="#">Online Radio<a>
