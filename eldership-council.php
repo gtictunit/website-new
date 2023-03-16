@@ -636,7 +636,7 @@
 
        </div>
       </div>
-    
+      <?php include('./reusables/footer.php') ?>
 
 
 
@@ -929,7 +929,126 @@
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
 }
-    </style>
+    /* Footer */
+footer {
+  background-color: #3d0052 !important;
+  /* padding: 50px; */
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  color: white !important;
+  gap: 30px;
+  font-family: Raleway !important;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer i {
+  color: #ddd !important;
+}
+
+footer h6 {
+  color: #fff !important;
+  font-family: "Josefin Sans", sans-serif;
+}
+.footer-logo {
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+
+.footer-logo img {
+  margin-left: -20px;
+}
+
+.footer-text {
+  font-size: 15px;
+  margin: 10px 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+.social-links {
+  margin: 24px 0;
+  font-size: 32px;
+  display: flex;
+  gap: 21px;
+}
+
+.section-header {
+  /* font-family: 'Josefin Sans', sans-serif; */
+  margin-bottom: 24px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-2 li {
+  margin: 16px 0;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-3 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-3 li {
+  margin: 16px 0;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-4 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-4 li {
+  margin: 16px 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+li:hover {
+  color: red;
+}
+
+.fa-location-dot {
+  color: red;
+}
+.fa-phone {
+  color: red;
+}
+.fa-envelope {
+  color: red;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: white;
+}
+
+.no-hover:hover {
+  color: white;
+}
+
+hr {
+  width: 30px;
+}
     </style>
   </body>
 </html>
