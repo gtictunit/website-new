@@ -9,8 +9,11 @@
             $this->insert = new insertClass();
             require_once  "model/selectClass.php";        
             $this->select = new selectClass();
+            require_once  "model/updateClass.php";        
+            $this->update = new updateClass(); 
         }
         public function newSermonMonth(){
+            $this->update->unflagSermonMonth();
             return $this->insert->insSermonMonth();
         } 
         public function viewAllSermonMonth(){
