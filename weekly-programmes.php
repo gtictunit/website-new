@@ -11,6 +11,33 @@
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
     <!-- <link rel="stylesheet" href="./css/mainStyles.css" /> -->
   <!-- <link rel="stylesheet" href="./css/drop-in.animation.css" /> -->
+   <!-- Local css -->
+   <!-- <link rel="stylesheet" href="./css/mainStyles.css" /> -->
+  <link rel="stylesheet" href="./css/drop-in.animation.css" />
+  <link rel="stylesheet" href="./css/drop-down.animation.css" />
+  <link rel="stylesheet" href="./css/ripple.css" />
+  <!-- <link rel="stylesheet" href="./css/accrodion.css" /> -->
+  <link rel="stylesheet" href="./css/mainStyles.responsive.css" />
+  <link rel="stylesheet" href="./css/Chistory.css" />
+
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- SwiperJs -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <link rel="shortcut icon" href="./assets/images/gt_logo.png" type="image/x-icon">
 
 </head>
 
@@ -19,18 +46,16 @@
     <header class="main-header">
       <?php include('./reusables/navbar.php') ?>
 
-      <div class="overlay"></div>
+ 
 
+      <header class="history-header-1">
+      <div class="history-overlay"></div>
       <div class="hero">
-        <h6 class="header-text drop-in">
-          Welcome to<br />
-          Glory Tabernacle Ministry
-        </h6>
-        <div class="header-description drop-in-2">
-          <span>SALVATION</span>| <span>SANCTIFICATION</span>|
-          <span>SERVICE</span>
-        </div>
+        <h4 class="history-header-text drop-in">
+          You've Got a Seat Reserved!
+        </h4>
       </div>
+    </header>
   </div>
 
 
@@ -225,7 +250,7 @@
         </button>
       </div>
       <br>
-    
+      <?php include('./reusables/footer.php') ?>
 
       <style>
         .nav {
@@ -417,6 +442,126 @@
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
 }
+/* Footer */
+footer {
+  background-color: #3d0052 !important;
+  /* padding: 50px; */
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  color: white !important;
+  gap: 30px;
+  font-family: "Raleway" !important;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer i {
+  color: #ddd !important;
+}
+
+footer h6 {
+  color: #fff !important;
+  font-family: "Josefin Sans", sans-serif;
+}
+.footer-logo {
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+
+.footer-logo img {
+  margin-left: -20px;
+}
+
+.footer-text {
+  font-size: 15px;
+  margin: 10px 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+.social-links {
+  margin: 24px 0;
+  font-size: 32px;
+  display: flex;
+  gap: 21px;
+}
+
+.section-header {
+  /* font-family: 'Josefin Sans', sans-serif; */
+  margin-bottom: 24px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-2 li {
+  margin: 16px 0;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-3 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-3 li {
+  margin: 16px 0;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-4 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-4 li {
+  margin: 16px 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+li:hover {
+  color: red;
+}
+
+.fa-location-dot {
+  color: red;
+}
+.fa-phone {
+  color: red;
+}
+.fa-envelope {
+  color: red;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: white;
+}
+
+.no-hover:hover {
+  color: white;
+}
+
+hr {
+  width: 30px;
+}
         body{
            font-family: "Josefin Sans", sans-serif ;
            width: 100%;
@@ -430,19 +575,10 @@
                color: #101318;
                            font-size: 4vw;
                font-weight: 700;
-               line-height: 1.2em
+               line-height: 1.2rem;
+               margin-top: -15rem;
            }
            
-           .carousel-item > div {
-             display: flex;
-             justify-content: space-between;
-           }
-           
-           @media (max-width: 767px) {
-             .carousel-item > div > .col-md-4:nth-child(n+4) {
-               display: none;
-             }
-           }
            
            @media (min-width: 768px) and (max-width: 991px) {
              .carousel-item > div > .col-md-4:nth-child(n+3) {

@@ -18,8 +18,12 @@
     ></script>
     <script src="https://kit.fontawesome.com/7127052039.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Raleway">
+    
+    <link
+      rel="shortcut icon"
+      href="./assets/images/gt_logo.png"
+      type="image/x-icon" />
    
     <!-- <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script> -->
