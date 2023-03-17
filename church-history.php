@@ -4,26 +4,19 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <title>About Us</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Local css
-  <link rel="stylesheet" href="./css/mainStyles.css" />
-  <link rel="stylesheet" href="./css/mainStyles.responsive.css" />
   <link rel="stylesheet" href="./css/drop-in.animation.css" />
   <link rel="stylesheet" href="./css/drop-down.animation.css" />
-  <link rel="stylesheet" href="./css/ripple.css" /> -->
-
-  <!-- Carousel -->
-  <!-- <link rel="stylesheet" type="text/css" href="./vendor/carousel/css/demo.css" />
-  <link rel="stylesheet" type="text/css" href="./vendor/carousel/css/style1.css" />
-  <script type="text/javascript" src="./vendor/carousel/js/modernizr.custom.86080.js"></script> -->
-
-
+  <link rel="stylesheet" href="./css/ripple.css" />
+  <!-- <link rel="stylesheet" href="./css/accrodion.css" /> -->
+  <link rel="stylesheet" href="./css/mainStyles.responsive.css" />
+  <link rel="stylesheet" href="./css/Chistory.css" />
 
 
   <!-- Font awesome -->
@@ -43,14 +36,28 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <link rel="shortcut icon" href="./assets/images/gt_logo.png" type="image/x-icon">
-  <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Raleway">
 
-  <title>Glory Tabernacle Ministry Ibadan</title>
-</head>
 <body>
-    <?php include('./reusables/navbar.php') ?>
-    <div class="container-fluid row pt-4 d-flex pb-5">
+<div>
+  <div>
+  <div>
+  <div>
+    <header class="main-header">
+      <?php include('./reusables/navbar.php') ?>
+
+ 
+
+      <header class="history-header-1">
+      <div class="history-overlay"></div>
+      <div class="hero">
+        <h4 class="history-header-text drop-in">
+        How it all began
+        </h4>
+      </div>
+    </header>
+  </div>
+  </div>
+    <div class="container-fluid row  d-flex pb-5">
         <div class="col-6 d-flex">
             <div class="d-flex">
                <div class="card IC1 rounded-5 border-0"><img src="avatar.png" class="card-img rounded-4" alt=""></div>
@@ -79,6 +86,9 @@
            overflow-x: hidden;
            
     	            }
+        .row{
+          margin-top: -10rem;
+        }
         .IC1, .IC2, .IC3{
             width: 190px;
             height: 417px;

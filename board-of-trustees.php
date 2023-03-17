@@ -20,40 +20,61 @@
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
     <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Raleway">
     
-    <link
-      rel="shortcut icon"
-      href="./assets/images/gt_logo.png"
-      type="image/x-icon" />
+    <link rel="stylesheet" href="./css/drop-in.animation.css" />
+  <link rel="stylesheet" href="./css/drop-down.animation.css" />
+  <link rel="stylesheet" href="./css/ripple.css" />
+  <!-- <link rel="stylesheet" href="./css/accrodion.css" /> -->
+  <link rel="stylesheet" href="./css/mainStyles.responsive.css" />
+  <link rel="stylesheet" href="./css/Chistory.css" />
+
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- SwiperJs -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <link rel="shortcut icon" href="./assets/images/gt_logo.png" type="image/x-icon">
    
     <!-- <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script> -->
   </head>
   <div>
+  <div>
     <header class="main-header">
       <?php include('./reusables/navbar.php') ?>
 
-      <!-- <div class="overlay"></div>
+ 
 
+      <header class="history-header-1">
+      <div class="history-overlay"></div>
       <div class="hero">
-        <h6 class="header-text drop-in">
-          Welcome to<br />
-          Glory Tabernacle Ministry
-        </h6>
-        <div class="header-description drop-in-2">
-          <span>SALVATION</span>| <span>SANCTIFICATION</span>|
-          <span>SERVICE</span>
-        </div>
-      </div> -->
+        <h4 class="history-header-text drop-in">
+        Our Board of Trustees
+        </h4>
+      </div>
+    </header>
+  </div>
   </div>
 
   <body>
-    <div class="container">
+    <!-- <div class="container ">
       <h1 class="display-3 text-center fw-bold" id="BOT">
         Board of Trustees
-      </h1>
-    </div>
+      </h1> 
+    </div> -->
 
-    <div class="row container-fluid justify-content-center">
+    <div class="row container-fluid justify-content-center" id= "BOT">
       <div class="col-sm-2">
         <button
           type="button"
@@ -693,7 +714,8 @@ hr {
            
       #BOT {
         font-family: "Josefin Sans", sans-serif;
-        margin-top: -30rem;
+        margin-top: -10rem;
+         
       }
       #avatar {
         height: 470px;
