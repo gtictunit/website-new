@@ -51,13 +51,13 @@
       <div class="history-overlay"></div>
       <div class="hero">
         <h4 class="history-header-text drop-in">
-        How it all began
+        In the beginning...
         </h4>
       </div>
     </header>
   </div>
   </div>
-    <div class="container-fluid row  d-flex pb-5">
+    <div class="container-fluid row d-flex pb-5">
         <div class="col-6 d-flex">
             <div class="d-flex">
                <div class="card IC1 rounded-5 border-0"><img src="avatar.png" class="card-img rounded-4" alt=""></div>
@@ -88,6 +88,7 @@
     	            }
         .row{
           margin-top: -10rem;
+          padding-left: 60px;
         }
         .IC1, .IC2, .IC3{
             width: 190px;
@@ -107,13 +108,13 @@
             margin-top: 15px;
         }
         .UPP{
-            margin-left: 115px;
+            margin-left: 50px;
             margin-top: 15px;
             margin-bottom: 20px;
         }
         .p{
             line-height: 30px;
-            margin-left: 115px;
+            margin-left: 50px;
         }
         .btnb{
             margin-left: 115px;
