@@ -61,7 +61,7 @@
     <header class="main-header">
       <?php include('./reusables/navbar.php') ?>
 
-      <div class="overlay"></div>
+      <!-- <div class="overlay"></div>
 
       <div class="hero">
         <h6 class="header-text drop-in">
@@ -72,7 +72,7 @@
           <span>SALVATION</span>| <span>SANCTIFICATION</span>|
           <span>SERVICE</span>
         </div>
-      </div>
+      </div> -->
   </div>
 
   <body>
@@ -88,7 +88,7 @@
         Elder Adeolu Adedapo-
     -->
     <div class="container">
-      <h1 class="display-3 pt-5 text-center  fw-bold" id="EC">Eldership Council</h1>
+      <h1 class="display-3 text-center  fw-bold" id="EC">Eldership Council</h1>
     </div>
 
     <div class="container justify-content-center d-flex GPAP">
@@ -667,6 +667,7 @@
     	            }
       #EC {
         font-family: "Josefin Sans", sans-serif;
+        margin-top: -30rem;
       }
       .GPAP{
         margin-bottom: 50px;

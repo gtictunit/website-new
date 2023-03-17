@@ -400,9 +400,9 @@
   z-index: 9999;
 }
 
-.dropdown:hover .dropbtn {
-  /* background-color: #3e8e41; */
-}
+/* .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} */
 .overlay {
   background: rgba(0, 0, 0, 0.6);
   position: absolute;

@@ -32,7 +32,7 @@
     <header class="main-header">
       <?php include('./reusables/navbar.php') ?>
 
-      <div class="overlay"></div>
+      <!-- <div class="overlay"></div>
 
       <div class="hero">
         <h6 class="header-text drop-in">
@@ -43,12 +43,12 @@
           <span>SALVATION</span>| <span>SANCTIFICATION</span>|
           <span>SERVICE</span>
         </div>
-      </div>
+      </div> -->
   </div>
 
   <body>
     <div class="container">
-      <h1 class="display-3 pt-5 text-center fw-bold" id="BOT">
+      <h1 class="display-3 text-center fw-bold" id="BOT">
         Board of Trustees
       </h1>
     </div>
@@ -693,6 +693,7 @@ hr {
            
       #BOT {
         font-family: "Josefin Sans", sans-serif;
+        margin-top: -30rem;
       }
       #avatar {
         height: 470px;
