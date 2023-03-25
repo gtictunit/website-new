@@ -8,6 +8,7 @@
   <title>Giving</title>
 </head>
 
+f
 <body>
   <?php include('./reusables/navbar.php') ?>
   <div>
