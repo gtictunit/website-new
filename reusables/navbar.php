@@ -21,7 +21,7 @@
         </a>
         <div class="dropdown-content">
           <a href="church-history">Church History</a>
-          <a href="#">Board of Trustees </a>
+          <a href="board-of-trustees.php">Board of Trustees </a>
           <a href="eldership-council.php">Eldership </a>
 
 
@@ -32,8 +32,8 @@
           <!-- <i class="fa-solid fa-chevron-down"></i> -->
         </a>
         <div class="dropdown-content">
-          <a href="#">Sermon of the Month</a>
-          <a href="#">Pastor's Desk</a>
+          <a href="sermon-month">Sermon of the Month</a>
+          <a href="pastor-desk">Pastor's Desk</a>
           <a href="#">Live Stream </a>
           <a href="#">Audio Messages </a>
           <a href="#">Online Radio<a>
@@ -42,7 +42,7 @@
       <li class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-btn">Programmes</a>
         <div class="dropdown-content">
-          <a href="#">Weekly Programmes</a>
+          <a href="weekly-programmes.php">Weekly Programmes</a>
           <a href="calender">Church Calendar</a>
         </div>
       </li>

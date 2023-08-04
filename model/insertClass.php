@@ -405,9 +405,9 @@
         }
         public function sermonMonthInsert(){
             $query = $this->Connection->prepare(
-                "INSERT INTO " . $this->sermon_month . "(`gtm-auto-no`,`gtm-sotm-title`, `gtm-sotm-text`,  `gtm-sotm-month`, `gtm-sotm-year`, `gtm-sotm-preacher`, `gtm-sotm-flag`) VALUES('',:ti,:te,:mo,:yr,:wr,:fl)"
+                "INSERT INTO " . $this->sermon_month . "(`gtm-auto-no`,`gtm-sotm-title`, `gtm-sotm-text`,  `gtm-sotm-month`, `gtm-sotm-year`, `gtm-sotm-preacher`) VALUES('',:ti,:te,:mo,:yr,:wr)"
             );
-            $query->execute(array(':ti'=>$this->sotm_topic, ':te'=>$this->sotm_message, ':mo'=>$this->sotm_month, ':yr'=>$this->sotm_year, ':wr'=>$this->sotm_preacher, ':fl'=>1));
+            $query->execute(array(':ti'=>$this->sotm_topic, ':te'=>$this->sotm_message, ':mo'=>$this->sotm_month, ':yr'=>$this->sotm_year, ':wr'=>$this->sotm_preacher));
             $result = $query->rowCount();
             return $result;
         }

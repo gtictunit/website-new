@@ -59,3 +59,25 @@
   .mission-h2{
     font-family: "Josefin Sans", sans-serif;
   }
+  .pdeskTitle{
+    font-size: 45px;
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 45px;
+  }
+  .pdeskTitle small{
+    font-size: 25px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .pdeskBody{
+      font-family: "Raleway", sans-serif;
+      text-align: justify;
+      font-size: 18px;
+  }
+  .pdeskImg{
+    margin-top: 75px;
+    width:100%;
+    min-height: 350px;
+    border-radius: 7px;
+    box-shadow: 4px 3px 8px 1px #969696;
+    -webkit-box-shadow: 4px 3px 8px 1px #969696;
+  }

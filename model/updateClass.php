@@ -3,7 +3,6 @@
 
         private $login = "`gtm-login`";
         private $pastor_desk = "`gtm-pastor-desk`";
-        private $sermon_month = "`gtm-sermon-month`";
 
         private $Connection;
         /*private $password; 
@@ -26,17 +25,6 @@
         public function unflagPastorDesk(){
             $query = $this->Connection->prepare(
                 "UPDATE " . $this->pastor_desk . " SET `gtm-pd-flag`=:fg"
-            );
-            $query->execute(array("fg" =>0));
-            $result = $query->rowCount();
-            $this->Connection = null; //connection closure
-
-            return $result;
-        }
-
-        public function unflagSermonMonth(){
-            $query = $this->Connection->prepare(
-                "UPDATE " . $this->sermon_month . " SET `gtm-sotm-flag`=:fg"
             );
             $query->execute(array("fg" =>0));
             $result = $query->rowCount();
