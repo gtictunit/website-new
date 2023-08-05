@@ -1,4 +1,4 @@
-<nav class="nav navbar navbar-expand-lg sticky-top">
+<nav class="nav navbar navbar-dark navbar-expand-lg sticky-top">
   <div>
     <a href="/" class="navbar-brand">
       <img src="./assets/images/gt_logo.png" alt="Logo" width="50" height="auto" class="d-inline-block align-text-top"
@@ -6,10 +6,18 @@
       <div>Glory Tabernacle Ministry</div>
     </a>
   </div>
-  <div class="menu-icon">
-
-  </div>
-  <div class="">
+  <!-- <div class="menu-icon">
+  <label for="check">
+      <input type="checkbox" id="check"/> 
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="nav-list">
       <li class="nav-item ">
         <a href="index.php" class="nav-link active"> Home </a>

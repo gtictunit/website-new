@@ -295,7 +295,7 @@
 }
 
 .main-header {
-  /* height: 50vh !important; */
+  height: 100vh !important;
   background-image: url("../assets/images/heroo.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -454,8 +454,46 @@ a:hover {
            overflow-x: hidden;
            
     	            }
-       
-      
+           
+      #BOT {
+        font-family: "Josefin Sans", sans-serif;
+        margin-top: -10rem;
+         
+      }
+      #avatar {
+        height: 470px;
+        width: 35%;
+        float: left;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        padding-bottom: 3rem;
+      }
+
+      .modal-title {
+        margin-bottom: 1.5rem;
+      }
+
+      .modal {
+        padding: 7rem;
+        border-radius: 0;
+      }
+      .modal-content {
+        border-radius: 0; /* Remove rounded corners */
+      }
+      .col {
+        margin-right: 10px;
+      }
+      .main {
+        
+        border: 0;
+        background-color: #c17aeb;
+        box-shadow: 5 10px 10px 5 rgba(0,0,0,0.16),0;
+        border-radius:0;
+        margin-bottom:20px;
+
+
+        
+      }
     </style>
   </body>
 </html>

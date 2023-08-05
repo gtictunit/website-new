@@ -126,7 +126,7 @@
 
 
 
-
+<div style="padding:20px;">
   <section class="container-xl cta-section-give">
     <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
       <div class="icon-container col-4">
@@ -160,6 +160,7 @@
           officia minima voluptatem sit,
       </div>
   </section>
+</div>
 
   <style>
     .cta-section-give {
@@ -169,7 +170,7 @@
       margin-top: -50px;
       z-index: 1000000 !important;
       position: relative;
-
+      height: 100%;
     }
 
     .cta-give-2 {
@@ -177,6 +178,16 @@
       border: 1px solid gray;
       border-top: 0;
       border-bottom: 0
+    }
+
+    @media screen and (max-width:768px) {
+      .cta-section-give {
+        padding: 1em;
+      }
+      .cta-give-2 {
+      border:none;
+      padding: 0;
+    }
     }
   </style>
 

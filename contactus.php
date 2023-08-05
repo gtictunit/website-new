@@ -41,7 +41,7 @@
 
       <div class="abeg">
         <div class="container">
-          <div class="row">
+          <div class="row gx-5">
             <div class="col-sm">
               <h3 class="fontie">Get in touch with us</h3>
               <p>You can reach out to us via this section</p>
@@ -49,7 +49,7 @@
                 <div class="footer-text">
                   <form id="contact-form" role="form" method="post" enctype="text/plain"
                     action="mailto:noahtochukwu10@gmail.com">
-                    <div class="row">
+                    <div class="row gy-4">
                       <div class="col-md-6">
                         <div class="form-group">
                           <label for="form_email">Email *</label>
@@ -111,13 +111,13 @@
 
     <!-- Footer -->
     <?php
-    // include('./reusables/footer.php') 
+    include('./reusables/footer.php') 
     ?>
   </div>
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+  <!-- <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2023 Copyright:
     <a class="text-reset fw-bold" href="/">Glory Tabernacle Ministry</a>
-  </div>
+  </div> -->
 </body>
 
 </html>

@@ -43,21 +43,13 @@
 
 
 <div>
-    <header class="main-header">
+   
       <?php include('./reusables/navbar.php') ?>
 
- 
-
-      <header class="history-header-1">
-      <div class="history-overlay"></div>
-      <div class="hero">
-        <h4 class="history-header-text drop-in">
-          You've Got a Seat Reserved!
-        </h4>
+      <div class="contact-header">
+        <div class="overlay"></div>
+        <p class="ellu-p drop-in"> Contact Us</p>
       </div>
-    </header>
-  </div>
-
 
 
 <body class="bg-body-secondary">
