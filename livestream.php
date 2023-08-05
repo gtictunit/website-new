@@ -51,7 +51,7 @@
       <div class="history-overlay"></div>
       <div class="hero">
         <h4 class="history-header-text drop-in">
-        Join our Service
+        Join our Livestream
         </h4>
       </div>
     </header>
