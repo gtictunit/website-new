@@ -76,33 +76,23 @@
       <h1 class="display-3 text-center  fw-bold" id="EC"></h1>
     </div> -->
 
-    <div class="container justify-content-center d-flex GPAP">
-      <div class="row">
-        <div class="col-md-6">
-          <!--  General pastor -->
-
-          <button
+    <div class=" justify-content-center justify-content-around d-flex flex-row px-0 mx-auto pb-4  mt-0">
+      
+          <!-- 1 -->
+          <div
             type="button"
-            class="btn border-0"
+            class="btn border-0 w-50 image-overlay"
             data-bs-toggle="modal"
             data-bs-target="#GPM"
           >
-            <div class="card main pt-4 border-0  rounded-0" style="width: 200px">
-              <div class="border border-5 m-3 img-thumbnail">
-                <img
-                  src="avatar.png"
-                  class="card-img-top rounded-circle"
-                  alt=""
-                />
-              </div>
-              <div class="card-body ">
-                <h4 class="card-title fs-5 PGA">Gabriel Akinbola</h4>
-                <p class="card-text gpt">General Pastor</p>
-              </div>
-            </div>
-          </button>
-
-<div class="modal modal-lg p-1" id="GPM">
+          <img src="./avatar.png" class="ps-5 " style="width: 42rem; height: 40rem" alt="">
+          <div class="overlay-text text-start" style="margin-left: 2rem">
+          <p class="h4">General Pastor</p>
+          <p class="h2">Pastor Gabriel Akinbola</p>
+          </div>
+          </div>
+<!-- modal -->
+`     <div class="modal modal-lg p-1" id="GPM">
           <div class="modal-dialog modal-dialog-centered p-1">
             <div class="modal-content">
               <!-- Modal Header -->
@@ -131,498 +121,275 @@
             </div>
           </div>
         </div>
-        </div>
-
-        <div class="col-md-6">
-          <button
-            type="button"
-            class="btn border-0"
-            data-bs-toggle="modal"
-            data-bs-target="#APM"
-          >
-            <div class="card main pt-4 border-0  rounded-0" style="width: 200px">
-              <div class="border border-5 m-3 img-thumbnail">
-                <img
-                  src="avatar.png"
-                  class="card-img-top rounded-circle"
-                  alt=""
-                />
-              </div>
-              <div class="card-body">
-                <h4 class="card-title fs-5 PJE">Joseph Emmanuel</h4>
-                <p class="card-text mje">Assistant Pastor</p>
-              </div>
-            </div>
-          </button>
-          <div class="modal modal-lg p-1" id="APM">
-            <div class="modal-dialog modal-dialog-centered p-1">
-              <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header border-bottom-0">
-                  <h4 class="modal-title"></h4>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                  ></button>
-                </div>
-  
-                <!-- Modal body -->
-                <div class="modal-body text-wrap">
-                  <span class="pb-1"
-                    ><img id="avatar" src="avatar.png" alt=""
-                  /></span>
-                  <h4 class="modal-title">Pastor Joseph Emmanuel</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.Dignissimos illum cum possimus natus sit deserunt, on
-                    ipsa dolorum numquam iste id in voluptate nobis doloremque
-                    distinctio nemo quod nihil tempora.
-                  </p>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div></div>
-
-    <div class="container-fluid justify-content-center d-flex">
-    <!-- Elders -->
-
-    <div class="row">
-        <div class="col-sm-2">
-            <button
-            type="button"
-            class="btn border-0 "
-            data-bs-toggle="modal"
-            data-bs-target="#DO"
-          >
-            <div class="card main pt-4 border-0  rounded-0" style="width: 200px">
-              <div class="border border-5 m-3 img-thumbnail">
-                <img
-                  src="avatar.png"
-                  class="card-img-top rounded-circle"
-                  alt=""
-                />
-              </div>
-              <div class="card-body">
-                <h4 class="card-title fs-5 ">Daniel Oshafi</h4>
-                <p class="card-text q1">Elder</p>
-              </div>
-            </div>
-          </button>
-          <div class="modal modal-lg p-1" id="DO">
-            <div class="modal-dialog modal-dialog-centered p-1">
-              <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header border-bottom-0">
-                  <h4 class="modal-title"></h4>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                  ></button>
-                </div>
-  
-                <!-- Modal body -->
-                <div class="modal-body text-wrap">
-                  <span class="pb-1"
-                    ><img id="avatar" src="avatar.png" alt=""
-                  /></span>
-                  <h4 class="modal-title">Elder Daniel Oshafi</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.Dignissimos illum cum possimus natus sit deserunt, on
-                    ipsa dolorum numquam iste id in voluptate nobis doloremque
-                    distinctio nemo quod nihil tempora.
-                  </p>
-                </div>
-              </div>
-            </div>  </div>  </div>
-        </div>
-
-
-        <div class="col-sm-2">
-
-            <button
-            type="button"
-            class="btn border-0 "
-            data-bs-toggle="modal"
-            data-bs-target="#JA"
-          >
-            <div class="card main pt-4 border-0  rounded-0" style="width: 200px">
-              <div class="border border-5 m-3 img-thumbnail">
-                <img
-                  src="avatar.png"
-                  class="card-img-top rounded-circle"
-                  alt=""
-                />
-              </div>
-              <div class="card-body">
-                <h4 class="card-title fs-5 ">Johnson Adewumi</h4>
-                <p class="card-text q2">Elder</p>
-              </div>
-            </div>
-          </button>
-          <div class="modal modal-lg p-1" id="JA">
-            <div class="modal-dialog modal-dialog-centered p-1">
-              <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header border-bottom-0">
-                  <h4 class="modal-title"></h4>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                  ></button>
-                </div>
-  
-                <!-- Modal body -->
-                <div class="modal-body text-wrap">
-                  <span class="pb-1"
-                    ><img id="avatar" src="avatar.png" alt=""
-                  /></span>
-                  <h4 class="modal-title">Elder Johnson Adewumi</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.Dignissimos illum cum possimus natus sit deserunt, on
-                    ipsa dolorum numquam iste id in voluptate nobis doloremque
-                    distinctio nemo quod nihil tempora.
-                  </p>
-                </div>
-              </div>
-            </div>
-        </div>
-            
-        </div>
-
-
-        <div class="col-sm-2">
-            <button
-            type="button"
-            class="btn border-0  "
-            data-bs-toggle="modal"
-            data-bs-target="#JU"
-          >
-            <div class="card main pt-4 border-0  rounded-0" style="width: 200px">
-              <div class="border border-5 m-3 img-thumbnail">
-                <img
-                  src="avatar.png"
-                  class="card-img-top rounded-circle"
-                  alt=""
-                />
-              </div>
-              <div class="card-body">
-                <h4 class="card-title fs-5">Joseph Uponi</h4>
-                <p class="card-text q3">Elder</p>
-              </div>
-            </div>
-          </button>
-          <div class="modal modal-lg p-1" id="JU">
-            <div class="modal-dialog modal-dialog-centered p-1">
-              <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header border-bottom-0">
-                  <h4 class="modal-title"></h4>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                  ></button>
-                </div>
-  
-                <!-- Modal body -->
-                <div class="modal-body text-wrap">
-                  <span class="pb-1"
-                    ><img id="avatar" src="avatar.png" alt=""
-                  /></span>
-                  <h4 class="modal-title"> Elder Joseph Uponi</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.Dignissimos illum cum possimus natus sit deserunt, on
-                    ipsa dolorum numquam iste id in voluptate nobis doloremque
-                    distinctio nemo quod nihil tempora.
-                  </p>
-                </div>
-              </div>
-            </div>
-        </div>
-    </div>
-
-        <div class="col-sm-2">
-
-            <button
-            type="button"
-            class="btn border-0"
-            data-bs-toggle="modal"
-            data-bs-target="#SA"
-          >
-            <div class="card main pt-4 border-0  rounded-0" style="width: 200px">
-              <div class="border border-5 m-3 img-thumbnail">
-                <img
-                  src="avatar.png"
-                  class="card-img-top rounded-circle"
-                  alt=""
-                />
-              </div>
-              <div class="card-body">
-                <h4 class="card-title fs-5 ">Samuel Agbokeye</h4>
-                <p class="card-text q4">Elder</p>
-              </div>
-            </div>
-          </button>
-          <div class="modal modal-lg p-1" id="SA">
-            <div class="modal-dialog modal-dialog-centered p-1">
-              <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header border-bottom-0">
-                  <h4 class="modal-title"></h4>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                  ></button>
-                </div>
-  
-                <!-- Modal body -->
-                <div class="modal-body text-wrap">
-                  <span class="pb-1"
-                    ><img id="avatar" src="avatar.png" alt=""
-                  /></span>
-                  <h4 class="modal-title">Elder Samuel Agbokeye</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.Dignissimos illum cum possimus natus sit deserunt, on
-                    ipsa dolorum numquam iste id in voluptate nobis doloremque
-                    distinctio nemo quod nihil tempora.
-                  </p>
-                </div>
-              </div>
-            </div></div>
-
-        </div>
-
-
-        <div class="col-sm-2">
-            <button
-            type="button"
-            class="btn border-0 "
-            data-bs-toggle="modal"
-            data-bs-target="#YA"
-          >
-            <div class="card main pt-4 border-0  rounded-0" style="width: 200px">
-              <div class="border border-5 m-3 img-thumbnail">
-                <img
-                  src="avatar.png"
-                  class="card-img-top rounded-circle"
-                  alt=""
-                />
-              </div>
-              <div class="card-body">
-                <h4 class="card-title fs-5  ">Yemi Alao</h4>
-                <p class="card-text q5">Elder</p>
-              </div>
-            </div>
-          </button>
-          <div class="modal modal-lg p-1" id="YA">
-            <div class="modal-dialog modal-dialog-centered p-1">
-              <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header border-bottom-0">
-                  <h4 class="modal-title"></h4>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                  ></button>
-                </div>
-  
-                <!-- Modal body -->
-                <div class="modal-body text-wrap">
-                  <span class="pb-1"
-                    ><img id="avatar" src="avatar.png" alt=""
-                  /></span>
-                  <h4 class="modal-title">Elder Yemi Alao</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.Dignissimos illum cum possimus natus sit deserunt, on
-                    ipsa dolorum numquam iste id in voluptate nobis doloremque
-                    distinctio nemo quod nihil tempora.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-        <br><br>
-        <!-- <div class="container-fluid justify-content-center d-flex"> -->
-
         
-        <!-- <div class="row">
-            <div class="col-sm-4 co1" >
-
-                <button
+          <!-- 2 -->
+          <div
             type="button"
-            class="btn border-0 "
+            class="btn border-0 w-50 image-overlay"
             data-bs-toggle="modal"
-            data-bs-target="#SA"
+            data-bs-target="#AGP"
           >
-            <div class="card main pt-4 border-0  rounded-0" style="width: 200px">
-              <div class="border border-5 m-3 img-thumbnail">
-                <img
-                  src="avatar.png"
-                  class="card-img-top rounded-circle"
-                  alt=""
-                />
-              </div>
-              <div class="card-body">
-                <h4 class="card-title fs-5  ">Samuel Agbokeye</h4>
-                <p class="card-text q6">Elder</p>
-              </div>
-            </div>
-          </button>
-          <div class="modal modal-lg p-1" id="SA">
-            <div class="modal-dialog modal-dialog-centered p-1">
-              <div class="modal-content"> -->
-                <!-- Modal Header -->
-                <!-- <div class="modal-header border-bottom-0">
-                  <h4 class="modal-title"></h4>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                  ></button>
-                </div>
-   -->
-                <!-- Modal body -->
-                <!-- <div class="modal-body text-wrap">
-                  <span class="pb-1"
-                    ><img id="avatar" src="avatar.png" alt=""
-                  /></span>
-                  <h4 class="modal-title">Elder Samuel Agbokeye</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.Dignissimos illum cum possimus natus sit deserunt, on
-                    ipsa dolorum numquam iste id in voluptate nobis doloremque
-                    distinctio nemo quod nihil tempora.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            </div></div></div> -->
-
-            <!-- <div class="col-sm-4 co2">
-                <button 
-            type="button"
-            class="btn border-0 "
-            data-bs-toggle="modal"
-            data-bs-target="#TB"
-          >
-            <div class="card main pt-4 border-0  rounded-0" style="width: 200px">
-              <div class="border border-5 m-3 img-thumbnail">
-                <img
-                  src="avatar.png"
-                  class="card-img-top rounded-circle"
-                  alt=""
-                />
-              </div>
-              <div class="card-body">
-                <h4 class="card-title fs-5  ">Tokunbo Bamgbose</h4>
-                <p class="card-text q7">Elder</p>
-              </div>
-            </div>
-          </button>
-          <div class="modal modal-lg p-1" id="TB">
-            <div class="modal-dialog modal-dialog-centered p-1">
-              <div class="modal-content"> -->
-                <!-- Modal Header -->
-                <!-- <div class="modal-header border-bottom-0">
-                  <h4 class="modal-title"></h4>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                  ></button>
-                </div> -->
-  
-                <!-- Modal body -->
-                <!-- <div class="modal-body text-wrap">
-                  <span class="pb-1"
-                    ><img id="avatar" src="avatar.png" alt=""
-                  /></span>
-                  <h4 class="modal-title">Elder Tokunbo Bamgbose</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.Dignissimos illum cum possimus natus sit deserunt, on
-                    ipsa dolorum numquam iste id in voluptate nobis doloremque
-                    distinctio nemo quod nihil tempora.
-                  </p>
-                </div>
-              </div>
-            </div>
-        </div> -->
-            <!-- <div class="col-sm-4 co3">
-
+          <img src="./avatar.png" class="pe-5" style="width: 42rem; height: 40rem" alt="">
+          <div class="overlay-text text-start">
+          <p class="h4">Assistant General Pastor</p>
+          <p class="h2">Pastor Joseph Emmanuel</p>
+          </div>
+          </div>
+<!-- modal -->
+`     <div class="modal modal-lg p-1" id="AGP">
+          <div class="modal-dialog modal-dialog-centered p-1">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header border-bottom-0">
+                <h4 class="modal-title"></h4>
                 <button
-                type="button"
-                class="btn border-0 "
-                data-bs-toggle="modal"
-                data-bs-target="#YA"
-              >
-                <div class="card main pt-4 border-0  rounded-0" style="width: 200px">
-                  <div class="border border-5 m-3 img-thumbnail">
-                    <img
-                      src="avatar.png"
-                      class="card-img-top rounded-circle"
-                      alt=""
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h4 class="card-title fs-5  ">Yemi Alao</h4>
-                    <p class="card-text q8">Elder</p>
-                  </div>
-                </div>
-              </button>
-              <div class="modal modal-lg p-1" id="YA">
-                <div class="modal-dialog modal-dialog-centered p-1">
-                  <div class="modal-content"> -->
-                    <!-- Modal Header -->
-                    <!-- <div class="modal-header border-bottom-0">
-                      <h4 class="modal-title"></h4>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                      ></button>
-                    </div>
-       -->
-                    <!-- Modal body -->
-                    <!-- <div class="modal-body text-wrap">
-                      <span class="pb-1"
-                        ><img id="avatar" src="avatar.png" alt=""
-                      /></span>
-                      <h4 class="modal-title">Elder Yemi Alao</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.Dignissimos illum cum possimus natus sit deserunt, on
-                        ipsa dolorum numquam iste id in voluptate nobis doloremque
-                        distinctio nemo quod nihil tempora.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-    
+                  type="button"
+                  class="btn-close "
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
 
+              <!-- Modal body -->
+              <div class="modal-body text-wrap">
+                <span class="pb-1"
+                  ><img id="avatar" src="avatar.png" alt=""
+                /></span>
+                <h4 class="modal-title">Pastor Joseph Emmanuel</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit.Dignissimos illum cum possimus natus sit deserunt, on
+                  ipsa dolorum numquam iste id in voluptate nobis doloremque
+                  distinctio nemo quod nihil tempora.
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
+</div>
 
-        </div> -->
+<!-- 2nd row -->
+    <div class="container justify-content-center justify-content-around  d-flex flex-row px-3   GPAP mt-0">
+      
+          <!-- 1 -->
+          <div
+            type="button"
+            class="btn border-0 image-overlay"
+            data-bs-toggle="modal"
+            data-bs-target="#EDO"
+          >
+          <img src="./avatar.png" class="px-1" style="width: 27rem; height:40rem;" alt="">
+          <div class="overlay-text text-start ms-4">
+          <p class="h3">Elder Daniel Oshafi</p>
+          </div>
+          </div>
+<!-- modal -->
+`     <div class="modal modal-lg p-1" id="EDO">
+          <div class="modal-dialog modal-dialog-centered p-1">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header border-bottom-0">
+                <h4 class="modal-title"></h4>
+                <button
+                  type="button"
+                  class="btn-close "
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
 
-       </div>
-      </div>
+              <!-- Modal body -->
+              <div class="modal-body text-wrap">
+                <span class="pb-1"
+                  ><img id="avatar" src="avatar.png" alt=""
+                /></span>
+                <h4 class="modal-title">Elder Daniel Oshafi</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit.Dignissimos illum cum possimus natus sit deserunt, on
+                  ipsa dolorum numquam iste id in voluptate nobis doloremque
+                  distinctio nemo quod nihil tempora.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- 2 -->
+          <div
+            type="button"
+            class="btn border-0 image-overlay"
+            data-bs-toggle="modal"
+            data-bs-target="#EJA"
+          >
+          <img src="./avatar.png" class="px-1" style="width: 27rem; height:40rem;" alt="">
+          <div class="overlay-text text-start ms-5">
+          <p class="h3">Elder Johnson Adewumi</p>
+          </div>
+          </div>
+<!-- modal -->
+`     <div class="modal modal-lg p-1" id="EJA">
+          <div class="modal-dialog modal-dialog-centered p-1">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header border-bottom-0">
+                <h4 class="modal-title"></h4>
+                <button
+                  type="button"
+                  class="btn-close "
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body text-wrap">
+                <span class="pb-1"
+                  ><img id="avatar" src="avatar.png" alt=""
+                /></span>
+                <h4 class="modal-title">Elder Johnson Adewumi</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit.Dignissimos illum cum possimus natus sit deserunt, on
+                  ipsa dolorum numquam iste id in voluptate nobis doloremque
+                  distinctio nemo quod nihil tempora.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+          <div
+            type="button"
+            class="btn border-0 image-overlay"
+            data-bs-toggle="modal"
+            data-bs-target="#EJU"
+          >
+          <img src="./avatar.png" class="px-1" style="width: 27rem; height:40rem;" alt="">
+          <div class="overlay-text text-start ms-4">
+          <p class="h3">Elder Joseph Uponi</p>
+          </div>
+          </div>
+<!-- modal -->
+`     <div class="modal modal-lg p-1" id="EJU">
+          <div class="modal-dialog modal-dialog-centered p-1">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header border-bottom-0">
+                <h4 class="modal-title"></h4>
+                <button
+                  type="button"
+                  class="btn-close "
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body text-wrap">
+                <span class="pb-1"
+                  ><img id="avatar" src="avatar.png" alt=""
+                /></span>
+                <h4 class="modal-title">Elder Joseph Uponi</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit.Dignissimos illum cum possimus natus sit deserunt, on
+                  ipsa dolorum numquam iste id in voluptate nobis doloremque
+                  distinctio nemo quod nihil tempora.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+<!-- 3rd row -->
+    <div class="justify-content-center   d-flex flex-row px-5 mx-auto mb-5  GPAP mt-5">
+      
+          <!-- 1 -->
+          <div
+            type="button"
+            class="btn border-0 image-overlay"
+            data-bs-toggle="modal"
+            data-bs-target="#ESA"
+          >
+          <img src="./avatar.png" class="px-1 ms-5" style="width: 27rem; height:40rem;" alt="">
+          <div class="overlay-text text-start  " style="margin: 0 5rem !important; ">
+          <p class="h3">Elder Samuel Agbokeye</p>
+          </div>
+          </div>
+<!-- modal -->
+`     <div class="modal modal-lg p-1" id="ESA">
+          <div class="modal-dialog modal-dialog-centered p-1">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header border-bottom-0">
+                <h4 class="modal-title"></h4>
+                <button
+                  type="button"
+                  class="btn-close "
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body text-wrap">
+                <span class="pb-1"
+                  ><img id="avatar" src="avatar.png" alt=""
+                /></span>
+                <h4 class="modal-title">Elder Samuel Agbokeye</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit.Dignissimos illum cum possimus natus sit deserunt, on
+                  ipsa dolorum numquam iste id in voluptate nobis doloremque
+                  distinctio nemo quod nihil tempora.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- 2 -->
+          <div
+            type="button"
+            class="btn border-0 image-overlay"
+            data-bs-toggle="modal"
+            data-bs-target="#EYA"
+          >
+          <img src="./avatar.png" class="px-1 me-5" style="width: 27rem; height:40rem;" alt="">
+          <div class="overlay-text" style="margin: 0 -1rem;">
+          <p class="h3">Elder Yemi Alao</p>
+          </div>
+          </div>
+<!-- modal -->
+`     <div class="modal modal-lg p-1" id="EYA">
+          <div class="modal-dialog modal-dialog-centered p-1">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header border-bottom-0">
+                <h4 class="modal-title"></h4>
+                <button
+                  type="button"
+                  class="btn-close "
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body text-wrap">
+                <span class="pb-1"
+                  ><img id="avatar" src="avatar.png" alt=""
+                /></span>
+                <h4 class="modal-title">Elder Yemi Alao</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit.Dignissimos illum cum possimus natus sit deserunt, on
+                  ipsa dolorum numquam iste id in voluptate nobis doloremque
+                  distinctio nemo quod nihil tempora.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+</div>
+
+      
       <?php include('./reusables/footer.php') ?>
 
 
@@ -648,14 +415,37 @@
            width: 100%;
            /*height: 500px;  Example Height */
            overflow-x: hidden;
-           
-    	            }
+    	    }
+
+.image-overlay {
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: #3d0052;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.image-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
       #EC {
         font-family: "Josefin Sans", sans-serif;
-        margin-top: -30rem;
-      }
-      .GPAP{
-        margin-bottom: 50px;
+         margin-top: -30rem;
+       margin-bottom: 50px;
         margin-top: -10rem;
       }
       .PGA {
@@ -681,7 +471,9 @@
         margin-right: 1rem;
         margin-left: 1rem;
         padding-bottom: 3rem;
-      }
+      }     }
+      
+  
       .modal-title {
         margin-bottom: 1.5rem;
       }
@@ -897,7 +689,7 @@
 }
 
 .main-header {
-  height: 100vh !important;
+  height: 70vh !important;
   background-image: url("../assets/images/heroo.png");
   background-repeat: no-repeat;
   background-size: cover;
