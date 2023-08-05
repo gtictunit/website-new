@@ -17,7 +17,10 @@ a {
   flex-grow: 1;
 }
 
-/* Navbar */
+/****************
+ *   Navigation bar
+ ****************/
+
 .nav {
   width: 100vw;
   display: flex;
@@ -91,9 +94,10 @@ a {
   border-bottom: 2px solid white;
 } */
 
-/* .menu-icon {
-  display: none;
-} */
+.navbar-toggler{
+  border:none !important;
+  color: #fff !important;
+}
 
 .nav-link:after {
   background: none repeat scroll 0 0 transparent;
@@ -396,11 +400,12 @@ hr {
 }
 
 .abeg {
-  background-color: #3d0052;
+  color: #3d0052;
   padding: 53px;
-  color: white;
-  gap: 30px;
+  background-color: white;
+  gap: 40px;
 }
+  
 /* Features Section */
 .features-section {
   width: 100%;
@@ -820,3 +825,4 @@ transform: scale(1.1);
   font-size: 14px;
   font-weight: bold;
 }
+

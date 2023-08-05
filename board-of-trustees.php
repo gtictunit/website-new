@@ -556,7 +556,7 @@
 }
 
 .main-header {
-  height: 100vh !important;
+  height: 70vh !important;
   background-image: url("../assets/images/heroo.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -714,7 +714,7 @@ hr {
            
       #BOT {
         font-family: "Josefin Sans", sans-serif;
-        margin-top: -10rem;
+        /* margin-top: -20rem; */
          
       }
       #avatar {
