@@ -81,3 +81,18 @@
     box-shadow: 4px 3px 8px 1px #969696;
     -webkit-box-shadow: 4px 3px 8px 1px #969696;
   }
+
+  @media screen and (max-width:800px) {
+    .mission-words-1 {
+      margin: 28px 20px;
+    }
+    .m-header-1 {
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .m-header-text {
+        font-size: 35px;
+    }
+  }

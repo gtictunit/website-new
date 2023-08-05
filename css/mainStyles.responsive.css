@@ -1,6 +1,6 @@
 @media only screen and (max-width: 800px) {
   .nav ul {
-    display: none;
+    display: block;
   }
   .nav-tgl {
     display: block;
@@ -102,6 +102,13 @@
     display: none;
   }
 
+  .mobile-nav{
+    display: block !important;
+  }
+  .menuIcon{
+    display: block !important;
+  }
+
   /* Header */
   .header-text {
     font-size: 45px;
@@ -144,12 +151,29 @@
     height: 100%;
     width: 100%;
   }
+
+
+  .contact-header {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ellu-p {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 28px;
+  }
 }
 
-@media only screen and (max-width: 800px) {
-    .our-services{
-        font-size: 36px;
-      }
+/* @media only screen and (max-width: 768px) {
+  .contact-header {
+    height: 150px;
+  }
+  .ellu-p {
+    padding-bottom: 28px;
+    font-size: 28px;
+  }
     
-}
+} */
 

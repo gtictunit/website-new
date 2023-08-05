@@ -14,6 +14,7 @@
 
   <!-- Local css -->
   <link rel="stylesheet" href="./css/mainStyles.css" />
+  <link rel="stylesheet" href="./css/menu-bar.css" />
   <link rel="stylesheet" href="./css/mainStyles.responsive.css" />
   <link rel="stylesheet" href="./css/drop-in.animation.css" />
   <link rel="stylesheet" href="./css/drop-down.animation.css" />
