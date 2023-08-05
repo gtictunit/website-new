@@ -49,7 +49,7 @@
     <!-- <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script> -->
   </head>
-  <div>
+
   <div>
     <header class="main-header">
       <?php include('./reusables/navbar.php') ?>
@@ -60,337 +60,76 @@
       <div class="history-overlay"></div>
       <div class="hero">
         <h4 class="history-header-text drop-in">
-        Our Board of Trustees
+        Board of Trustees
         </h4>
       </div>
     </header>
   </div>
-  </div>
-
   <body>
-    <!-- <div class="container ">
-      <h1 class="display-3 text-center fw-bold" id="BOT">
-        Board of Trustees
-      </h1> 
-    </div> -->
-
-    <div class="row container-fluid justify-content-center" id= "BOT">
-      <div class="col-sm-2">
-        <button
-          type="button"
-          class="btn border-0"
-          data-bs-toggle="modal"
-          data-bs-target="#pjd1"
-        >
-          <div class="card main pt-4" style="width: 200px">
-            <div class="border border-5 m-3 img-thumbnail">
-              <img
-                src="avatar.png"
-                class="card-img-top rounded-circle"
-                alt=""
-              />
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">John Doe (1)</h4>
-              <p class="card-text">Basic Info</p>
-            </div>
-          </div>
-        </button>
-        <!-- The Modal -->
-        <div class="modal modal-lg p-1" id="pjd1">
-          <div class="modal-dialog modal-dialog-centered p-1">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header border-bottom-0">
-                <h4 class="modal-title"></h4>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                ></button>
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body text-wrap">
-                <span class="pb-1"
-                  ><img id="avatar" src="avatar.png" alt=""
-                /></span>
-                <h4 class="modal-title">John Doe</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit.Dignissimos illum cum possimus natus sit deserunt, on
-                  ipsa dolorum numquam iste id in voluptate nobis doloremque
-                  distinctio nemo quod nihil tempora.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- 1 -->
+    <div class="container d-flex flex-row px-0 py-5 mt-5">
+      <div class="bg-secondary me-5 img-box w-50">
+      &nbsp;
       </div>
-      <div class="col-sm-2">
-        <button
-          type="button"
-          class="btn border-0"
-          data-bs-toggle="modal"
-          data-bs-target="#pjd1"
-        >
-          <div class="card main pt-4" style="width: 200px">
-            <div class="border border-5 m-3 img-thumbnail">
-              <img
-                src="avatar.png"
-                class="card-img-top rounded-circle"
-                alt=""
-              />
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">John Doe (1)</h4>
-              <p class="card-text">Basic Info</p>
-            </div>
-          </div>
-        </button>
-        <!-- The Modal -->
-        <div class="modal modal-lg p-1" id="pjd1">
-          <div class="modal-dialog modal-dialog-centered p-1">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header border-bottom-0">
-                <h4 class="modal-title"></h4>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                ></button>
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body text-wrap">
-                <span class="pb-1"
-                  ><img id="avatar" src="avatar.png" alt=""
-                /></span>
-                <h4 class="modal-title">John Doe</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit.Dignissimos illum cum possimus natus sit deserunt, on
-                  ipsa dolorum numquam iste id in voluptate nobis doloremque
-                  distinctio nemo quod nihil tempora.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-2">
-        <button
-          type="button"
-          class="btn border-0"
-          data-bs-toggle="modal"
-          data-bs-target="#pjd1"
-        >
-          <div class="card main pt-4" style="width: 200px">
-            <div class="border border-5 m-3 img-thumbnail">
-              <img
-                src="avatar.png "
-                class="card-img-top rounded-circle"
-                alt=""
-              />
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">John Doe (1)</h4>
-              <p class="card-text">Basic Info</p>
-            </div>
-          </div>
-        </button>
-        <!-- The Modal -->
-        <div class="modal modal-lg p-1" id="pjd1">
-          <div class="modal-dialog modal-dialog-centered p-1">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header border-bottom-0">
-                <h4 class="modal-title"></h4>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                ></button>
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body text-wrap">
-                <span class="pb-1"
-                  ><img id="avatar" src="avatar.png" alt=""
-                /></span>
-                <h4 class="modal-title">John Doe</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit.Dignissimos illum cum possimus natus sit deserunt, on
-                  ipsa dolorum numquam iste id in voluptate nobis doloremque
-                  distinctio nemo quod nihil tempora.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-2">
-        <button
-          type="button"
-          class="btn border-0"
-          data-bs-toggle="modal"
-          data-bs-target="#pjd1"
-        >
-          <div class="card main pt-4" style="width: 200px">
-            <div class="border border-5 m-3 img-thumbnail">
-              <img
-                src="avatar.png"
-                class="card-img-top rounded-circle"
-                alt=""
-              />
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">John Doe (1)</h4>
-              <p class="card-text">Basic Info</p>
-            </div>
-          </div>
-        </button>
-        <!-- The Modal -->
-        <div class="modal modal-lg p-1" id="pjd1">
-          <div class="modal-dialog modal-dialog-centered p-1">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header border-bottom-0">
-                <h4 class="modal-title"></h4>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                ></button>
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body text-wrap">
-                <span class="pb-1"
-                  ><img id="avatar" src="avatar.png" alt=""
-                /></span>
-                <h4 class="modal-title">John Doe</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit.Dignissimos illum cum possimus natus sit deserunt, on
-                  ipsa dolorum numquam iste id in voluptate nobis doloremque
-                  distinctio nemo quod nihil tempora.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="ms-5 me-5 w-50">
+        <p class="h2 pb-5 pt-4">John Doe H.</p>
+        <p class="fs-4 lh-lg d-block"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis blanditiis beatae deserunt dicta, provident dolore ducimus ipsam quos! Corporis voluptate nobis impedit praesentium. Ipsa deleniti quasi nisi id explicabo nemo?</p>
       </div>
     </div>
-   <div class="row justify-content-center">
-   <div class="col-sm-2">
-        <button
-          type="button"
-          class="btn border-0"
-          data-bs-toggle="modal"
-          data-bs-target="#pjd1"
-        >
-          <div class="card main pt-4" style="width: 200px">
-            <div class="border border-5 m-3 img-thumbnail">
-              <img
-                src="avatar.png"
-                class="card-img-top rounded-circle"
-                alt=""
-              />
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">John Doe (1)</h4>
-              <p class="card-text">Basic Info</p>
-            </div>
-          </div>
-        </button>
-        <!-- The Modal -->
-        <div class="modal modal-lg p-1" id="pjd1">
-          <div class="modal-dialog modal-dialog-centered p-1">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header border-bottom-0">
-                <h4 class="modal-title"></h4>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                ></button>
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body text-wrap">
-                <span class="pb-1"
-                  ><img id="avatar" src="avatar.png" alt=""
-                /></span>
-                <h4 class="modal-title">John Doe</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit.Dignissimos illum cum possimus natus sit deserunt, on
-                  ipsa dolorum numquam iste id in voluptate nobis doloremque
-                  distinctio nemo quod nihil tempora.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- 2 -->
+    <div class="container d-flex flex-row-reverse px-0 py-5">
+      <div class="bg-secondary ms-5 img-box w-50">
+      &nbsp;
       </div>
-
-      <div class="col-sm-2">
-        <button
-          type="button"
-          class="btn border-0"
-          data-bs-toggle="modal"
-          data-bs-target="#pjd1"
-        >
-          <div class="card main pt-4" style="width: 200px">
-            <div class="border border-5 m-3 img-thumbnail">
-              <img
-                src="avatar.png"
-                class="card-img-top rounded-circle"
-                alt=""
-              />
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">John Doe (1)</h4>
-              <p class="card-text">Basic Info</p>
-            </div>
-          </div>
-        </button>
-        <!-- The Modal -->
-        <div class="modal modal-lg p-1" id="pjd1">
-          <div class="modal-dialog modal-dialog-centered p-1">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header border-bottom-0">
-                <h4 class="modal-title"></h4>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                ></button>
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body text-wrap">
-                <span class="pb-1"
-                  ><img id="avatar" src="avatar.png" alt=""
-                /></span>
-                <h4 class="modal-title">John Doe</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit.Dignissimos illum cum possimus natus sit deserunt, on
-                  ipsa dolorum numquam iste id in voluptate nobis doloremque
-                  distinctio nemo quod nihil tempora.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="ms-5 me-5 w-50">
+        <p class="h2 pb-5 pt-4 text-end">John Doe H.</p>
+        <p class="fs-4 lh-lg d-block text-end"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis blanditiis beatae deserunt dicta, provident dolore ducimus ipsam quos! Corporis voluptate nobis impedit praesentium. Ipsa deleniti quasi nisi id explicabo nemo?</p>
       </div>
-   </div>
+    </div>
+    <!-- 3 -->
+    <div class="container d-flex flex-row px-0 py-5 ">
+      <div class="bg-secondary me-5 img-box w-50">
+      &nbsp;
+      </div>
+      <div class="ms-5 me-5 w-50">
+        <p class="h2 pb-5 pt-4">John Doe H.</p>
+        <p class="fs-4 lh-lg d-block"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis blanditiis beatae deserunt dicta, provident dolore ducimus ipsam quos! Corporis voluptate nobis impedit praesentium. Ipsa deleniti quasi nisi id explicabo nemo?</p>
+      </div>
+    </div>
+  <!-- 4 -->
+    <div class="container d-flex flex-row-reverse px-0 py-5">
+      <div class="bg-secondary ms-5 img-box w-50">
+      &nbsp;
+      </div>
+      <div class="ms-5 me-5 w-50">
+        <p class="h2 pb-5 pt-4 text-end">John Doe H.</p>
+        <p class="fs-4 lh-lg d-block text-end"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis blanditiis beatae deserunt dicta, provident dolore ducimus ipsam quos! Corporis voluptate nobis impedit praesentium. Ipsa deleniti quasi nisi id explicabo nemo?</p>
+      </div>
+    </div>
+   <!-- 5 -->
+   <div class="container d-flex flex-row px-0 py-5 ">
+      <div class="bg-secondary me-5 img-box w-50">
+      &nbsp;
+      </div>
+      <div class="ms-5 me-5 w-50">
+        <p class="h2 pb-5 pt-4">John Doe H.</p>
+        <p class="fs-4 lh-lg d-block"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis blanditiis beatae deserunt dicta, provident dolore ducimus ipsam quos! Corporis voluptate nobis impedit praesentium. Ipsa deleniti quasi nisi id explicabo nemo?</p>
+      </div>
+    </div>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
 
     <?php include('./reusables/footer.php') ?>
 
@@ -556,7 +295,7 @@
 }
 
 .main-header {
-  height: 100vh !important;
+  /* height: 50vh !important; */
   background-image: url("../assets/images/heroo.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -584,6 +323,12 @@
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
 }
+
+/* Board of trustees */
+.img-box {
+  padding: 15rem 0;
+}
+
 /* Footer */
 footer {
   background-color: #3d0052 !important;
@@ -701,9 +446,7 @@ a:hover {
   color: white;
 }
 
-hr {
-  width: 30px;
-}
+
       body{
            font-family: "Josefin Sans", sans-serif ;
            width: 100%;
@@ -711,46 +454,8 @@ hr {
            overflow-x: hidden;
            
     	            }
-           
-      #BOT {
-        font-family: "Josefin Sans", sans-serif;
-        margin-top: -10rem;
-         
-      }
-      #avatar {
-        height: 470px;
-        width: 35%;
-        float: left;
-        margin-right: 1rem;
-        margin-left: 1rem;
-        padding-bottom: 3rem;
-      }
-
-      .modal-title {
-        margin-bottom: 1.5rem;
-      }
-
-      .modal {
-        padding: 7rem;
-        border-radius: 0;
-      }
-      .modal-content {
-        border-radius: 0; /* Remove rounded corners */
-      }
-      .col {
-        margin-right: 10px;
-      }
-      .main {
-        
-        border: 0;
-        background-color: #c17aeb;
-        box-shadow: 5 10px 10px 5 rgba(0,0,0,0.16),0;
-        border-radius:0;
-        margin-bottom:20px;
-
-
-        
-      }
+       
+      
     </style>
   </body>
 </html>

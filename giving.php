@@ -16,6 +16,7 @@
     </section>
   </div>
   <?php include('./reusables/footer.php') ?>
+  <a href="http:..//sportybet.com">sportybet</a>
 </body>
 
 </html>
