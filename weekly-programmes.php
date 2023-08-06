@@ -24,7 +24,9 @@
 
 
   <!-- Font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -69,11 +71,12 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="card"><a class="img-container" href="#">
-                <img class="card-img-top img-fluid hover-effect si" src="./assets//images//Hour Of Divine Help.jpg" alt=""></a>
+                <img class="card-img-top img-fluid hover-effect si" src="./assets//images/gmj.jpeg" alt=""></a>
               <div>
                 <div class="card-body">
                   <h4 class="card-title">Good Morning Jesus</h4>
-                  <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic at eveniet tempora labore alias error quae quasi doloremque minus voluptatum exercitationem.</p>
+                  <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic at eveniet tempora labore
+                    alias error quae quasi doloremque minus voluptatum exercitationem.</p>
 
                   <p class="card-text">
                   <div class="">
@@ -89,7 +92,8 @@
           <div class="swiper-slide">
             <div class="">
               <div class="card"><a class="img-container" href="#">
-                  <img class="card-img-top img-fluid hover-effect si" src="./assets/images/SUNDAY SERVICE.jpg" alt=""></a>
+                  <img class="card-img-top img-fluid hover-effect si" src="./assets/images/SUNDAY SERVICE.jpg"
+                    alt=""></a>
                 <div>
                   <div class="card-body">
                     <h4 class="card-title">Sunday Service</h4>
@@ -109,11 +113,13 @@
           </div>
           <div class="swiper-slide">
             <div class="card"><a class="img-container" href="#">
-                <img class="card-img-top img-fluid hover-effect si" src="./assets/images/Hour Of Divine Help.jpg" alt=""></a>
+                <img class="card-img-top img-fluid hover-effect si" src="./assets/images/Hour Of Divine Help.jpg"
+                  alt=""></a>
               <div>
                 <div class="card-body">
                   <h4 class="card-title">Hour of Divine Help</h4>
-                  <p class="desc">Come and build yourself on your most holy faith through special teachings and prayers </p>
+                  <p class="desc">Come and build yourself on your most holy faith through special teachings and prayers
+                  </p>
 
                   <p class="card-text">
                   <div class="">
@@ -128,7 +134,8 @@
           </div>
           <div class="swiper-slide">
             <div class="card"><a class="img-container" href="#">
-                <img class="card-img-top img-fluid hover-effect si" src="./assets/images/THURSDAY SERVICE.jpg" alt=""></a>
+                <img class="card-img-top img-fluid hover-effect si" src="./assets/images/THURSDAY SERVICE.jpg"
+                  alt=""></a>
               <div>
                 <div class="card-body">
                   <h4 class="card-title">Bible Study</h4>
@@ -148,7 +155,8 @@
           </div>
           <div class="swiper-slide">
             <div class="card"><a class="img-container" href="#">
-                <img class="card-img-top img-fluid hover-effect si" src="./assets/images/THURSDAY SERVICE.jpg" alt=""></a>
+                <img class="card-img-top img-fluid hover-effect si" src="./assets/images/THURSDAY SERVICE.jpg"
+                  alt=""></a>
               <div>
                 <div class="card-body">
                   <h4 class="card-title">Thursday Service</h4>
@@ -168,7 +176,8 @@
           </div>
           <div class="swiper-slide">
             <div class="card"><a class="img-container" href="#">
-                <img class="card-img-top img-fluid hover-effect si" src="./assets/images/Hour Of Divine Help.jpg" alt=""></a>
+                <img class="card-img-top img-fluid hover-effect si" src="./assets/images/Hour Of Divine Help.jpg"
+                  alt=""></a>
               <div>
                 <div class="card-body">
                   <h4 class="card-title">Prayer Meeting</h4>
@@ -191,7 +200,7 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-    
+
     </div>
     <br>
     <?php include('./reusables/footer.php') ?>
@@ -662,8 +671,8 @@
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 30,
-        autoplay:true,
-        loop:true,
+        autoplay: true,
+        loop: true,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
