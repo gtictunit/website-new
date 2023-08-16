@@ -691,6 +691,18 @@ hr {
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
 }
+.custom-button {
+  background: linear-gradient(
+    135deg,
+    /* rgba(2, 0, 36, 1) 0%, */ rgba(109, 9, 121, 1) 35%,
+    rgba(203, 42, 42, 1) 75%
+  );
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 30px;
+  border: none !important;
+}
 
 /* .crossfade > figure {
     animation: imageAnimation 30s linear infinite 0s;

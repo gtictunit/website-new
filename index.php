@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="./css/drop-in.animation.css" />
   <link rel="stylesheet" href="./css/drop-down.animation.css" />
   <link rel="stylesheet" href="./css/ripple.css" />
+  <link rel="stylesheet" href="./css/upcoming-events.css" />
+
 
   <!-- Carousel -->
   <!-- <link rel="stylesheet" type="text/css" href="./vendor/carousel/css/demo.css" />
@@ -127,41 +129,41 @@
 
 
 
-<div style="padding:20px;">
-  <section class="container-xl cta-section-give">
-    <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
-      <div class="icon-container col-4">
-        <img src="./assets/images/vision.png" width="75px" height="75px" />
+  <div style="padding:20px;">
+    <section class="container-xl cta-section-give">
+      <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
+        <div class="icon-container col-4">
+          <img src="./assets/images/vision.png" width="75px" height="75px" />
+        </div>
+        <div class="description col-8">
+          <h6>Our Vision</h6>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
+            officia minima voluptatem sit</p>
+        </div>
       </div>
-      <div class="description col-8">
-        <h6>Our Vision</h6>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
-          officia minima voluptatem sit</p>
-      </div>
-    </div>
 
-    <div class="cta-give-2 d-flex flex-row justify-content-start align-items-center">
-      <div class="icon-container col-4">
-        <img src="./assets/images/target.png" width="75px" height="75px" />
+      <div class="cta-give-2 d-flex flex-row justify-content-start align-items-center">
+        <div class="icon-container col-4">
+          <img src="./assets/images/target.png" width="75px" height="75px" />
+        </div>
+        <div class="description">
+          <h6>Our Mission</h6>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
+            officia minima voluptatem sit,</p>
+        </div>
       </div>
-      <div class="description">
-        <h6>Our Mission</h6>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
-          officia minima voluptatem sit,</p>
-      </div>
-    </div>
 
-    <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
-      <div class="icon-container col-4">
-        <img src="./assets/images/location.png" width="75px" height="75px" />
-      </div>
-      <div class="description">
-        <h6>Participate with us</h6>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
-          officia minima voluptatem sit,
-      </div>
-  </section>
-</div>
+      <div class="cta-give-1 d-flex flex-row justify-content-start align-items-center">
+        <div class="icon-container col-4">
+          <img src="./assets/images/location.png" width="75px" height="75px" />
+        </div>
+        <div class="description">
+          <h6>Participate with us</h6>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum earum, libero nihil delectus,
+            officia minima voluptatem sit,
+        </div>
+    </section>
+  </div>
 
   <style>
     .cta-section-give {
@@ -185,10 +187,11 @@
       .cta-section-give {
         padding: 1em;
       }
+
       .cta-give-2 {
-      border:none;
-      padding: 0;
-    }
+        border: none;
+        padding: 0;
+      }
     }
   </style>
 
@@ -285,8 +288,8 @@
           <span></span>
         </div>
       </div>
-   </div>
-</section>
+    </div>
+  </section>
 
 
   <section class="giving">
@@ -300,9 +303,72 @@
         <div class="giving-description">
           You can Donate to Glory Tabernacle Ministry today.
         </div>
-        <a class="btn give-btn text-white" href="">
-          Donate
-        </a>
+        <button type="button" class="btn btn-primary rounded-3 custom-button">Learn more</button>
+
+      </div>
+    </div>
+  </section>
+  <section class="upcoming-events">
+    <div class="blog-home2 py-5">
+      <div class="container-xl">
+        <!-- Row  -->
+        <div class="row justify-content-center">
+          <!-- Column -->
+          <div class="col-md-8 text-center">
+            <h3 class="my-3">Upcoming Programs</h3>
+            <h6 class="subtitle font-weight-normal">Keep to date with the latest and upcoming programs in Glory
+              Tabernacle Ministry</h6>
+          </div>
+          <!-- Column -->
+          <!-- Column -->
+        </div>
+        <div class="row mt-4">
+          <!-- Column -->
+          <div class="col-md-4 on-hover">
+            <div class="card border-0 mb-4">
+              <a href="#"><img class="card-img-top"
+                  src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img3.jpg"
+                  alt="wrappixel kit"></a>
+              <div
+                class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                Aug<span class="d-block">23</span></div>
+              <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Glory Children's Team
+                  Convention `23</a></h5>
+              <p class="mt-3">Business Park, Opp. Corns Sam Restaurant, New Yoark, US</p>
+              <a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>
+            </div>
+          </div>
+          <!-- Column -->
+          <div class="col-md-4 on-hover">
+            <div class="card border-0 mb-4">
+              <a href="#"><img class="card-img-top"
+                  src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img2.jpg"
+                  alt="wrappixel kit"></a>
+              <div
+                class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                Sep<span class="d-block">23</span></div>
+              <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Congregational All-Night
+                  prayer meeting.</a></h5>
+              <p class="mt-3">Business Park, Opp. Corns Sam Restaurant, New Yoark, US</p>
+              <a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>
+            </div>
+          </div>
+          <!-- Column -->
+          <div class="col-md-4 on-hover">
+            <div class="card border-0 mb-4">
+              <a href="#"><img class="card-img-top"
+                  src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img1.jpg"
+                  alt="wrappixel kit"></a>
+              <div
+                class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                Oct<span class="d-block">23</span></div>
+              <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">BLEST convention</a>
+              </h5>
+              <p class="mt-3">Business Park, Opp. Corns Sam Restaurant, New Yoark, US</p>
+              <a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -310,10 +376,11 @@
   <style>
     .giving {
       background-color: pink;
-      background-image: url("./assets/images/renate-vanaga-L6kEF4sVy8U-unsplash.jpg");
+      background-image: url("./assets/images/leiada-krozjhen-L7kHt5x_Slc-unsplash.jpg");
       background-position: center;
       background-size: cover;
       position: relative;
+      margin-top: 50px;
     }
 
     .giving-overlay {
@@ -338,14 +405,14 @@
     }
 
     .giving-header {
-      font-family: Poppins;
+      font-family: Montserrat;
       color: #fff;
-      font-size: 48px;
-      font-weight: 700;
+      font-size: 60px;
+      font-weight: 600;
     }
 
     .giving-description {
-      color: #fff;
+      color: #e5e5e5;
       font-size: 21px;
       font-family: "Raleway";
       margin: 15px 0;
@@ -355,7 +422,7 @@
       width: fit-content;
       padding: 10px 30px;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-      border-radius: 2px ;
+      border-radius: 2px;
       color: white;
       background-color: #3d0052;
     }
